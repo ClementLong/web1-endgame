@@ -1,6 +1,6 @@
 <template>
   <div class="team">
-    <h1>This is an team page</h1>
+    <h1>Les membres de notre équipe</h1>
     <div v-for="(member, index) in members" :key="index">
       {{ member }}
     </div>
@@ -12,20 +12,22 @@ export default {
   data() {
     return {
       members: [
-        'Clément',
-        'Bastien'
-      ]
-    }
-  }
-}
+        "Louis Fleury",
+        "Melvyn Dadure",
+        "Romain Danizel",
+        "Aymeric Gilet",
+        "Loïc Deniel",
+        "Nathan Binet",
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
 .team {
-
   h1 {
     margin: 0;
   }
-
 }
 </style>
