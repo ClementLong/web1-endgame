@@ -1,3 +1,13 @@
+# RAP / ROCK :metal:
+Groupe 11 :boom:
+
+BINET Nathan
+GILLET Aymeric
+FLEURY Louis
+DADURE Melvyn
+DANIZEL Romain
+DENIEL Loic
+
 # web1-endgame
 
 ## Stack du projet
@@ -45,4 +55,3 @@ https://router.vuejs.org/
 https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
 
 https://marozed.ma/vue-cheatsheet/
-
