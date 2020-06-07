@@ -15,7 +15,7 @@ export default {
         "Louis Fleury",
         "Melvyn Dadure",
         "Romain Danizel",
-        "Aymeric Gilet",
+        "Aymeric Gillet",
         "Loïc Deniel",
         "Nathan Binet",
       ],
@@ -28,6 +28,7 @@ export default {
 .team {
   h1 {
     margin: 0;
+    border: 3px red dashed;
   }
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/pouete.png" />
-    <HelloWorld msg="Bienvenue sur notre projet de fin d'année" />
+    <img alt="aerosmith" src="https://images6.alphacoders.com/410/thumb-1920-410779.jpg" />
+    <HelloWorld msg="Groupe 11" />
+    <h2 msg ="RAP / ROCK" />
   </div>
 </template>
 
@@ -16,3 +17,13 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+
+.home
+  img {
+  width: 1200px;
+  height: 650px;
+}
+
+</style>
