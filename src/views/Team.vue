@@ -11,21 +11,16 @@
 export default {
   data() {
     return {
-      members: [
-        'Clément',
-        'Bastien'
-      ]
-    }
-  }
-}
+      members: ["Clément", "Bastien"],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
 .team {
-
   h1 {
     margin: 0;
   }
-
 }
 </style>
