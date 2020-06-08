@@ -1,9 +1,7 @@
 <template>
   <div class="team">
     <h1>This is an team page</h1>
-    <div v-for="(member, index) in members" :key="index">
-      {{ member }}
-    </div>
+    <p v-for="(member, index) in members" :key="index">{{ member }}</p>
   </div>
 </template>
 
@@ -11,21 +9,27 @@
 export default {
   data() {
     return {
-      members: [
-        'Clément',
-        'Bastien'
-      ]
-    }
+      members: ["PA", "Annie", "Priska", "Anthony", "Nicoraux", "Axel"]
+    };
   }
-}
+};
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .team {
-
   h1 {
     margin: 0;
+    padding: 30px 0;
   }
 
+  p {
+    color: $blue;
+    margin: 8px;
+
+    &:hover {
+      color: $yellow;
+      transition: 250ms;
+    }
+  }
 }
 </style>
