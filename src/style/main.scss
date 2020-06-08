@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'variables';
+@import 'mixin';
+@import 'color';
+
+.fiftyMeters {
+	@include size;
+	@include background(url(../img/HomePage.jpg));
+	@include flexcenter(space-around, center, column);
+	&__mainTitle {
+		@include title(aileronsregular, normal, uppercase, 96px, $black, 1.5);
+	}
+	&__secondTitle {
+		@include title(abel, normal, none, 48px, $white, 1.5);
+	}
+	.btn {
+		cursor: pointer;
+		padding: 15px 40px;
+		border-radius: 16px;
+		border: 3px solid $black;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background: $white;
+		font-family: aileronsregular;
+		font-size: 36px;
+		line-height: 29px;
+	}
+}
+.oneHundredFiftyMeters {
+	@include size;
+	@include background(url(../img/HomePage.jpg));
+	@include flexcenter(space-around, center, column);
+	&__secondTitle {
+		max-width: 800px;
+		@include title(abel, normal, none, 48px, $white, 1.5);
+	}
+	.btn-scroll {
+		h2 {
+			@include title(abel, normal, none, 18px, $white, 1.5);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@mixin size {
+	height: 100vh;
+	width: 100vw;
+}
+@mixin flexcenter($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+@mixin background($url) {
+	background-image: $url;
+	background-size: cover;
+	background-position: center;
+}
+@mixin title($family, $weight, $transform, $size, $color, $line) {
+	font-family: $family;
+	font-weight: $weight;
+	text-transform: $transform;
+	font-size: $size;
+	color: $color;
+	line-height: $line;
+}
