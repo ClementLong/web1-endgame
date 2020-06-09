@@ -35,24 +35,24 @@
 
 <script>
 // @ is an alias to /src
-import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
+// import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
-import StartArticle from "@/components/Frame-start_article.vue";
-import PopUpArticle from "@/components/partials/Pop-up_article.vue";
-import AssosArticle from "@/components/Frame-assos_article.vue";
-import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+// import StartArticle from "@/components/Frame-start_article.vue";
+// import PopUpArticle from "@/components/partials/Pop-up_article.vue";
+// import AssosArticle from "@/components/Frame-assos_article.vue";
+// import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld,
     NextChapterButton,
-    DisclaimerArticle,
-    StartArticle,
-    PopUpArticle,
-    AssosArticle,
-    ChapterTitleAndReturn,
+    // DisclaimerArticle,
+    // StartArticle,
+    // PopUpArticle,
+    // AssosArticle,
+    // ChapterTitleAndReturn,
   }
 };
 </script>

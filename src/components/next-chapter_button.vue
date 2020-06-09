@@ -32,6 +32,8 @@ export default {
       & button {
         font-size: 11px;
         color: $white;
+        background: none;
+        border: none;
       }
     }
   }
