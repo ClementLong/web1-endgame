@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <HelloWorld msg="Les coraux, la vie se meurt" />
-    <DisclaimerArticle text="Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC.
+    <DisclaimerArticle
+      text="Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC.
     Les contenus présentés n'ont pas fait l'objet d'une demande de droit d'utilisation.
     Ce site ne sera en aucun cas exploité à des fins commerciales et ne sera pas publié."/>
     <StartArticle dive="Pour une immersion totale à travers ce webdocumentaire, 
@@ -21,6 +22,13 @@
       Il est donc à la fois animal, minéral et végétale!"/>
     <AssosArticle title="Envie d’oeuvrer pour l’avenir  des coraux ?"
       text="Clique sur l’association de ton choix !"/>
+    />
+    <ChapterTitleAndReturn
+      currentChapter="01"
+      chapter="07"
+      title="Mais que ce passe t-il ?"
+      reviewChapter="revoir le chapitre précédent"
+    />
   </div>
 </template>
 
@@ -31,6 +39,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import StartArticle from "@/components/Frame-start_article.vue";
 import PopUpArticle from "@/components/partials/Pop-up_article.vue";
 import AssosArticle from "@/components/Frame-assos_article.vue";
+import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 
 export default {
   name: "Home",
@@ -40,6 +49,7 @@ export default {
     StartArticle,
     PopUpArticle,
     AssosArticle
+    ChapterTitleAndReturn
   }
 };
 </script>
