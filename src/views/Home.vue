@@ -30,6 +30,7 @@
       title="Mais que ce passe t-il ?"
       reviewChapter="revoir le chapitre précédent"
     />-->
+    <!-- <Controls /> -->
   </div>
 </template>
 
@@ -42,11 +43,13 @@ import HelloWorld from "@/components/HelloWorld.vue";
 // import PopUpArticle from "@/components/partials/Pop-up_article.vue";
 // import AssosArticle from "@/components/Frame-assos_article.vue";
 // import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+// import Controls from "@/components/Controls.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld
+    // Controls
     // NextChapterButton,
     // DisclaimerArticle,
     // StartArticle,
