@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <ProgressBar />
+    <IntroductionTitle />
     <HelloWorld msg="Les coraux, la vie se meurt" />
     <DisclaimerArticle
       text="Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC.
@@ -20,13 +22,17 @@
 import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+import IntroductionTitle from "@/components/IntroductionTitle.vue";
+import ProgressBar from "@/components/ProgressBar.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld,
     DisclaimerArticle,
-    ChapterTitleAndReturn
+    ChapterTitleAndReturn,
+    IntroductionTitle,
+    ProgressBar,
   }
 };
 </script>

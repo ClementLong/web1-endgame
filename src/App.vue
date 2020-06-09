@@ -25,5 +25,6 @@ export default {
   text-align: center;
   //color: $yellow;
   font-family: $montserrat;
+  background-image: url('image-coraux.png');
 }
 </style>
