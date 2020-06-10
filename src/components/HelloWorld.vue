@@ -1,7 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>{{ NomDuProjet }}</p>
   </div>
 </template>
 
@@ -10,7 +8,6 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String,
-  NomDuProjet: String,
   }
 }
 </script>
@@ -18,12 +15,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-h3 {
-  padding: 40px 0 0;
-}
-
-p {
-  color: red;
+.hello {
+  color: blueviolet;
 }
 
 </style>
