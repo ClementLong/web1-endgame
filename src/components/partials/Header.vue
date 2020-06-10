@@ -44,7 +44,7 @@ export default {
     height: 50vh;
 
     flex-direction: column;
-    background:salmon;
+    background: grey;
 
     &-open { // #nav .menu-open
       display: flex;
@@ -62,7 +62,7 @@ export default {
 
     &.router-link-exact-active { // #nav a.router-link-exact-active 
       // Cette class est ajouté automatiquement par le routeur au lien qui correspond à la page courante
-      color: lightskyblue;
+      color: black;
     }
   }
 }
