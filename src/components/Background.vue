@@ -1,22 +1,20 @@
-<template>
-  <div class="hello">
-  </div>
+<template class="bgimg">
+  <img src="../img/home/background.png" />
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-  }
+  name: 'background',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.hello {
-  color: blueviolet;
+.bgimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 </style>
