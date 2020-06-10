@@ -3,34 +3,32 @@
     <headr />
     <div class="firstFrame">
       <h1>
-        <span>Le poisson-clown</span>
+        <span>Le dauphin</span>
       </h1>
       <div class="species">
         <div class="species__spec">
-          <img src="../../img/Species/nemo.svg" class="nemo" alt />
+          <img src="../../img/Species/dauphin/dauphin.svg" class="nemo" alt />
           <p>
-            Le poisson clown est un type de poisson qui vit dans les habitats d'eau salée.
-            Les poissons-clowns sont généralement des poissons orange très brillants qui ont trois bandes blanches, une à la tête, au milieu et à la queue.
-            Si vous regardez de très près, vous remarquerez peut-être qu'il y a de fines lignes noires autour des rayures blanches.
-            De plus, les extrémités de leurs nageoires ont une fine bande arrondie noire.
+            Réputé pour sa sympathie, sa beauté, son intelligence et sa facétie,
+            le dauphin est un mammifère très populaire auprès des hommes, souvent friands de nager à ses côtés.
           </p>
         </div>
         <div class="species__info">
           <div class="spec">
             <p>
-              <span>Profondeur:</span> 0 - 12 m
+              <span>Profondeur:</span>: 0 - 200 m
             </p>
             <p>
-              <span>Durée de vie:</span> 3 - 5 ans
+              <span>Durée de vie:</span> 15-16 ans
             </p>
             <p>
               <span>Poids/Taille:</span>
-              250g / 88 mm
+              75 kg/ 1,5 et 2,5 m
             </p>
           </div>
           <div class="info">
             <p>
-              <span>Zone geographique:</span> Ocean Pacifique et Indien
+              <span>Zone geographique:</span> Observable dans tous les océans du monde
             </p>
             <br />
             <p>
@@ -39,10 +37,7 @@
             <br />
 
             <p>
-              <span>Reproduction:</span> Les poissons-clowns pondent leurs œufs par lots sur le corail,
-              la roche ou à côté de l'anémone de mer qu'ils appellent chez eux. Le poisson
-              clown mâle construira un nid sur la roche ou le corail près de l'anémone afin d'être
-              protégé contre les prédateurs
+              <span>Reproduction:</span> les femelles mettent au monde des petits deux ou trois fois par an
             </p>
           </div>
         </div>
@@ -51,7 +46,7 @@
     <div class="secondFrame">
       <div class="secondFrame__video">
         <iframe
-          src="https://www.youtube.com/embed/LAkky8eH92I"
+          src="https://www.youtube.com/embed/vIZKR_PSDwA"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -62,19 +57,19 @@
         </div>
       </div>
       <div class="secondFrame__tips">
-        <p>Le saviez-vous?</p>
         <p>
-          Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
+          <span>Le saviez-vous?</span>
+          <br />Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
           Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
         </p>
       </div>
-      <img src="../../img/Species/nemo_egg.svg" class="easterEgg" alt />
+      <!-- <img src="../../img/Species/dauphin/nemo_egg.svg" class="easterEgg" alt /> -->
     </div>
   </div>
 </template>
 
 <script>
-import headr from "../../components/partials/Head";
+import headr from "@/components/partials/Head";
 export default {
   name: "dauphin",
   components: {

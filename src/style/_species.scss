@@ -4,10 +4,11 @@
 	@include size(100%, 100vw);
 
 	@include backgroundGradient;
-	span {
-		border-bottom: 2px solid $white;
-	}
+
 	.firstFrame {
+		span {
+			border-bottom: 2px solid $white;
+		}
 		text-align: start;
 		.nemo {
 			width: 500px;
@@ -81,6 +82,8 @@
 	.secondFrame {
 		@include size(100%, 100vw);
 		@include flexcenter(space-around, center, column);
+		position: relative;
+		padding-top: 100px;
 
 		&__video {
 			@include size(100vh, 100vw);
@@ -98,7 +101,33 @@
 					@include size(50vh, 90vw);
 				}
 			}
-			&__photo {
+			.photo {
+				@media (max-width: 750px) {
+					@include flexcenter(center, center, column);
+				}
+				img:first-child {
+					@include size(auto, 500px);
+					max-width: 50%;
+					transform: translate(130px, 150px);
+					@media (max-width: 750px) {
+						transform: translate(0px, 0px);
+						@include size(auto, 90vw);
+						max-width: 90vw;
+						padding: 25px 0 25px 0;
+					}
+				}
+				img:nth-child(2) {
+					@include size(auto, 500px);
+					max-width: 50%;
+					// padding-top: ;
+
+					@media (max-width: 750px) {
+						@include size(auto, 90vw);
+						max-width: 90vw;
+
+						padding: 0px 0 25px 0;
+					}
+				}
 			}
 		}
 
@@ -106,17 +135,21 @@
 			position: relative;
 			color: white;
 			@include flexcenter(center, center, column);
-			max-width: 500px;
-			width: 90vw;
-			padding: 10px;
-			background-color: #025b83;
-			border-radius: 20px;
-			@include title(abel, normal, none, 24px, $white, 1.5);
-		}
-		.easterEgg {
-			position: absolute;
-			top: 0;
-			right: 0;
+			padding-bottom: 50px;
+			span {
+				font-size: 24px;
+			}
+			p {
+				max-width: 500px;
+				width: 90vw;
+				padding: 10px;
+				background-color: #025b83;
+				border-radius: 20px;
+				@include title(abel, normal, none, 18px, $white, 1.5);
+			}
+			@media (max-width: 750px) {
+				padding: 50px 0px 10px 0px;
+			}
 		}
 	}
 }

@@ -7,12 +7,19 @@
 .homePage {
 	@include size(100vh, 100vw);
 	@include background(url(../img/HomePage.jpg));
-	@include flexcenter(space-around, center, column);
+	@include flexcenter(space-between, center, column);
 	&__mainTitle {
 		@include title(aileronsregular, normal, uppercase, 96px, $black, 1.5);
+		@media (max-width: 750px) {
+			@include title(aileronsregular, normal, uppercase, 48px, $black, 1.5);
+		}
 	}
 	&__secondTitle {
 		@include title(abel, normal, none, 48px, $white, 1.5);
+		@media (max-width: 750px) {
+			max-width: 70vw;
+			@include title(abel, normal, none, 24px, $white, 1.5);
+		}
 	}
 	.btn {
 		cursor: pointer;
@@ -24,16 +31,32 @@
 		font-family: aileronsregular;
 		font-size: 36px;
 		line-height: 29px;
+		@media (max-width: 750px) {
+			font-size: 18px;
+			line-height: 0px;
+			border: 1px solid #000;
+		}
+
+		margin-bottom: 10vh;
 	}
 }
 .secondPage {
 	@include background(url(../img/HomePage.jpg));
+
 	.information {
-		@include size(95vh, 100vw);
-		@include flexcenter(space-around, center, column);
+		@include size(90vh, 100vw);
+		@include flexcenter(space-evenly, center, column);
+		@media (max-width: 750px) {
+			padding-top: 10px;
+		}
 		&__secondTitle {
+			@include size(100%, 70vw);
 			max-width: 800px;
 			@include title(abel, normal, none, 48px, $white, 1.5);
+			@media (max-width: 750px) {
+				max-width: 70vw;
+				@include title(abel, normal, none, 24px, $white, 1.5);
+			}
 		}
 		.btn-scroll {
 			h2 {

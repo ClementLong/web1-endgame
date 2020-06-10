@@ -7,7 +7,7 @@
       </h1>
       <div class="species">
         <div class="species__spec">
-          <img src="../../img/Species/nemo.svg" class="nemo" alt />
+          <img src="../../img/Species/clown/nemo.svg" class="nemo" alt />
           <p>
             Le poisson clown est un type de poisson qui vit dans les habitats d'eau salée.
             Les poissons-clowns sont généralement des poissons orange très brillants qui ont trois bandes blanches, une à la tête, au milieu et à la queue.
@@ -56,19 +56,19 @@
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+
         <div class="photo">
-          <!-- <img src="../../img/Species/nemo1.svg" alt />
-          <img src="../../img/Species/nemo2.svg" alt />-->
+          <img src="../../img/Species/clown/nemo2.svg" alt />
+          <img src="../../img/Species/clown/nemo1.svg" alt />
         </div>
       </div>
       <div class="secondFrame__tips">
-        <p>Le saviez-vous?</p>
         <p>
-          Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
+          <span>Le saviez-vous?</span>
+          <br />Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
           Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
         </p>
       </div>
-      <img src="../../img/Species/nemo_egg.svg" class="easterEgg" alt />
     </div>
   </div>
 </template>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <img src="../../img/Logo.svg" alt />
-    <router-link class="btn" to="/secondPage">Famillias</router-link>
+    <router-link class="btn" to="/mammiferes">
+      <button>Familles</button>
+    </router-link>
   </div>
 </template>
 
@@ -14,24 +16,35 @@ export default {
 <style lang="scss" scoped>
 div {
   position: relative;
-  height: 5vh;
+  height: 10vh;
   display: flex;
   justify-self: flex-start;
   align-items: flex-start;
+  @media (max-width: 750px) {
+    align-items: center;
+  }
   img {
     padding: 10px;
+    @media (max-width: 750px) {
+      width: 10vw;
+    }
   }
 }
 
-.btn {
+button {
   cursor: pointer;
   padding: 15px 40px;
   border-radius: 16px;
   border: 3px solid #000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #fff;
+  background: #025b83;
   font-family: aileronsregular;
   font-size: 36px;
   line-height: 29px;
+  @media (max-width: 750px) {
+    font-size: 18px;
+    line-height: 0px;
+    border: 1px solid #000;
+  }
 }
 </style>
