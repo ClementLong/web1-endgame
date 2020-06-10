@@ -1,0 +1,122 @@
+.backgroundPage {
+	background-color: #ccc;
+	@include flexcenter(space-between, center, column);
+	@include size(100%, 100vw);
+
+	@include backgroundGradient;
+	span {
+		border-bottom: 2px solid $white;
+	}
+	.firstFrame {
+		text-align: start;
+		.nemo {
+			width: 500px;
+			@media (max-width: 750px) {
+				width: 90vw;
+			}
+		}
+
+		@include size(90vh, 100vw);
+		@include flexcenter(space-around, center, column);
+		//=================================================
+		@media (max-width: 750px) {
+			@include size(100%, 90vw);
+		}
+
+		h1 {
+			@include title(abel, normal, none, 96px, $white, 1.5);
+			//=================================================
+
+			@media (max-width: 750px) {
+				@include title(abel, normal, none, 48px, $white, 1.5);
+			}
+		}
+		.species {
+			align-self: flex-end;
+			@include size(100%, 100vw);
+			@include flexcenter(space-around, center, column);
+			@include title(abel, normal, none, 24px, $white, 1.5);
+			//=================================================
+
+			@media (max-width: 750px) {
+				@include size(100%, 90vw);
+			}
+			&__spec {
+				@include flexcenter(space-around, center, row);
+				//=================================================
+
+				@media (max-width: 750px) {
+					@include flexcenter(space-around, center, column);
+					@include size(100%, 100vw);
+					padding-bottom: 100px;
+					max-width: 90vw;
+				}
+				@include size(40vh, 100vw);
+				p {
+					max-width: 800px;
+				}
+			}
+			&__info {
+				@include flexcenter(space-around, flex-start, row);
+				@include size(40vh, 100vw);
+				max-width: 90vw;
+				//=================================================
+
+				@media (max-width: 750px) {
+					@include flexcenter(space-around, center, column);
+					@include size(100%, 100vw);
+					max-width: 90vw;
+				}
+				.spec {
+					@media (max-width: 750px) {
+						padding-bottom: 100px;
+					}
+				}
+				.info {
+					max-width: 800px;
+				}
+			}
+		}
+	}
+	.secondFrame {
+		@include size(100%, 100vw);
+		@include flexcenter(space-around, center, column);
+
+		&__video {
+			@include size(100vh, 100vw);
+			@include flexcenter(space-around, center, row);
+			//=================================================
+
+			@media (max-width: 750px) {
+				@include flexcenter(center, center, column);
+			}
+			iframe {
+				@include size(50vh, 40vw);
+				//=================================================
+
+				@media (max-width: 750px) {
+					@include size(50vh, 90vw);
+				}
+			}
+			&__photo {
+			}
+		}
+
+		&__tips {
+			position: relative;
+			color: white;
+			@include flexcenter(center, center, column);
+			max-width: 500px;
+			width: 90vw;
+			padding: 10px;
+			background-color: #025b83;
+			border-radius: 20px;
+			@include title(abel, normal, none, 24px, $white, 1.5);
+		}
+		.easterEgg {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}

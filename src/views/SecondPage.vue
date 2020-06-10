@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <div class="oneHundredFiftyMeters">
+  <div class="secondPage">
+    <naver />
+    <div class="information">
       <h2
-        class="oneHundredFiftyMeters__secondTitle"
+        class="information__secondTitle"
       >Bienvenu dans les abysses, scroll vers le bas si tu es pret à découvrir les mysteres des profondeurs !</h2>
       <h2
-        class="oneHundredFiftyMeters__secondTitle"
+        class="information__secondTitle"
       >Ce périple interactif te feras découvrir un monde insoupçonné.</h2>
-      <h2 class="oneHundredFiftyMeters__secondTitle">
+      <h2 class="information__secondTitle">
         La ou la lumiere s'arrete,
         <br />la vie commence..
       </h2>
@@ -40,8 +41,12 @@
 </template>
 
 <script>
+import naver from "../components/partials/Header.vue";
 export default {
-  name: "secondPage"
+  name: "secondPage",
+  components: {
+    naver
+  }
 };
 </script>
 

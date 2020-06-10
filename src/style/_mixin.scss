@@ -1,6 +1,6 @@
-@mixin size {
-	height: 100vh;
-	width: 100vw;
+@mixin size($height, $width) {
+	height: $height;
+	width: $width;
 }
 @mixin flexcenter($justify, $align, $direction) {
 	display: flex;
@@ -11,7 +11,39 @@
 @mixin background($url) {
 	background-image: $url;
 	background-size: cover;
-	background-position: center;
+	background-repeat: no-repeat;
+	position: top;
+}
+@mixin backgroundGradient {
+	background-size: cover;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		10deg,
+		rgba(0, 0, 10, 1) 1%,
+		rgba(0, 0, 20, 1) 2%,
+		rgba(0, 0, 30, 1) 3%,
+		rgba(0, 0, 40, 1) 4%,
+		rgba(0, 0, 50, 1) 5%,
+		rgba(0, 0, 60, 1) 10%,
+		rgba(0, 0, 70, 1) 15%,
+		rgba(0, 0, 80, 1) 20%,
+		rgba(0, 0, 90, 1) 25%,
+		rgba(1, 10, 100, 1) 30%,
+		rgba(0, 0, 110, 1) 35%,
+		rgba(0, 0, 120, 1) 40%,
+		rgba(0, 0, 130, 1) 45%,
+		rgba(0, 0, 140, 1) 50%,
+		rgba(0, 0, 150, 1) 55%,
+		rgba(0, 0, 160, 1) 60%,
+		rgba(0, 10, 170, 1) 65%,
+		rgba(0, 40, 180, 1) 70%,
+		rgba(0, 70, 190, 1) 75%,
+		rgba(0, 100, 200, 1) 80%,
+		rgba(0, 130, 210, 1) 85%,
+		rgba(0, 140, 220, 1) 90%,
+		rgba(15, 170, 230, 1) 95%,
+		rgba(0, 200, 240, 1) 100%
+	);
 }
 @mixin title($family, $weight, $transform, $size, $color, $line) {
 	font-family: $family;

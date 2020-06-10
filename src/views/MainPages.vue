@@ -1,47 +1,11 @@
 <template>
   <div>
-    <div class="fiftyMeters">
-      <h1 class="fiftyMeters__mainTitle">
+    <div class="homePage">
+      <h1 class="homePage__mainTitle">
         Project
         <br />Abys Life
       </h1>
-      <h2 class="fiftyMeters__secondTitle">
-        L'aventure dans les
-        <br />mysterieux fonds marins
-      </h2>
-
-      <router-link class="btn" to="/secondPage">Commencer</router-link>
-    </div>
-    <div class="fiftyMeters">
-      <h1 class="fiftyMeters__mainTitle">
-        Project
-        <br />Abys Life
-      </h1>
-      <h2 class="fiftyMeters__secondTitle">
-        L'aventure dans les
-        <br />mysterieux fonds marins
-      </h2>
-
-      <router-link class="btn" to="/secondPage">Commencer</router-link>
-    </div>
-    <div class="fiftyMeters">
-      <h1 class="fiftyMeters__mainTitle">
-        Project
-        <br />Abys Life
-      </h1>
-      <h2 class="fiftyMeters__secondTitle">
-        L'aventure dans les
-        <br />mysterieux fonds marins
-      </h2>
-
-      <router-link class="btn" to="/secondPage">Commencer</router-link>
-    </div>
-    <div class="fiftyMeters">
-      <h1 class="fiftyMeters__mainTitle">
-        Project
-        <br />Abys Life
-      </h1>
-      <h2 class="fiftyMeters__secondTitle">
+      <h2 class="homePage__secondTitle">
         L'aventure dans les
         <br />mysterieux fonds marins
       </h2>
