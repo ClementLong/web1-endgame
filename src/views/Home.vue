@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld msg="Les coraux, la vie se meurt" />
-    <NextChapterButton msg="PASSEZ AU CHAPITRE SUIVANT" /> 
+    <!-- <NextChapterButton msg="PASSEZ AU CHAPITRE SUIVANT" /> 
     <DisclaimerArticle
       text="Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC.
     Les contenus présentés n'ont pas fait l'objet d'une demande de droit d'utilisation.
@@ -23,36 +23,39 @@
       Il est donc à la fois animal, minéral et végétale!"/>
     <AssosArticle title="Envie d’oeuvrer pour l’avenir  des coraux ?"
       text="Clique sur l’association de ton choix !"/>
-    />
-    <ChapterTitleAndReturn
+    />-->
+    <!-- <ChapterTitleAndReturn
       currentChapter="01"
       chapter="07"
       title="Mais que ce passe t-il ?"
       reviewChapter="revoir le chapitre précédent"
-    />
+    />-->
+    <!-- <Controls /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
+// import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
 import HelloWorld from "@/components/HelloWorld.vue";
-import NextChapterButton from "@/components/next-chapter_button.vue";
-import StartArticle from "@/components/Frame-start_article.vue";
-import PopUpArticle from "@/components/partials/Pop-up_article.vue";
-import AssosArticle from "@/components/Frame-assos_article.vue";
-import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+// import NextChapterButton from "@/components/next-chapter_button.vue";
+// import StartArticle from "@/components/Frame-start_article.vue";
+// import PopUpArticle from "@/components/partials/Pop-up_article.vue";
+// import AssosArticle from "@/components/Frame-assos_article.vue";
+// import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+// import Controls from "@/components/Controls.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
-    NextChapterButton,
-    DisclaimerArticle,
-    StartArticle,
-    PopUpArticle,
-    AssosArticle,
-    ChapterTitleAndReturn
+    HelloWorld
+    // Controls
+    // NextChapterButton,
+    // DisclaimerArticle,
+    // StartArticle,
+    // PopUpArticle,
+    // AssosArticle,
+    // ChapterTitleAndReturn
   }
 };
 </script>
