@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="aerosmith" src="https://images6.alphacoders.com/410/thumb-1920-410779.jpg" />
+    <img alt="aerosmith" src="../img/home/background.png" />
     <HelloWorld msg="Groupe 11" />
     <p>{{NomDuProjet ="RAP / ROCK"}}</p>
     <h1>Bonjour</h1>
@@ -23,12 +23,8 @@ export default {
 
 .home
   img {
-  width: 1200px;
-  height: 650px;
-}
-
-p {
-  color: red;
+  width: 100%;
+  height: 50%;
 }
 
 </style>
