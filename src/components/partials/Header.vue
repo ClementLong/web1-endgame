@@ -14,6 +14,9 @@
       </svg>
     </div>
     <div class="menu" :class="isOpen ? 'menu-open' : 'menu-close'">
+      <router-link @click.native="isOpen = false" to="/karanga"
+        >karanga</router-link
+      >
       <router-link @click.native="isOpen = false" to="/connexion"
         >connexion</router-link
       >

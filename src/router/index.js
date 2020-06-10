@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Team from "../views/Team.vue";
 import connexion from "../views/connexion.vue";
+import karanga from "../views/karanga.vue";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/connexion",
     name: "connexion",
     component: connexion,
+  },
+  {
+    path: "/karanga",
+    name: "karanga",
+    component: karanga,
   },
 ];
 
