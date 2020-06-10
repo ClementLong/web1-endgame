@@ -47,11 +47,11 @@ export default {
   name: "Home",
   components: {
     HelloWorld,
-    NextChapterButton
+    NextChapterButton,
     DisclaimerArticle,
     StartArticle,
     PopUpArticle,
-    AssosArticle
+    AssosArticle,
     ChapterTitleAndReturn
   }
 };

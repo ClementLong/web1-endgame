@@ -2,7 +2,9 @@
     <div class="container">
         <div class="innerContainer">
             <h1>{{ title }}</h1>
-            <p>{{ text }}</p>
+            <div class="textContainer">
+                <p>{{ text }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -22,12 +24,22 @@ export default {
         @include background-boxes;
         width: 240px;
         height: 320px;
-        overflow: auto;
 
-            &::-webkit-scrollbar {
-            width: 12px;
-            height: 100px;
-            margin-right: 12px;
+        .innerContainer {
+            padding: 16px 8px 16px 16px;
+
+            h1 {
+            font-size: rem($mobileH2);
+            color: $white;
+            font-weight: 600;
+            padding:8px 0px 20px 0px;
+            }
+
+            .textContainer {
+                height: 200px;
+                overflow: auto;
+                &::-webkit-scrollbar {
+                    width: 8px;
 
                 &-track {
                     background-color: $white;
@@ -40,22 +52,16 @@ export default {
                 }
             }
 
-        .innerContainer {
-            padding: 16px;
-        }
-
-        h1 {
-            font-size: rem($mobileH2);
-            color: $white;
-            font-weight: 600;
-            padding:8px 0px 20px 0px;
-        }
-
-        p {
-            font-size: rem($mobileP);
-            color: $white;
-            line-height:1.5;
-            text-align: left;
+                p {
+                font-size: rem($mobileP);
+                color: $white;
+                line-height:1.5;
+                text-align: left;
+                padding-right: 16px;
+                }
+            }
         }
     }
+
+    // ceci est un test
 </style>
