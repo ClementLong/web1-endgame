@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Les coraux, la vie se meurt" />
+    <!-- <HelloWorld msg="Les coraux, la vie se meurt" /> -->
+	<IntroductionTitle />
+	<ProgressBar />
     <!-- <NextChapterButton msg="PASSEZ AU CHAPITRE SUIVANT" /> 
     <DisclaimerArticle
       text="Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC.
@@ -37,7 +39,9 @@
 <script>
 // @ is an alias to /src
 // import DisclaimerArticle from "@/components/Frame-disclaimer_article.vue";
-import HelloWorld from "@/components/HelloWorld.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
+import IntroductionTitle from "@/components/IntroductionTitle.vue";
+import ProgressBar from "@/components/ProgressBar.vue";
 // import NextChapterButton from "@/components/next-chapter_button.vue";
 // import StartArticle from "@/components/Frame-start_article.vue";
 // import PopUpArticle from "@/components/partials/Pop-up_article.vue";
@@ -48,8 +52,10 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld
-    // Controls
+    // HelloWorld,
+	IntroductionTitle,
+	ProgressBar,
+    // Controls,
     // NextChapterButton,
     // DisclaimerArticle,
     // StartArticle,
