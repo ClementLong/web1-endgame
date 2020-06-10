@@ -126,3 +126,12 @@ $desktop-megaLarge_2368: 2368px;
   backdrop-filter: blur(4px);
   border-radius: 8px;
 }
+
+@mixin scale-animation-light {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
