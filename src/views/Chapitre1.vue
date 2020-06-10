@@ -1,19 +1,19 @@
 <template>
-<body>
-  <section class="container__top">
-    <Header />
-    <ProgressBar value="12.5" />
-    <ChapterTitleAndReturn
-      currentChapter="01"
-      chapter="07"
-      title="Qu’est-ce qu’un corail ?"
-      reviewChapter="revoir le chapitre précédent"
-    />
+  <section class="chapitre1">
+    <section class="container__top">
+      <Header />
+      <ProgressBar value="12.5" />
+      <ChapterTitleAndReturn
+        currentChapter="01"
+        chapter="07"
+        title="Qu’est-ce qu’un corail ?"
+        reviewChapter="revoir le chapitre précédent"
+      />
+    </section>
+    <section class="container__bottom">
+      <NextChapterButton msg="passer au chapitre suivant" />
+    </section>
   </section>
-  <section class="container__bottom">
-    <NextChapterButton msg="passer au chapitre suivant" />
-  </section>
-</body>
 </template>
 
 <script>
