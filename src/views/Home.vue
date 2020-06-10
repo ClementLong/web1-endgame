@@ -33,6 +33,7 @@ export default {
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin: top left;
 	background-image: url("tmp-background.jpg");
+	background-size: cover;
 	background-position: center;
 }
 
