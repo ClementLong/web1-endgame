@@ -7,8 +7,6 @@
       </svg>
     </div>
   </div>
-  
-  
 </template>
 
 <script>
@@ -18,23 +16,29 @@ export default {
     msg: String
   }
 };
-
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .click {
-    width: 40%;
-    height: 5%;
-    @include background-boxes;
-    &__inner {
-      @include flexbox(row, center, center);
-      & button {
-        font-size: 11px;
-        color: $white;
-        background: none;
-        border: none;
-      }
+.click {
+  width: 19%;
+  padding: 4px;
+  @include background-boxes;
+  margin: 8px 8px 8px 0;
+  @include tablet-up {
+    font-size: rem(32px);
+  }
+  @include desktop-up {
+    font-size: rem(40px);
+  } 
+  &__inner {
+    @include flexbox(row, center, center);
+    & button {
+      border: 1px solid white;
+      font-size: $mobileP;
+      color: $white;
+      background: none;
+      border: none;
     }
   }
+}
 </style>
