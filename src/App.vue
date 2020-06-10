@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Chapitre1 />
     <!-- <Header /> -->
     <router-view />
   </div>
@@ -7,10 +8,12 @@
 
 <script>
 // import Header from "@/components/partials/Header.vue";
+import Chapitre1 from "@/views/Chapitre1.vue";
 
 export default {
   components: {
     // Header
+    Chapitre1
   }
 };
 </script>
