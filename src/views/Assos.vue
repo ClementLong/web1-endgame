@@ -12,9 +12,6 @@
       />
     </router-link>
   </section>
-  <section class="container__bottom">
-    <NextChapterButton msg="passer au chapitre suivant" />
-  </section>
 </body>
 </template>
 
@@ -22,15 +19,13 @@
 import Header from "@/components/partials/Header.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
 import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
-import NextChapterButton from "@/components/next-chapter_button.vue";
 
 export default {
   name: "Chapitre7",
   components: {
     Header,
     ProgressBar,
-    ChapterTitleAndReturn,
-    NextChapterButton
+    ChapterTitleAndReturn
   }
 };
 </script>
