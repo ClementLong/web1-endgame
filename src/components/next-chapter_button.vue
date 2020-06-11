@@ -21,7 +21,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 80px;
+  bottom: 5vh;
   right: 0px;
   padding: 24px 36px;
   background-color: $backgroundBoxes;
@@ -43,8 +43,8 @@ export default {
   }
 
   @media (max-width: 520px) {
-    padding: 16px 28px;
-    font-size: 12px;
+    padding: 3vw 4vw;
+    font-size: 3vw;
 	}
 }
 
