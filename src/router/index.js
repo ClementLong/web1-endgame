@@ -3,13 +3,13 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
 import Intro from '../views/Intro.vue'
-import Chapitre1 from "@/views/Chapitre1.vue"; 
-import Chapitre2 from "@/views/Chapitre2.vue";/*
+import Chapitre1 from "@/views/Chapitre1.vue";
+import Chapitre2 from "@/views/Chapitre2.vue";
 import Chapitre3 from "@/views/Chapitre3.vue";
 import Chapitre4 from "@/views/Chapitre4.vue";
 import Chapitre5 from "@/views/Chapitre5.vue";
 import Chapitre6 from "@/views/Chapitre6.vue";
-import Chapitre7 from "@/views/Chapitre7.vue";  */
+import Assos from "@/views/Assos.vue";
 
 Vue.use(VueRouter)
 
@@ -40,7 +40,7 @@ const routes = [
     path: '/chap2',
     name: 'Chapitre2',
     component: Chapitre2
-  },/*
+  },
   {
     path: '/chap3',
     name: 'Chapitre3',
@@ -62,10 +62,10 @@ const routes = [
     component: Chapitre6
   },
   {
-    path: '/chap7',
-    name: 'Chapitre7',
-    component: Chapitre7
-  }  */
+    path: '/assos',
+    name: 'Assos',
+    component: Assos
+  }  
 ]
 
 const router = new VueRouter({

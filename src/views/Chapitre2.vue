@@ -2,18 +2,20 @@
 <body>
   <section class="container__top">
     <Header />
-    <ProgressBar value="12.5" />
-    <ChapterTitleAndReturn
-      currentChapter="02"
-      chapter="07"
-      title="Quel est leur rôle ?"
-      reviewChapter="revoir le chapitre précédent"
-    />
+    <ProgressBar value="25" />
+    <router-link class="previousChapter" to="/chap1">
+      <ChapterTitleAndReturn
+        currentChapter="02"
+        chapter="07"
+        title="Quel est leur rôle ?"
+        reviewChapter="revoir le chapitre précédent"
+      />
+    </router-link>
   </section>
   <section class="container__bottom">
     <router-link class="nextChapter" to="/chap3">
-    <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-  </router-link>
+      <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
+    </router-link>
   </section>
 </body>
 </template>

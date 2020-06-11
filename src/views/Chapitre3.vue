@@ -2,16 +2,18 @@
 <body>
   <section class="container__top">
     <Header />
-    <ProgressBar value="12.5" />
-    <ChapterTitleAndReturn
-      currentChapter="05"
-      chapter="07"
-      title="93% des coraux ont blanchis"
-      reviewChapter="revoir le chapitre précédent"
-    />
+    <ProgressBar value="40" />
+    <router-link class="previousChapter" to="/chap2">
+      <ChapterTitleAndReturn
+        currentChapter="03"
+        chapter="07"
+        title="Mais que se passe t-il ?"
+        reviewChapter="revoir le chapitre précédent"
+      />
+    </router-link>
   </section>
   <section class="container__bottom">
-    <router-link class="nextChapter" to="/chap6">
+    <router-link class="nextChapter" to="/chap4">
         <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
   </router-link>
   </section>
@@ -25,7 +27,7 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 
 export default {
-  name: "Chapitre5",
+  name: "Chapitre3",
   components: {
     Header,
     ProgressBar,

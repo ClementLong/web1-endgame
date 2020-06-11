@@ -2,13 +2,15 @@
 <body>
   <section class="container__top">
     <Header />
-    <ProgressBar value="12.5" />
-    <ChapterTitleAndReturn
-      currentChapter="01"
-      chapter="07"
-      title="Qu’est-ce qu’un corail ?"
-      reviewChapter="revoir le chapitre précédent"
-    />
+    <ProgressBar value="15" />
+    <router-link class="previousChapter" to="/intro">
+      <ChapterTitleAndReturn
+        currentChapter="01"
+        chapter="07"
+        title="Qu’est-ce qu’un corail ?"
+        reviewChapter="revoir le chapitre précédent"
+      />
+    </router-link>
   </section>
   <section class="container__bottom">
     <router-link class="nextChapter" to="/chap2">
