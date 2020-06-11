@@ -1,15 +1,15 @@
 <template>
   <div class="karanga karanga--blend">
-    <title head="karanga" />
-
-    <!-- <div class="dark-filter"></div> -->
+    <Title head="karanga" />
   </div>
 </template>
 <script>
-import title from "../components/title.vue";
+import Title from "@/components/title.vue";
 export default {
   name: "karanga",
-  components: title,
+  components: {
+    Title,
+  },
 };
 </script>
 <style lang="scss" scoped></style>
