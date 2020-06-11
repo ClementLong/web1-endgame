@@ -1,7 +1,7 @@
 <template>
 <div class="main">
   <Header />
-  <ProgressBar />
+  <ProgressBar value="0"/>
   <router-link class="nextChapter" to="/chap1">
     <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
   </router-link>
