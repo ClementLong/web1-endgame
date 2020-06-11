@@ -1,6 +1,6 @@
 <template>
   <div class="karanga karanga--blend">
-    <Title head="karanga" />
+    <Title head="karanga" filter=" " :Source="Source" />
   </div>
 </template>
 <script>
@@ -9,6 +9,11 @@ export default {
   name: "karanga",
   components: {
     Title,
+  },
+  data() {
+    return {
+      Source: [],
+    };
   },
 };
 </script>
