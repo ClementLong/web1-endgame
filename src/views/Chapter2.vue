@@ -4,15 +4,15 @@
     <Header />
     <ProgressBar value="12.5" />
     <ChapterTitleAndReturn
-      currentChapter="01"
+      currentChapter="02"
       chapter="07"
-      title="Qu’est-ce qu’un corail ?"
+      title="Quel est leur rôle ?"
       reviewChapter="revoir le chapitre précédent"
     />
   </section>
   <section class="container__bottom">
-    <router-link class="nextChapter" to="/chap2">
-      <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
+    <router-link class="nextChapter" to="/chap3">
+    <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
   </router-link>
   </section>
 </body>
@@ -25,7 +25,7 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 
 export default {
-  name: "Chapitre1",
+  name: "Chapitre2",
   components: {
     Header,
     ProgressBar,
