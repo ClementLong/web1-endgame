@@ -1,26 +1,18 @@
 <template>
   <div id="app">
-    <!-- <Header />  -->
-    <!-- <Chapitre1 /> -->
-    <router-view />
+    <transition name="transition" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
-// import Header from "@/components/partials/Header.vue";
-// import Chapitre1 from "@/views/Chapitre1.vue";
-
 export default {
-  components: {
-    // Header
-    // Chapitre1
-  }
+  components: {}
 };
 </script>
 
 <style lang="scss">
-//@import "@/assets/scss/styles.scss";
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,4 +26,14 @@ header {
   display: flex;
 }
 
+.transition-enter,
+.transition-leave-to {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.transition-enter-active,
+.transition-leave-active {
+  transition: all 0.3s ease;
+}
 </style>
