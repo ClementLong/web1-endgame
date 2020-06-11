@@ -55,7 +55,6 @@ export default {
   &:hover {
     font-weight: 500;
     color: $yellow;
-    @include scale-animation-light;
   }
 
   p {

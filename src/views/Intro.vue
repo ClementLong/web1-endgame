@@ -2,7 +2,9 @@
 <div class="main">
   <Header />
   <ProgressBar />
-  <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
+  <router-link class="nextChapter" to="/chap1">
+    <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
+  </router-link>
 </div>
 </template>
 

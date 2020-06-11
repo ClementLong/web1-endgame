@@ -89,6 +89,7 @@ export default {
 
 .container_reviewChapter {
   @include flexbox(row, flex-start, center);
+  cursor: pointer;
 
   img {
     margin-right: 8px;
