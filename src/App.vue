@@ -1,26 +1,32 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view/>
+    <!-- <Header />  -->
+    <!-- <Chapitre1 /> -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from '@/components/partials/Header.vue'
+// import Header from "@/components/partials/Header.vue";
+// import Chapitre1 from "@/views/Chapitre1.vue";
 
 export default {
   components: {
-    Header
+    // Header
+    // Chapitre1
   }
-}
+};
 </script>
 
 <style lang="scss">
+//@import "@/assets/scss/styles.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  //color: $yellow;
+  font-family: $montserrat;
 }
 </style>

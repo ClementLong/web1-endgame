@@ -1,68 +1,107 @@
 <template>
   <div id="nav">
-    <div class="burger" @click="isOpen = !isOpen">
-      <svg viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
-    </div>
-    <div class="menu" :class="isOpen ? 'menu-open' : 'menu-close'">
-      <router-link @click.native="isOpen = false" to="/">Home</router-link> 
-      <!-- @click.native car @click ne fonctionne pas sur router-link -->
-      <!-- .native signifie que l'on utilise l'evenement 'click' natif de javascript et pas l'evenement 'click' de vue -->
-      <!-- 'isOpen = false' car je souhaite fermer mon menu quand on clique sur un lien -->
-      <router-link @click.native="isOpen = false" to="/team">l'Équipe</router-link>
+    <div class="menu">
+      <router-link class="link_home" to="/">Accueil</router-link>
+      <div class="media_controler">
+        <img
+          class="icon_play"
+          src="../../assets/ux-kit/control/pause_icon.svg"
+          alt="play"
+          @click="toggleSound"
+        />
+        <img class="icon_sound" src="../../assets/ux-kit/control/sound-on_icon.svg" alt="sound" />
+      </div>
+      <router-link class="link_about" to="/team">À propos</router-link>
+      <router-link class="link_control" to="/">
+        <p>Contrôles</p>
+        <img src="../../assets/ux-kit/desktop/controle/arrow-ios-down.svg" alt />
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
   data() {
     return {
-      isOpen: false // Par defaut le menu n'est pas affiché
+      sound_icon: "../../assets/ux-kit/control/play_icon.svg"
+    };
+  },
+
+  methods: {
+    toggleSound() {
+      this.sound_icon = !this.sound_icon;
+      // return require("../../assets/ux-kit/control/play_icon.svg");
     }
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
 #nav {
   position: relative;
 
-  .burger svg {
-    position: absolute;
-    right: 5px;
-    z-index: 2;
-    height: 30px;
-  }
-
   .menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-
+    /* padding: 0 30px; */
     width: 100%;
-    height: 50vh;
+    height: 45px;
+    background: $backgroundBoxes;
+    backdrop-filter: blur(4px);
+    @include flexbox(row, space-between, center);
 
-    flex-direction: column;
-    background:salmon;
-
-    &-open { // #nav .menu-open
-      display: flex;
+    @include tablet-up {
+      padding: 0 60px;
+      @include flexbox(row, flex-start, center);
+    }
+    @include desktop-up {
+      padding: 0 80px;
     }
 
-    &-close { // #nav .menu-close
+    a {
+      font-size: rem(13px);
+      font-weight: 500;
+      color: white;
+
+      @include tablet-up {
+        font-size: rem(16px);
+        margin-right: 56px;
+      }
+      // &.router-link-exact-active {
+      //   // #nav a.router-link-exact-active
+      //   // Cette class est ajouté automatiquement par le routeur au lien qui correspond à la page courante
+      // }
+    }
+
+    .link_home {
+      color: $yellow;
+      font-weight: 600;
+    }
+
+    .link_about {
+      color: $white;
+    }
+
+    .link_control {
+      color: $white;
       display: none;
+
+      @include tablet-up {
+        @include flexbox(row, center, center);
+        p {
+          margin-right: 4px;
+        }
+      }
     }
-  }
 
-  a {
-    font-weight: bold;
-    color: white;
-    padding: 20px 0;
+    .media_controler {
+      width: 70px;
+      @include flexbox(row, space-between, center);
 
-    &.router-link-exact-active { // #nav a.router-link-exact-active 
-      // Cette class est ajouté automatiquement par le routeur au lien qui correspond à la page courante
-      color: lightskyblue;
+      @include tablet-up {
+        position: absolute;
+        right: 60px;
+      }
     }
   }
 }
