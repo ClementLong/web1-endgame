@@ -1,108 +1,154 @@
 <template>
-  <div id="nav">
-    <div class="menu">
-      <router-link class="link_home" to="/">Accueil</router-link>
-      <div class="media_controler">
-        <img
-          class="icon_play"
-          src="../../assets/ux-kit/control/pause_icon.svg"
-          alt="play"
-          @click="toggleSound"
-        />
-        <img class="icon_sound" src="../../assets/ux-kit/control/sound-on_icon.svg" alt="sound" />
-      </div>
-      <router-link class="link_about" to="/team">À propos</router-link>
-      <router-link class="link_control" to="/">
-        <p>Contrôles</p>
-        <img src="../../assets/ux-kit/desktop/controle/arrow-ios-down.svg" alt />
-      </router-link>
-    </div>
-  </div>
+	<header>
+		<div class="links">
+			<router-link class="link link-home" to="/">Accueil</router-link>
+			<router-link class="desktop link link-about-desktop" to="/team">À propos</router-link>
+			<div class="link controls">
+				<p>Contrôles</p>
+				<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.49928 5.33298C5.33778 5.33298 5.17699 5.27843 5.04595 5.16864L0.795951 1.62698C0.495618 1.37693 0.454535 0.929976 0.705285 0.629643C0.955326 0.329309 1.40158 0.288934 1.70262 0.538976L5.50708 3.70948L9.30516 0.653018C9.60974 0.407934 10.056 0.456101 10.3011 0.760684C10.5462 1.06527 10.498 1.51081 10.1934 1.7566L5.94341 5.17643C5.81378 5.28056 5.65653 5.33298 5.49928 5.33298Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.49928 5.33298C5.33778 5.33298 5.17699 5.27843 5.04595 5.16864L0.795951 1.62698C0.495618 1.37693 0.454535 0.929976 0.705285 0.629643C0.955326 0.329309 1.40158 0.288934 1.70262 0.538976L5.50708 3.70948L9.30516 0.653018C9.60974 0.407934 10.056 0.456101 10.3011 0.760684C10.5462 1.06527 10.498 1.51081 10.1934 1.7566L5.94341 5.17643C5.81378 5.28056 5.65653 5.33298 5.49928 5.33298Z" fill="white"/></svg>
+			</div>
+		</div>
+		<div class="video-controls">
+			<svg v-on:click="pause()" class="pause-button" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9995 13C13.9995 13.55 13.5495 14 12.9995 14C12.4495 14 11.9995 13.55 11.9995 13V7C11.9995 6.45 12.4495 6 12.9995 6C13.5495 6 13.9995 6.45 13.9995 7V13ZM7.99951 13C7.99951 13.55 7.54951 14 6.99951 14C6.44951 14 5.99951 13.55 5.99951 13V7C5.99951 6.45 6.44951 6 6.99951 6C7.54951 6 7.99951 6.45 7.99951 7V13ZM9.99951 0C4.48551 0 -0.000488281 4.486 -0.000488281 10C-0.000488281 15.514 4.48551 20 9.99951 20C15.5145 20 19.9995 15.514 19.9995 10C19.9995 4.486 15.5145 0 9.99951 0Z" fill="#222B45"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9995 13C13.9995 13.55 13.5495 14 12.9995 14C12.4495 14 11.9995 13.55 11.9995 13V7C11.9995 6.45 12.4495 6 12.9995 6C13.5495 6 13.9995 6.45 13.9995 7V13ZM7.99951 13C7.99951 13.55 7.54951 14 6.99951 14C6.44951 14 5.99951 13.55 5.99951 13V7C5.99951 6.45 6.44951 6 6.99951 6C7.54951 6 7.99951 6.45 7.99951 7V13ZM9.99951 0C4.48551 0 -0.000488281 4.486 -0.000488281 10C-0.000488281 15.514 4.48551 20 9.99951 20C15.5145 20 19.9995 15.514 19.9995 10C19.9995 4.486 15.5145 0 9.99951 0Z" fill="#FFFFFF"/></svg>
+			<svg v-on:click="play()" class="play-button hidden" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 12.5997L12.309 9.99966L9.5 7.40066V12.5997ZM13.98 11.1788L10.338 14.5488C10.019 14.8448 9.604 14.9998 9.181 14.9998C8.948 14.9998 8.711 14.9518 8.488 14.8548C7.878 14.5888 7.5 14.0198 7.5 13.3698V6.62976C7.5 5.98076 7.878 5.41076 8.488 5.14576C9.114 4.87076 9.841 4.99076 10.339 5.45176L13.98 8.82176C14.311 9.12676 14.5 9.55676 14.5 9.99976C14.5 10.4438 14.311 10.8728 13.98 11.1788ZM10 -0.000244141C4.486 -0.000244141 0 4.48676 0 9.99976C0 15.5138 4.486 19.9998 10 19.9998C15.514 19.9998 20 15.5138 20 9.99976C20 4.48676 15.514 -0.000244141 10 -0.000244141Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 12.5997L12.309 9.99966L9.5 7.40066V12.5997ZM13.98 11.1788L10.338 14.5488C10.019 14.8448 9.604 14.9998 9.181 14.9998C8.948 14.9998 8.711 14.9518 8.488 14.8548C7.878 14.5888 7.5 14.0198 7.5 13.3698V6.62976C7.5 5.98076 7.878 5.41076 8.488 5.14576C9.114 4.87076 9.841 4.99076 10.339 5.45176L13.98 8.82176C14.311 9.12676 14.5 9.55676 14.5 9.99976C14.5 10.4438 14.311 10.8728 13.98 11.1788ZM10 -0.000244141C4.486 -0.000244141 0 4.48676 0 9.99976C0 15.5138 4.486 19.9998 10 19.9998C15.514 19.9998 20 15.5138 20 9.99976C20 4.48676 15.514 -0.000244141 10 -0.000244141Z" fill="white"/></svg>
+			<svg v-on:click="mute()" class="mute-button" width="22" height="18" viewBox="0 0 22 18" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><path d="M12.4345 0.175232C12.7405 -0.0347676 13.1375 -0.0587676 13.4665 0.115232C13.7945 0.288232 14.0005 0.629232 14.0005 1.00023V17.0002C14.0005 17.3712 13.7945 17.7122 13.4665 17.8852C13.3205 17.9622 13.1595 18.0002 13.0005 18.0002C12.8015 18.0002 12.6045 17.9412 12.4345 17.8252L6.02349 13.4282H1.00049C0.447488 13.4282 0.000488281 12.9812 0.000488281 12.4282V5.57123C0.000488281 5.01823 0.447488 4.57123 1.00049 4.57123H6.02349L12.4345 0.175232Z" fill="#FFFFFF"/><path d="M18.6379 2.22953C18.2129 1.87753 17.5819 1.93653 17.2299 2.36253C16.8779 2.78753 16.9369 3.41753 17.3629 3.77053C19.0629 5.17953 19.9999 7.03653 19.9999 9.00053C19.9999 10.9635 19.0629 12.8205 17.3629 14.2295C16.9369 14.5825 16.8779 15.2125 17.2299 15.6375C17.4279 15.8765 17.7129 16.0005 18.0009 16.0005C18.2249 16.0005 18.4509 15.9245 18.6379 15.7705C20.8059 13.9745 21.9999 11.5695 21.9999 9.00053C21.9999 6.43053 20.8059 4.02553 18.6379 2.22953Z" fill="#FFFFFF"/><path d="M17.2795 5.37303C16.9325 4.94303 16.3035 4.87603 15.8735 5.22103C15.4435 5.56703 15.3745 6.19603 15.7205 6.62703C16.7565 7.91303 16.7565 10.087 15.7205 11.373C15.3745 11.804 15.4435 12.433 15.8735 12.779C16.0585 12.928 16.2795 13 16.4995 13C16.7915 13 17.0815 12.872 17.2795 12.627C18.9155 10.593 18.9155 7.40703 17.2795 5.37303Z" fill="#FFFFFF"/><path d="M12.4345 0.175232C12.7405 -0.0347676 13.1375 -0.0587676 13.4665 0.115232C13.7945 0.288232 14.0005 0.629232 14.0005 1.00023V17.0002C14.0005 17.3712 13.7945 17.7122 13.4665 17.8852C13.3205 17.9622 13.1595 18.0002 13.0005 18.0002C12.8015 18.0002 12.6045 17.9412 12.4345 17.8252L6.02349 13.4282H1.00049C0.447488 13.4282 0.000488281 12.9812 0.000488281 12.4282V5.57123C0.000488281 5.01823 0.447488 4.57123 1.00049 4.57123H6.02349L12.4345 0.175232Z" fill="#FFFFFF"/><path d="M18.6379 2.22953C18.2129 1.87753 17.5819 1.93653 17.2299 2.36253C16.8779 2.78753 16.9369 3.41753 17.3629 3.77053C19.0629 5.17953 19.9999 7.03653 19.9999 9.00053C19.9999 10.9635 19.0629 12.8205 17.3629 14.2295C16.9369 14.5825 16.8779 15.2125 17.2299 15.6375C17.4279 15.8765 17.7129 16.0005 18.0009 16.0005C18.2249 16.0005 18.4509 15.9245 18.6379 15.7705C20.8059 13.9745 21.9999 11.5695 21.9999 9.00053C21.9999 6.43053 20.8059 4.02553 18.6379 2.22953Z" fill="#FFFFFF"/><path d="M17.2795 5.37303C16.9325 4.94303 16.3035 4.87603 15.8735 5.22103C15.4435 5.56703 15.3745 6.19603 15.7205 6.62703C16.7565 7.91303 16.7565 10.087 15.7205 11.373C15.3745 11.804 15.4435 12.433 15.8735 12.779C16.0585 12.928 16.2795 13 16.4995 13C16.7915 13 17.0815 12.872 17.2795 12.627C18.9155 10.593 18.9155 7.40703 17.2795 5.37303Z" fill="#FFFFFF"/></svg>
+			<svg v-on:click="unmute()" class="unmute-button hidden" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9999 0.999944V9.17194L8.0259 3.19794L12.4349 0.174944C12.7399 -0.0350564 13.1369 -0.0580564 13.4659 0.114944C13.7939 0.287944 13.9999 0.628944 13.9999 0.999944Z" fill="white"/><path d="M19.9999 9.00014C19.9999 10.5991 19.3699 12.1211 18.2219 13.3941L19.6369 14.8091C21.1629 13.1551 21.9999 11.1371 21.9999 9.00014C21.9999 6.43114 20.8059 4.02514 18.6379 2.22914C18.2119 1.87814 17.5819 1.93714 17.2299 2.36214C16.8769 2.78714 16.9369 3.41814 17.3619 3.77114C19.0629 5.18014 19.9999 7.03614 19.9999 9.00014Z" fill="white"/><path d="M15.9105 11.0821L17.3485 12.5211C18.9065 10.4831 18.8885 7.37414 17.2795 5.37314C16.9325 4.94314 16.3035 4.87614 15.8725 5.22114C15.4425 5.56714 15.3745 6.19614 15.7205 6.62714C16.6835 7.82314 16.7385 9.77814 15.9105 11.0821Z" fill="white"/><path d="M3.743 4.57144H1C0.448 4.57144 0 5.01844 0 5.57144V12.4284C0 12.9814 0.448 13.4284 1 13.4284H6.023L12.434 17.8254C12.604 17.9414 12.802 18.0004 13 18.0004C13.16 18.0004 13.32 17.9624 13.466 17.8844C13.794 17.7124 14 17.3714 14 17.0004V14.8284L3.743 4.57144Z" fill="white"/><path d="M2.2929 0.293044C2.6839 -0.0979564 3.3159 -0.0979564 3.7069 0.293044L19.7069 16.293C20.0979 16.684 20.0979 17.316 19.7069 17.707C19.5119 17.902 19.2559 18 18.9999 18C18.7439 18 18.4879 17.902 18.2929 17.707L2.2929 1.70704C1.9019 1.31604 1.9019 0.684044 2.2929 0.293044Z" fill="white"/><path d="M13.9999 0.999944V9.17194L8.0259 3.19794L12.4349 0.174944C12.7399 -0.0350564 13.1369 -0.0580564 13.4659 0.114944C13.7939 0.287944 13.9999 0.628944 13.9999 0.999944Z" fill="white"/><path d="M19.9999 9.00014C19.9999 10.5991 19.3699 12.1211 18.2219 13.3941L19.6369 14.8091C21.1629 13.1551 21.9999 11.1371 21.9999 9.00014C21.9999 6.43114 20.8059 4.02514 18.6379 2.22914C18.2119 1.87814 17.5819 1.93714 17.2299 2.36214C16.8769 2.78714 16.9369 3.41814 17.3619 3.77114C19.0629 5.18014 19.9999 7.03614 19.9999 9.00014Z" fill="white"/><path d="M15.9105 11.0821L17.3485 12.5211C18.9065 10.4831 18.8885 7.37414 17.2795 5.37314C16.9325 4.94314 16.3035 4.87614 15.8725 5.22114C15.4425 5.56714 15.3745 6.19614 15.7205 6.62714C16.6835 7.82314 16.7385 9.77814 15.9105 11.0821Z" fill="white"/><path d="M3.743 4.57144H1C0.448 4.57144 0 5.01844 0 5.57144V12.4284C0 12.9814 0.448 13.4284 1 13.4284H6.023L12.434 17.8254C12.604 17.9414 12.802 18.0004 13 18.0004C13.16 18.0004 13.32 17.9624 13.466 17.8844C13.794 17.7124 14 17.3714 14 17.0004V14.8284L3.743 4.57144Z" fill="white"/><path d="M2.2929 0.293044C2.6839 -0.0979564 3.3159 -0.0979564 3.7069 0.293044L19.7069 16.293C20.0979 16.684 20.0979 17.316 19.7069 17.707C19.5119 17.902 19.2559 18 18.9999 18C18.7439 18 18.4879 17.902 18.2929 17.707L2.2929 1.70704C1.9019 1.31604 1.9019 0.684044 2.2929 0.293044Z" fill="white"/></svg>
+		</div>
+		<router-link class="link link-about-mobile" to="/team">À propos</router-link>
+
+	</header>
 </template>
 
 <script>
+
 export default {
   name: "Header",
-  data() {
-    return {
-      sound_icon: "../../assets/ux-kit/control/play_icon.svg"
-    };
-  },
-
   methods: {
-    toggleSound() {
-      this.sound_icon = !this.sound_icon;
-      // return require("../../assets/ux-kit/control/play_icon.svg");
-    }
-  }
-};
+		pause() {
+			document.querySelector('video').pause();
+			document.querySelector('.pause-button').classList.add('hidden');
+			document.querySelector('.play-button').classList.remove('hidden');
+		},
+		play() {
+			document.querySelector('video').play();
+			document.querySelector('.pause-button').classList.remove('hidden');
+			document.querySelector('.play-button').classList.add('hidden');
+		},
+		mute() {
+			document.querySelector('video').muted = true;
+			document.querySelector('.mute-button').classList.add('hidden');
+			document.querySelector('.unmute-button').classList.remove('hidden');
+		},
+		unmute() {
+			document.querySelector('video').muted = false;
+			document.querySelector('.mute-button').classList.remove('hidden');
+			document.querySelector('.unmute-button').classList.add('hidden');
+		}
+	}
+}
+
 </script>
 
 <style scoped lang="scss">
-#nav {
-  position: relative;
 
-  .menu {
-    /* padding: 0 30px; */
-    width: 100%;
-    height: 45px;
-    background: $backgroundBoxes;
-    backdrop-filter: blur(4px);
-    @include flexbox(row, space-between, center);
-
-    @include tablet-up {
-      padding: 0 60px;
-      @include flexbox(row, flex-start, center);
-    }
-    @include desktop-up {
-      padding: 0 80px;
-    }
-
-    a {
-      font-size: rem(13px);
-      font-weight: 500;
-      color: white;
-
-      @include tablet-up {
-        font-size: rem(16px);
-        margin-right: 56px;
-      }
-      // &.router-link-exact-active {
-      //   // #nav a.router-link-exact-active
-      //   // Cette class est ajouté automatiquement par le routeur au lien qui correspond à la page courante
-      // }
-    }
-
-    .link_home {
-      color: $yellow;
-      font-weight: 600;
-    }
-
-    .link_about {
-      color: $white;
-    }
-
-    .link_control {
-      color: $white;
-      display: none;
-
-      @include tablet-up {
-        @include flexbox(row, center, center);
-        p {
-          margin-right: 4px;
-        }
-      }
-    }
-
-    .media_controler {
-      width: 70px;
-      @include flexbox(row, space-between, center);
-
-      @include tablet-up {
-        position: absolute;
-        right: 60px;
-      }
-    }
-  }
+header {
+	display: flex;
+	width: 100vw;
+	height: 45px;
+	background-color: $backgroundBoxes;
+	backdrop-filter: blur(4px);
+	align-items: center;
 }
+
+.links {
+	display: flex;
+}
+
+.link {
+	color: $white;
+	font-weight: bold;
+	margin: 0px 32px;
+	cursor: pointer;
+
+	svg {
+		margin: 0px 8px;
+	}
+
+	&:hover {
+		color: $yellow;
+
+		svg > * {
+			fill: $yellow;
+		}
+	}
+}
+
+.link-about-desktop {
+	@media (max-width: 520px) {
+		display: none;
+	}
+}
+
+svg:hover {
+	cursor: pointer;
+
+	& > * {
+		fill: $yellow;
+	}
+}
+
+.link-about-mobile {
+	display: none;
+
+	@media (max-width: 520px) {
+		display: flex;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 520px) {
+		display: none;
+	}
+}
+
+.desktop {
+	@media (max-width: 520px) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media (max-width: 520px) {
+		display: flex;
+	}
+}
+
+.video-controls {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	margin-right: 20px;
+
+	@media (max-width: 520px) {
+		right: 50%;
+		transform: translateX(50%);
+	}
+
+	svg {
+		margin: 0px 16px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
 </style>

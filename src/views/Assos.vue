@@ -44,4 +44,8 @@ body {
   object-fit: cover;
   background-image: url(../assets/img/background-temporaire-chap1.png);
 }
+
+header {
+  display: flex;
+}
 </style>

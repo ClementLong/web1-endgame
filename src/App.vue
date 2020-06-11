@@ -29,4 +29,9 @@ export default {
   //color: $yellow;
   font-family: $montserrat;
 }
+
+header {
+  display: flex;
+}
+
 </style>
