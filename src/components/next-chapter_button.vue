@@ -33,6 +33,7 @@ export default {
 .click {
   cursor: pointer;
   position: absolute;
+  overflow: hidden;
   bottom: 30px;
   right: 0;
   padding: 0 16px 0 16px;

@@ -16,7 +16,6 @@
         <p>Contrôles</p>
         <img src="../../assets/ux-kit/desktop/controle/arrow-ios-down.svg" alt />
       </router-link>
-      <!-- Provisoire --><router-link class="link_intro" to="/intro">Intro</router-link> 
     </div>
   </div>
 </template>

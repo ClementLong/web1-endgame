@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Chapitre1 />
-    <!-- <Header /> -->
+    <!-- <Header />  -->
+    <!-- <Chapitre1 /> -->
     <router-view />
   </div>
 </template>
 
 <script>
 // import Header from "@/components/partials/Header.vue";
-import Chapitre1 from "@/views/Chapitre1.vue";
+// import Chapitre1 from "@/views/Chapitre1.vue";
 
 export default {
   components: {
     // Header
-    Chapitre1
+    // Chapitre1
   }
 };
 </script>

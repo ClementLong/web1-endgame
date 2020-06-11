@@ -1,5 +1,7 @@
 <template>  
-  <button class="start">{{ msg }} </button> 
+  <router-link to="/Intro">
+    <button class="start">{{ msg }} </button> 
+  </router-link>
 </template>
 
 <script>
@@ -14,9 +16,8 @@
 <style scoped lang="scss">
 
 .start {
-  max-width: 300px;
+  margin-top: 16px;
   padding: 10px;
-  margin: 5%;
   padding: 12px 24px;
   border-radius: 40px;
   background-color: $white;
