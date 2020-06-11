@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 import Disclaimer from "@/components/Disclaimer.vue";
 import IntroductionTitle from "@/components/IntroductionTitle.vue";
 import StartArticle from "@/components/StartArticle.vue";
