@@ -1,26 +1,27 @@
 <template>
   <div id="app">
-    <Header />
     <router-view/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/partials/Header.vue'
 
-export default {
-  components: {
-    Header
-  }
-}
+export default {}
 </script>
 
 <style lang="scss">
+body, html {
+  height: 100%;
+  width: 100%;
+}
+body, html, div, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 </style>
