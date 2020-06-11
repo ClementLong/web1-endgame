@@ -1,15 +1,13 @@
 <template>
-<div class="main">
-  <Header />
-  <ProgressBar />
-  <router-link class="nextChapter" to="/chap1">
-    <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-  </router-link>
-  <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
-  <video src="video.mp4" autoplay loop> 
-    Votre navigateur ne supporte pas la vidéo. 
-  </video>
-</div>
+  <div class="main">
+    <Header />
+    <ProgressBar value="5" />
+    <router-link class="nextChapter" to="/chap1">
+      <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
+    </router-link>
+    <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
+    <video src="video.mp4" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
+  </div>
 </template>
 
 <script>
@@ -22,12 +20,11 @@ export default {
     Header,
     ProgressBar,
     NextChapterButton
-  },
-}
+  }
+};
 </script>
     
 <style scoped lang="scss">
-
 .main {
   max-width: 100vw;
   max-height: 100vh;
@@ -46,5 +43,4 @@ video {
   left: 0;
   z-index: -1;
 }
-
 </style>    
