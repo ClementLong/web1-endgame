@@ -46,8 +46,4 @@ body {
   object-fit: cover;
   background-image: url(../assets/img/background-temporaire-chap1.png);
 }
-
-.container__top {
-  @include flexbox(column, center, inherit);
-}
 </style>
