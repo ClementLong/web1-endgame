@@ -1,7 +1,14 @@
 <template>
-<div id="home">
-  <a href="/80s"><img src="../img/home/circle.png" alt="Circle" /></a>
-</div>
+  <div class="home">
+    <p class="haveAGoodDay">Bonne journée et bon dév les chefs !</p>
+    <img
+      alt="aerosmith"
+      src="https://images6.alphacoders.com/410/thumb-1920-410779.jpg"
+    />
+    <HelloWorld msg="Groupe 11" />
+    <p>{{ (NomDuProjet = "RAP / ROCK") }}</p>
+    <h1>Bonjour</h1>
+  </div>
 </template>
 
 <script>
@@ -9,17 +16,22 @@
 //import Background from "@/components/Background.vue";
 
 export default {
-  name: "Home"
+  name: "Home",
 };
 </script>
 
-<style lang="scss">
-#app {
-  background-image: url("../img/home/background.png");
+<style scoped lang="scss">
+.home img {
+  width: 1200px;
+  height: 650px;
 }
-a {
-  position: absolute;
-  top: 70%;
-  left: calc((100% - 66px) / 2);
+
+.haveAGoodDay {
+  font-size: 48px;
+  color: rgba(134, 221, 34, 0.925);
+}
+
+p {
+  color: red;
 }
 </style>
