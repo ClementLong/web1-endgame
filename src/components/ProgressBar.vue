@@ -1,5 +1,5 @@
 <template>
-    <progress max="100" value="80"></progress>
+    <progress max= 100 value= 80></progress>
 </template>
 
 <script>
@@ -10,11 +10,16 @@ export default {
 
 <style scoped lang="scss">
 
+progress {
+    height: 4px;
+    position: absolute;
+    left: 0;
+}
+
 progress[value] {
     -webkit-appearance: none;
     appearance: none;
     width: 100vw;
-    height: 4px;
 }
 
 progress[value]::-webkit-progress-bar {

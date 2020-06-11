@@ -43,7 +43,7 @@ export default {
   position: relative;
 
   .menu {
-    padding: 0 30px;
+    /* padding: 0 30px; */
     width: 100%;
     height: 45px;
     background: $backgroundBoxes;

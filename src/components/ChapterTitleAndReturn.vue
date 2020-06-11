@@ -23,14 +23,6 @@ export default {
     title: String,
     reviewChapter: String
   }
-  // data() {
-  //   return {
-  //     currentChapter: "01",
-  //     chapter: "07",
-  //     title: "Mais que ce passe t-il ?",
-  //     reviewChapter: "revoir le chapitre précédent"
-  //   };
-  // }
 };
 </script>
 
@@ -38,11 +30,20 @@ export default {
 .container_currentChapter {
   max-width: 300px;
   padding: 8px;
-  // background: $dark;
+  margin-left: 15px;
   font-family: $montserrat;
 
   @include tablet-up {
     max-width: 850px;
+    margin-left: 60px;
+    padding: 8px 0;
+  }
+
+  @include desktop-up {
+    position: absolute;
+    margin-left: 0;
+    left: 60px;
+    bottom: 30px;
   }
 }
 .container_chapterAndTitle {
@@ -55,7 +56,7 @@ export default {
 }
 
 .currentChapter {
-  font-size: rem(16px);
+  font: 600 rem(18px) $montserrat;
 
   @include tablet-up {
     font-size: rem(32px);
@@ -66,8 +67,8 @@ export default {
   }
 }
 .chapter {
-  font-size: rem(8px);
-
+  font: 600 rem(10px) $montserrat;
+  // font-size: rem(8px);
   @include tablet-up {
     font-size: rem(16px);
   }
@@ -88,6 +89,7 @@ export default {
 
 .container_reviewChapter {
   @include flexbox(row, flex-start, center);
+  cursor: pointer;
 
   img {
     margin-right: 8px;
@@ -97,8 +99,12 @@ export default {
     color: $white;
     font-size: rem(10px);
 
+    &:hover {
+      font-weight: 600;
+    }
+
     @include tablet-up {
-      font-size: rem(14px);
+      font-size: rem(16px);
     }
   }
 }
