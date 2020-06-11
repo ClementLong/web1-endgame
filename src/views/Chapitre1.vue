@@ -2,7 +2,6 @@
 <body>
   <section class="container__top">
     <Header />
-    <ProgressBar value="15" />
     <router-link class="previousChapter" to="/intro">
       <ChapterTitleAndReturn
         currentChapter="01"
@@ -11,6 +10,7 @@
         reviewChapter="revoir le chapitre précédent"
       />
     </router-link>
+    <ProgressBar value="15" />
   </section>
   <section class="container__bottom">
     <router-link class="nextChapter" to="/chap2">
@@ -45,9 +45,5 @@ body {
   background-repeat: no-repeat;
   object-fit: cover;
   background-image: url(../assets/img/background-temporaire-chap1.png);
-}
-
-.container__top {
-  @include flexbox(column, center, inherit);
 }
 </style>
