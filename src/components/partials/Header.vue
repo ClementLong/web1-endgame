@@ -138,6 +138,7 @@ svg:hover {
 	margin-right: 20px;
 
 	@media (max-width: 520px) {
+		margin-right: 0px;
 		right: 50%;
 		transform: translateX(50%);
 	}
