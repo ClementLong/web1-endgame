@@ -22,11 +22,12 @@ export default {
 
 <style scoped lang="scss">
 .home img {
-  width: 1200px;
+  width: 100vw;
   height: 650px;
 }
 
 .haveAGoodDay {
+  text-align: center;
   font-size: 48px;
   color: rgba(134, 221, 34, 0.925);
 }
