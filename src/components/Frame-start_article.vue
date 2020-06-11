@@ -31,7 +31,9 @@ export default {
 <style scoped lang="scss">
     .container {
         @include background-boxes;
-        width: 90%;
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
 
         .innerContainer {
             padding: 20px;
@@ -54,7 +56,7 @@ export default {
             font-size: rem($mobileP);
             color: $white;
             line-height:1.5;
-            padding-bottom: 16px;;
+            padding-bottom: 16px;
         }
     }
 </style>

@@ -20,10 +20,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .click {
-  width: 19%;
-  padding: 4px;
+  position: absolute;
+  bottom: 8vh;
+  right: 0px;
+  padding: 16px 8px 16px 16px;
   @include background-boxes;
-  margin: 8px 8px 8px 0;
+  border-radius: 8px 0px 0px 8px;
   @include tablet-up {
     font-size: rem(32px);
   }

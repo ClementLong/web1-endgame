@@ -14,12 +14,14 @@ export default {
 .start {
     max-width: 300px;
     padding: 10px;
-    margin: 5%;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left:auto;
     @include tablet-up {
-        padding: 4 18px;
+        padding: 10px 24px 10px 24px;
     }
     @include desktop-up {
-      padding: 4 80px;
+      padding: 10px 3vw 10px 3vw;
     }
     border-radius: 40px;
     background-color: $white;
