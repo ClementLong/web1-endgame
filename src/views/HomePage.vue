@@ -44,7 +44,7 @@ export default {};
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-image: url("../assets/background-filtre.jpg");
+  background-image: url("../assets/img/background-filtre.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
