@@ -16,6 +16,7 @@ Vue.use(VueRouter)
 
 // C'est dans la constante routes que vous définisez les différentes routes de votre projet
 // Chaque route doivent avoir au minimum un path et un component associé
+// blabla
 const routes = [{
     path: '/',
     name: 'Home',
