@@ -25,6 +25,8 @@ export default {
     line-height: 49px;
     color: #ffffff;
     font-family: "CinzelDecorative";
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   &__description {
     font-family: "Roboto";
