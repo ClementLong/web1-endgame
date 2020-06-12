@@ -18,7 +18,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  //color: $yellow;
+  color: #333;
   font-family: $montserrat;
 }
 
