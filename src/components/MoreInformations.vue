@@ -1,8 +1,8 @@
 <template>
   <div class="moreInformations">
+    <img :src="img" alt="" class="moreInformations__img" />
     <h1 class="moreInformations__title">{{ title }}</h1>
     <p class="moreInformations__description">{{ description }}</p>
-    <img :src="img" alt="" class="moreInformations__img" />
     <img :src="img" alt="" class="moreInformations__icon" />
     <div class="moreInformations__filter"></div>
   </div>
@@ -14,8 +14,8 @@ export default {
     title: String,
     description: String,
     filter: String,
-    img: String
-  }
+    img: String,
+  },
 };
 </script>
 
@@ -24,24 +24,38 @@ export default {
   &__title {
     font-size: 36px;
     line-height: 49px;
-    color: #ffffff;
+    color: red;
     font-family: "CinzelDecorative";
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 109px;
   }
 
   &__description {
     font-family: "Roboto";
     font-size: 24px;
-    color: #ffffff;
+    color: white;
+    display: block;
+    margin-top: 10vh;
+    margin-left: 45vw;
+    margin-right: 10vw;
+    text-align: left;
   }
 
-  // &__img {
-  // }
+  &__img {
+    display: inline;
+    left: 0;
+    height: 100%;
+    top: 0%;
+    position: absolute;
+  }
 
-  // &__icon {
-  // }
+  &__icon {
+    margin-top: 210px;
+  }
 
   &__filter {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #353535;
     width: 100vw;
     height: 100%;
     position: absolute;
