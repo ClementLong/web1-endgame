@@ -11,7 +11,8 @@
 		}
 		text-align: start;
 		.nemo {
-			width: 500px;
+			width: 30vw;
+			max-width: 500px;
 			@media (max-width: 750px) {
 				width: 90vw;
 			}
@@ -26,6 +27,7 @@
 
 		h1 {
 			@include title(abel, normal, none, 96px, $white, 1.5);
+			text-shadow: 5px 5px 5px black;
 			//=================================================
 
 			@media (max-width: 750px) {
@@ -39,14 +41,14 @@
 			@include title(abel, normal, none, 24px, $white, 1.5);
 			//=================================================
 
-			@media (max-width: 750px) {
+			@include phone {
 				@include size(100%, 90vw);
 			}
 			&__spec {
 				@include flexcenter(space-around, center, row);
 				//=================================================
 
-				@media (max-width: 750px) {
+				@include phone {
 					@include flexcenter(space-around, center, column);
 					@include size(100%, 100vw);
 					padding-bottom: 100px;
@@ -63,13 +65,13 @@
 				max-width: 90vw;
 				//=================================================
 
-				@media (max-width: 750px) {
+				@include phone {
 					@include flexcenter(space-around, center, column);
 					@include size(100%, 100vw);
 					max-width: 90vw;
 				}
 				.spec {
-					@media (max-width: 750px) {
+					@include phone {
 						padding-bottom: 100px;
 					}
 				}
@@ -87,41 +89,48 @@
 
 		&__video {
 			@include size(100vh, 100vw);
-			@include flexcenter(space-around, center, row);
+
+			@include flexcenter(space-around, center, column);
 			//=================================================
 
-			@media (max-width: 750px) {
+			@include phone {
 				@include flexcenter(center, center, column);
 			}
 			iframe {
-				@include size(50vh, 40vw);
+				@include size(50vh, 90vw);
+				max-width: 900px;
 				//=================================================
 
-				@media (max-width: 750px) {
+				@include phone {
 					@include size(50vh, 90vw);
+					max-width: 90vw;
+					padding-bottom: 120px;
 				}
 			}
 			.photo {
-				@media (max-width: 750px) {
+				@include size(70vh, 100vw);
+
+				@include flexcenter(center, center, row);
+				@include phone {
 					@include flexcenter(center, center, column);
+					@include size(50vh, 100vw);
 				}
 				img:first-child {
-					@include size(auto, 500px);
-					max-width: 50%;
-					transform: translate(130px, 150px);
-					@media (max-width: 750px) {
-						transform: translate(0px, 0px);
+					@include size(50vh, 40vw);
+					max-width: 600px;
+
+					@include phone {
 						@include size(auto, 90vw);
 						max-width: 90vw;
 						padding: 25px 0 25px 0;
 					}
 				}
 				img:nth-child(2) {
-					@include size(auto, 500px);
-					max-width: 50%;
-					// padding-top: ;
+					@include size(50vh, 40vw);
 
-					@media (max-width: 750px) {
+					max-width: 600px;
+
+					@include phone {
 						@include size(auto, 90vw);
 						max-width: 90vw;
 
@@ -147,8 +156,8 @@
 				border-radius: 20px;
 				@include title(abel, normal, none, 18px, $white, 1.5);
 			}
-			@media (max-width: 750px) {
-				padding: 50px 0px 10px 0px;
+			@include phone {
+				padding: 100px 0px 10px 0px;
 			}
 		}
 	}

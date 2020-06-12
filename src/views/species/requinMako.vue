@@ -3,27 +3,27 @@
     <headr />
     <div class="firstFrame">
       <h1>
-        <span>Le dauphin</span>
+        <span>Le requin mako</span>
       </h1>
       <div class="species">
         <div class="species__spec">
-          <img src="../../img/Species/dauphin/dauphin.svg" class="nemo" alt />
+          <img src="../../img/Species/requinMako/requinMako.svg" class="nemo" alt />
           <p>
-            Réputé pour sa sympathie, sa beauté, son intelligence et sa facétie,
-            le dauphin est un mammifère très populaire auprès des hommes, souvent friands de nager à ses côtés.
+            Requin Mako, l'une des deux espèces de requins rapides, actifs et potentiellement dangereux de la famille des requins maquereaux, Lamnidae.
+            Le mako à nageoires courtes se trouve dans toutes les mers tropicales et tempérées, et le mako à nageoires longues est dispersé dans le monde entier dans les mers tropicales.
           </p>
         </div>
         <div class="species__info">
           <div class="spec">
             <p>
-              <span>Profondeur:</span>: 0 - 200 m
+              <span>Profondeur:</span> 0 - 740 m
             </p>
             <p>
-              <span>Durée de vie:</span> 15-16 ans
+              <span>Durée de vie:</span> 28 - 35 ans
             </p>
             <p>
               <span>Poids/Taille:</span>
-              75 kg/ 1,5 et 2,5 m
+              500kg / 4.5 m
             </p>
           </div>
           <div class="info">
@@ -32,12 +32,12 @@
             </p>
             <br />
             <p>
-              <span>Habitude Alimentaire:</span> petits poissons,des anchois, des mulets, des sardines
+              <span>Habitude Alimentaire:</span> Essentiellement des poissons pélagiques comme les thons mais également des requins ainsi que des céphalopodes.
             </p>
             <br />
 
             <p>
-              <span>Reproduction:</span> les femelles mettent au monde des petits deux ou trois fois par an
+              <span>Reproduction:</span> Ovovivipare avec cannibalisme intra-utérin. De 2 à 21 embryons
             </p>
           </div>
         </div>
@@ -46,32 +46,31 @@
     <div class="secondFrame">
       <div class="secondFrame__video">
         <iframe
-          src="https://www.youtube.com/embed/vIZKR_PSDwA"
+          src="https://www.youtube.com/embed/9kfnPHuHPZs"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+
         <div class="photo">
-          <img src="@/img/Species/dauphin/dauphin1.svg" alt />
-          <img src="@/img/Species/dauphin/dauphin2.svg" alt />
+          <img src="../../img/Species/requinMako/requinMako1.svg" alt />
+          <img src="../../img/Species/requinMako/requinMako2.svg" alt />
         </div>
       </div>
       <div class="secondFrame__tips">
         <p>
           <span>Le saviez-vous?</span>
-          <br />Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
-          Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
+          <br />Le requin plus rapide du monde, il surgit de nulle part et attaque ses proies par derrière à toute vitesse.
         </p>
       </div>
-      <!-- <img src="../../img/Species/dauphin/nemo_egg.svg" class="easterEgg" alt /> -->
     </div>
   </div>
 </template>
 
 <script>
-import headr from "@/components/partials/Head";
+import headr from "../../components/partials/Head";
 export default {
-  name: "dauphin",
+  name: "requinMako",
   components: {
     headr
   }

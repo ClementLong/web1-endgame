@@ -2,6 +2,44 @@
 	height: $height;
 	width: $width;
 }
+@mixin phone {
+	@media (max-width: 750px) {
+		@content;
+	}
+}
+@mixin grid {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 3fr 1fr;
+	grid-template-rows: auto;
+	@content;
+}
+@mixin gridMobileFamilles {
+	@media (max-width: 750px) {
+		.diver {
+			display: none;
+		}
+		height: 100%;
+		max-width: 90vw;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			'title  '
+			'image1  '
+			'text1  '
+			'txt1'
+			'image2 '
+			'text2'
+			'txt2'
+			'image3 '
+			'text3'
+			'txt3 ';
+	}
+}
 @mixin flexcenter($justify, $align, $direction) {
 	display: flex;
 	justify-content: $justify;

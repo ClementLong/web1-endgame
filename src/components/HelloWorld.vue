@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>oros Dorian</h1>
+    <h1>Hi</h1>
   </div>
 </template>
 

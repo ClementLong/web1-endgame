@@ -24,7 +24,7 @@ div {
     align-items: center;
   }
   img {
-    padding: 10px;
+    padding: 10px 100px 0 10px;
     @media (max-width: 750px) {
       width: 10vw;
     }
@@ -41,6 +41,7 @@ button {
   font-family: aileronsregular;
   font-size: 36px;
   line-height: 29px;
+  margin-top: 10px;
   @media (max-width: 750px) {
     font-size: 18px;
     line-height: 0px;
