@@ -32,7 +32,7 @@ const routes = [{
     component: Intro
   }, {
     path: 'chap0',
-    name: 'Chap0',
+    name: 'Chapitre0',
     component: Chapitre0
   },
   {
