@@ -1,31 +1,35 @@
 <template>
-  <div class="home">
-    <img
-      alt="aerosmith"
-      src="https://images6.alphacoders.com/410/thumb-1920-410779.jpg"
-    />
-    <HelloWorld msg="Groupe 11" />
-    <p>{{ (NomDuProjet = "RAP / ROCK") }}</p>
-    <h1>Bonjour</h1>
+  <div class="template background">
+    <Template link='/80s' />
+    <div>Mid-80s/Late 80s :</div>
+    <div>The First Steps</div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 //import Background from "@/components/Background.vue";
+import Template from './template.vue'
 
 export default {
-  name: "Home",
-};
+  name: 'Home',
+  components: {
+    Template
+  }
+}
+
 </script>
 
 <style scoped lang="scss">
-.home img {
-  width: 100vw;
-  height: 100vh;
+
+.template {
+  width: 100%;
+  height: 100%;
+
 }
 
-p {
-  color: red;
+.background {
+  background-image: url("../img/home/background.png");
 }
+
 </style>
