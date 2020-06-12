@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Welcome from "../views/Welcome.vue";
+import Intro from "../views/Intro.vue";
 import Wero from "../views/Wero.vue";
 import Karanga from "../views/Karanga.vue";
 import Hongi from "../views/Hongi.vue";
@@ -19,9 +19,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/welcome",
-    name: "Welcome",
-    component: Welcome
+    path: "/intro",
+    name: "Intro",
+    component: Intro
   },
   {
     path: "/wero",
