@@ -26,7 +26,6 @@
   font-size: $mobileP;
   font-family: $montserrat;
   font-weight: bold;
-  text-transform: uppercase;
 
   &:hover {
       cursor: pointer;
