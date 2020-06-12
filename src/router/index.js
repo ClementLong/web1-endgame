@@ -39,10 +39,7 @@ const routes = [
   {
     path: '/chap1',
     name: 'Chapitre1',
-    component: Chapitre1,
-    children: [{
-      
-    }]
+    component: Chapitre1
   },
   {
     path: '/chap2',
