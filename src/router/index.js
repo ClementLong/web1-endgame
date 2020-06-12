@@ -1,12 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/home.vue";
-import Welcome from "../views/welcome.vue";
-import Wero from "../views/wero.vue";
-import Karanga from "../views/haranga.vue";
-import Hongi from "../views/hongi.vue";
-import Haka from "../views/haka.vue";
-import Hangi from "../views/hangi.vue";
+import Home from "../views/Home.vue";
+import Welcome from "../views/Welcome.vue";
+import Wero from "../views/Wero.vue";
+import Karanga from "../views/Karanga.vue";
+import Hongi from "../views/Hongi.vue";
+import Haka from "../views/Haka.vue";
+import Hangi from "../views/Hangi.vue";
 
 Vue.use(VueRouter);
 
@@ -14,34 +14,39 @@ Vue.use(VueRouter);
 // Chaque route doivent avoir au minimum un path et un component associé
 const routes = [
   {
+    path: "/home",
+    name: "Home",
+    component: Home
+  },
+  {
     path: "/welcome",
     name: "Welcome",
-    component: welcome
+    component: Welcome
   },
   {
     path: "/wero",
     name: "Wero",
-    component: wero
+    component: Wero
   },
   {
     path: "/karanga",
     name: "Karanga",
-    component: karanga
+    component: Karanga
   },
   {
     path: "/hongi",
     name: "Hongi",
-    component: hongi
+    component: Hongi
   },
   {
     path: "/haka",
     name: "Haka",
-    component: haka
+    component: Haka
   },
   {
     path: "/hangi",
     name: "Hangi",
-    component: hangi
+    component: Hangi
   }
 ];
 

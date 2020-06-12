@@ -2,24 +2,20 @@ import "@/assets/styles/styles.scss";
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import home from "@/component/home.vue";
-import welcome from "@/component/welcome.vue";
-import articleImg from "@/component/articleImg.vue";
-import articleVideo from "@/component/articleVideo.vue";
-import button from "@/component/button.vue";
-import largeInformations from "@/component/largeInformations.vue";
-import moreInformations from "@/component/moreInformations.vue";
-import timeLineHover from "@/component/timeLineHover.vue";
+import articleImg from "@/components/ArticleImg.vue";
+import articleVideo from "@/components/ArticleVideo.vue";
+import button from "@/components/Button.vue";
+import largeInformations from "@/components/LargeInformations.vue";
+import moreInformations from "@/components/MoreInformations.vue";
+import timeLineHover from "@/components/TimeLineHover.vue";
 
 Vue.config.productionTip = false;
-Vue.component("home", home);
-Vue.component("welcome", welcome);
-Vue.component("articleImg", articleImg);
-Vue.component("articleVideo", articleVideo);
-Vue.component("button", button);
-Vue.component("largeInformations", largeInformations);
-Vue.component("moreInformations", moreInformations);
-Vue.component("timeLineHover", timeLineHover);
+Vue.component("ArticleImg", articleImg);
+Vue.component("ArticleVideo", articleVideo);
+Vue.component("Button", button);
+Vue.component("LargeInformations", largeInformations);
+Vue.component("MoreInformations", moreInformations);
+Vue.component("TimeLineHover", timeLineHover);
 new Vue({
   router,
   render: h => h(App)
