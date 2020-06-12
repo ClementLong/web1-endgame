@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <p class="haveAGoodDay">Bonne journée et bon dév les chefs !</p>
     <img
       alt="aerosmith"
       src="https://images6.alphacoders.com/410/thumb-1920-410779.jpg"
@@ -23,13 +22,7 @@ export default {
 <style scoped lang="scss">
 .home img {
   width: 100vw;
-  height: 650px;
-}
-
-.haveAGoodDay {
-  text-align: center;
-  font-size: 48px;
-  color: rgba(134, 221, 34, 0.925);
+  height: 100vh;
 }
 
 p {
