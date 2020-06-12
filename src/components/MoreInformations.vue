@@ -24,7 +24,7 @@ export default {
   &__title {
     font-size: 36px;
     line-height: 49px;
-    color: white;
+    color: red;
     font-family: "CinzelDecorative";
     display: inline-block;
     margin-left: 60px;

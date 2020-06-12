@@ -1,6 +1,6 @@
 <template>
   <div class="articleImg">
-    <h1 class="articleImg__tile">{{ title }}</h1>
+    <h1 class="articleImg__title">{{ title }}</h1>
     <p class="articleImg__description">{{ description }}</p>
     <img class="articleImg__img" :src="img" />
     <div v-if="filter" class="articleImg__filter">{{ filter }}</div>
@@ -10,16 +10,16 @@
 <script>
 export default {
   props: {
+    img: String,
     title: String,
     description: String,
     filter: String,
-    img: String
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.articleIMG {
+.articleImg {
   &__title {
     font-size: 36px;
     line-height: 49px;
