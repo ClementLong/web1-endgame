@@ -39,7 +39,7 @@
             Click sur le point rouge pour en
             <br />decouvrir plus
           </h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
       <div class="three-h">
@@ -76,7 +76,7 @@
             <br />N’oublie pas de clicker pour plus
             <br />d’informations
           </h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
       <div class="five-h">
@@ -103,7 +103,7 @@
         <img src alt />
         <div>
           <h3 class="scaner">Tu sais quoi faire !</h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
       <div class="one-t">
@@ -132,7 +132,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
       <div class="two-t">
@@ -159,7 +159,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
       <div class="three-t">
@@ -186,8 +186,8 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt />
-        </div>
+          <img src="@/img/scaner.svg" alt class="scan" />
+        </div>150
       </div>
       <div class="four-t">
         <div>
@@ -238,7 +238,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt />
+          <img src="@/img/scaner.svg" width="100px" alt class="scan" />
         </div>
       </div>
     </div>
@@ -258,8 +258,7 @@ export default {
     this.so = ScrollOut({
       scope: this.$el,
       threshold: 0.5,
-      targets: [".bubble", ".scaner"],
-      once: true
+      targets: [".bubble", ".scaner", ".scan"]
     });
   },
   destroyed() {

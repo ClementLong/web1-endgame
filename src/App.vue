@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <router-view />
+    <mainPage />
   </div>
 </template>
 
 <script>
-export default {};
+import mainPage from "@/views/MainPages.vue";
+export default {
+  components: mainPage
+};
 </script>
 
 <style lang="scss">

@@ -51,16 +51,17 @@
 		@include title(abel, normal, none, 18px, $white, 1.5);
 		max-width: 800px;
 	}
-	img {
-		@include size(50%, 50%);
-	}
+
 	.o-h-f {
 		border-right: snow 5px solid;
 		@include size(200vh, 90vw);
 		@include flexcenter(space-between, center, column);
 		.bubble {
 			@include size(100%, 100vw);
-			@include flexcenter(space-around, center, row);
+			@include flexcenter(space-evenly, center, row);
+			img {
+				@include size(500px, 50%);
+			}
 		}
 		div {
 			@include flexcenter(center, center, column);
@@ -152,5 +153,26 @@
 		div {
 			@include flexcenter(center, center, column);
 		}
+	}
+}
+.scan {
+	@include size(100%, 200px);
+	animation: pulse 5s infinite;
+	@keyframes pulse {
+		0% {
+			transform: scale(0.5);
+		}
+
+		50% {
+			transform: scale(1.2);
+		}
+
+		100% {
+			transform: scale(0.5);
+		}
+	}
+}
+@keyframes bubble {
+	0% {
 	}
 }
