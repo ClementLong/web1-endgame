@@ -32,14 +32,17 @@ const routes = [
     name: 'Intro',
     component: Intro
   },{
-    path: 'chap0',
-    name: Chap0,
+    path: '/chap0',
+    name: 'Chapitre0',
     component: Chapitre0
   },
   {
     path: '/chap1',
     name: 'Chapitre1',
-    component: Chapitre1
+    component: Chapitre1,
+    children: [{
+      
+    }]
   },
   {
     path: '/chap2',

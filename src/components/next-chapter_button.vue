@@ -21,6 +21,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: absolute;
+  border-radius: 8px 0px 0px 8px;
   bottom: 5vh;
   right: 0px;
   padding: 24px 36px;

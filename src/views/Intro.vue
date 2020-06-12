@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <Header />
-    <ProgressBar value="5" />
-    <router-link class="nextChapter" to="/chap1">
+    <ProgressBar value="0" />
+    <router-link class="nextChapter" to="/chap0">
       <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
     </router-link>
     <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
