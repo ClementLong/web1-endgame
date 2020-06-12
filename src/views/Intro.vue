@@ -6,7 +6,7 @@
       <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
     </router-link>
     <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
-    <video src="video.mp4" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
+    <video :src="info" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
   </div>
 </template>
 
@@ -14,13 +14,24 @@
 import Header from "@/components/partials/Header.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
+import axios from 'axios';
 
 export default {
   components: {
     Header,
     ProgressBar,
     NextChapterButton
-  }
+  },
+  data () {
+    return {
+      info: null
+    }
+  },
+  mounted () {
+  axios
+    .get('http://167.71.55.113/api/page/2')
+    .then(response => (this.info = response.data.data.video))
+}
 };
 </script>
     
