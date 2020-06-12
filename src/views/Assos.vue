@@ -1,18 +1,18 @@
 <template>
-<body>
-  <section class="container__top">
-    <Header />
-    <ProgressBar value="100" />
-    <router-link class="previousChapter" to="/chap6">
-      <ChapterTitleAndReturn
-        currentChapter="07"
-        chapter="07"
-        title="Soutenez les associations"
-        reviewChapter="revoir le chapitre précédent"
-      />
-    </router-link>
-  </section>
-</body>
+  <body>
+    <section class="container__top">
+      <Header />
+      <ProgressBar value="100" />
+      <router-link class="previousChapter" to="/chap6">
+        <ChapterTitleAndReturn
+          currentChapter="07"
+          chapter="07"
+          title="Soutenez les associations"
+          reviewChapter="revoir le chapitre précédent"
+        />
+      </router-link>
+    </section>
+  </body>
 </template>
 
 <script>
@@ -25,8 +25,8 @@ export default {
   components: {
     Header,
     ProgressBar,
-    ChapterTitleAndReturn
-  }
+    ChapterTitleAndReturn,
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -37,7 +37,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-  background-image: url(../assets/img/background-temporaire-chap1.png);
+  background-image: url(../assets/img/chapter7.png);
 }
 
 header {

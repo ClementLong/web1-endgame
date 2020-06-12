@@ -1,23 +1,23 @@
 <template>
-<body>
-  <section class="container__top">
-    <Header />
-    <ProgressBar value="70" />
-    <router-link class="previousChapter" to="/chap4">
-      <ChapterTitleAndReturn
-        currentChapter="05"
-        chapter="07"
-        title="93% des coraux ont blanchis"
-        reviewChapter="revoir le chapitre précédent"
-      />
-    </router-link>
-  </section>
-  <section class="container__bottom">
-    <router-link class="nextChapter" to="/chap6">
+  <body>
+    <section class="container__top">
+      <Header />
+      <ProgressBar value="70" />
+      <router-link class="previousChapter" to="/chap4">
+        <ChapterTitleAndReturn
+          currentChapter="05"
+          chapter="07"
+          title="93% des coraux ont blanchis"
+          reviewChapter="revoir le chapitre précédent"
+        />
+      </router-link>
+    </section>
+    <section class="container__bottom">
+      <router-link class="nextChapter" to="/chap6">
         <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-  </router-link>
-  </section>
-</body>
+      </router-link>
+    </section>
+  </body>
 </template>
 
 <script>
@@ -32,8 +32,8 @@ export default {
     Header,
     ProgressBar,
     ChapterTitleAndReturn,
-    NextChapterButton
-  }
+    NextChapterButton,
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -44,7 +44,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-  background-image: url(../assets/img/background-temporaire-chap1.png);
+  background-image: url(../assets/img/chapter5.png);
 }
 
 header {
