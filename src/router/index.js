@@ -31,7 +31,7 @@ const routes = [{
     path: '/intro',
     name: 'Intro',
     component: Intro
-  },{
+  }, {
     path: '/chap0',
     name: 'Chapitre0',
     component: Chapitre0
