@@ -1,25 +1,4 @@
 <template>
-<<<<<<< Updated upstream
-<body>
-  <section class="container__top">
-    <Header />
-    <ProgressBar value="15" />
-    <router-link class="previousChapter" to="/intro">
-      <ChapterTitleAndReturn
-        currentChapter="00"
-        chapter="07"
-        title="Visitez les récifs"
-        reviewChapter="revoir le chapitre précédent"
-      />
-    </router-link>
-  </section>
-  <section class="container__bottom">
-    <router-link class="nextChapter" to="/chap1">
-      <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-  </router-link>
-  </section>
-</body>
-=======
   <body>
     <section class="container__top">
       <Header />
@@ -49,7 +28,6 @@
       </router-link>
     </section>
   </body>
->>>>>>> Stashed changes
 </template>
 
 <script>

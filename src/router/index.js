@@ -31,22 +31,14 @@ const routes = [{
     name: 'Intro',
     component: Intro
   }, {
-<<<<<<< Updated upstream
-    path: 'chap0',
-=======
     path: '/chap0',
->>>>>>> Stashed changes
     name: 'Chapitre0',
     component: Chapitre0
   },
   {
     path: '/chap1',
     name: 'Chapitre1',
-<<<<<<< Updated upstream
-    component: Chapitre1
-=======
     component: Chapitre1,
->>>>>>> Stashed changes
   },
   {
     path: '/chap2',
