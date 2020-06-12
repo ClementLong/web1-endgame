@@ -2,11 +2,13 @@
   <div class="main">
     <Header />
     <ProgressBar value="5" />
-    <router-link class="nextChapter" to="/chap1">
+    <router-link class="nextChapter" to="/chap0">
       <NextChapterButton msg="PASSER L'INTRODUCTION" />
     </router-link>
     <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
-    <video :src="info" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
+    <video :src="info" autoplay loop>
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
   </div>
 </template>
 
@@ -14,27 +16,27 @@
 import Header from "@/components/partials/Header.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   components: {
     Header,
     ProgressBar,
-    NextChapterButton
+    NextChapterButton,
   },
-  data () {
+  data() {
     return {
-      info: null
-    }
+      info: null,
+    };
   },
-  mounted () {
-  axios
-    .get('http://167.71.55.113/api/page/2')
-    .then(response => (this.info = response.data.data.video))
-}
+  mounted() {
+    axios
+      .get("http://167.71.55.113/api/page/2")
+      .then((response) => (this.info = response.data.data.video));
+  },
 };
 </script>
-    
+
 <style scoped lang="scss">
 .main {
   max-width: 100vw;
@@ -54,4 +56,4 @@ video {
   left: 0;
   z-index: -1;
 }
-</style>    
+</style>
