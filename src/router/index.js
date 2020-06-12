@@ -16,8 +16,7 @@ Vue.use(VueRouter)
 
 // C'est dans la constante routes que vous définisez les différentes routes de votre projet
 // Chaque route doivent avoir au minimum un path et un component associé
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'Home',
     component: Home
@@ -73,7 +72,7 @@ const routes = [
     path: '/assos',
     name: 'Assos',
     component: Assos
-  }  
+  }
 ]
 
 const router = new VueRouter({
