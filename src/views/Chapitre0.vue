@@ -2,7 +2,7 @@
 <body>
   <section class="container__top">
     <Header />
-    <ProgressBar value="15" />
+    <ProgressBar value="5" />
     <router-link class="previousChapter" to="/intro">
       <ChapterTitleAndReturn
         currentChapter="00"
@@ -27,7 +27,7 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 
 export default {
-  name: "Chapitre1",
+  name: "Chapitre0",
   components: {
     Header,
     ProgressBar,
