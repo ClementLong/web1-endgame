@@ -1,14 +1,13 @@
 <template>
   <div class="button">
-    <button>{{ button_text }}</button>
+    <button>{{ buttonText }}</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "button",
   props: {
-    button_text: String
+    buttonText: String
   }
 };
 </script>

@@ -22,20 +22,21 @@
       >
         {{ descriptionFourth }}
       </p>
-      <img src{{img}} alt="" class="largeInformations__img" />
+      <div class="largeInformations__filter"></div>
+      <img :src="img" alt="" class="largeInformations__img" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "LargeInformations",
   props: {
     title: String,
     descriptionFirst: String,
     descriptionSecond: String,
     descriptionThird: String,
     descriptionFourth: String,
+    filter: String,
     img: String
   }
 };
@@ -47,7 +48,7 @@ export default {
     font-size: 36px;
     line-height: 49px;
     color: #ffffff;
-    font-family: "CinzelDecorative regular";
+    font-family: "CinzelDecorative";
   }
 
   &__description {
@@ -67,9 +68,6 @@ export default {
   }
 
   // &__img {
-  // }
-
-  // &__icon {
   // }
 }
 </style>

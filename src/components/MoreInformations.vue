@@ -1,22 +1,20 @@
 <template>
   <div class="moreInformations">
-    <div class="moreInformations__filter">
-      <h1 class="moreInformations__title">{{ title }}</h1>
-      <p class="moreInformations__description">{{ description }}</p>
-      <img :src="img" alt="" class="moreInformations__img" />
-      <img :src="img" alt="" class="moreInformations__icon" />
-    </div>
+    <h1 class="moreInformations__title">{{ title }}</h1>
+    <p class="moreInformations__description">{{ description }}</p>
+    <img :src="img" alt="" class="moreInformations__img" />
+    <img :src="img" alt="" class="moreInformations__icon" />
+    <div class="moreInformations__filter"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "moreInformations",
   props: {
     title: String,
     description: String,
     filter: String,
-    img : String,
+    img: String
   }
 };
 </script>
@@ -27,7 +25,7 @@ export default {
     font-size: 36px;
     line-height: 49px;
     color: #ffffff;
-    font-family: "Cinzel Decorative";
+    font-family: "CinzelDecorative";
   }
 
   &__description {
@@ -35,6 +33,12 @@ export default {
     font-size: 24px;
     color: #ffffff;
   }
+
+  // &__img {
+  // }
+
+  // &__icon {
+  // }
 
   &__filter {
     background-color: rgba(0, 0, 0, 0.5);
@@ -44,12 +48,6 @@ export default {
     left: 0;
     top: 0;
     z-index: -1;
-  }
-
-  &__img {
-  }
-
-  &__icon {
   }
 }
 </style>

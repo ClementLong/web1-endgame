@@ -9,7 +9,6 @@
 
 <script>
 export default {
-  name: "moreInformations",
   props: {
     title: String,
     description: String,
@@ -25,7 +24,7 @@ export default {
     font-size: 36px;
     line-height: 49px;
     color: #ffffff;
-    font-family: "Cinzel Decorative";
+    font-family: "CinzelDecorative";
   }
   &__description {
     font-family: "Roboto";

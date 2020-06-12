@@ -1,14 +1,13 @@
 <template>
   <div class="timeLineHover">
+    <img class="timeLineHover__img" src="" alt="" />
+    <img class="timeLineHover__img" src="" alt="" />
     <div class="timeLineHover__filter"></div>
-    <img class="timeLineHover__img" src="" alt="" />
-    <img class="timeLineHover__img" src="" alt="" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "timeLineHover",
   props: {
     img: String,
     icon: String
