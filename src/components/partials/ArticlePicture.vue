@@ -22,7 +22,6 @@
                 <h1> {{ title }} </h1>
                 <hr>
                 <p> {{ text }} </p>
-                <StartButton msg="répondre au quizz" />
             </article>
             <aside class="subContent">
                 <img src="@/assets/img/background-temporaire-chap1.png">
@@ -34,12 +33,8 @@
 </template>
 
 <script>
-import StartButton from "@/components/StartButton.vue"
 export default {
     name: "ArticlePicture",
-    components: {
-        StartButton
-    },
     props: {
         title: String,
         text: String

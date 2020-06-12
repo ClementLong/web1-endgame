@@ -10,6 +10,8 @@ import Chapitre3 from "@/views/Chapitre3.vue";
 import Chapitre4 from "@/views/Chapitre4.vue";
 import Chapitre5 from "@/views/Chapitre5.vue";
 import Chapitre6 from "@/views/Chapitre6.vue";
+import ArticlePicture from "@/views/ArticlePicture1.vue";
+import Quizz from "@/views/Quizz1.vue";
 import Assos from "@/views/Assos.vue";
 
 Vue.use(VueRouter)
@@ -39,7 +41,19 @@ const routes = [{
   {
     path: '/chap1',
     name: 'Chapitre1',
-    component: Chapitre1
+    component: Chapitre1,
+    children: [{
+
+      path: 'article',
+      name: 'Chapitre1Article1',
+      component: ArticlePicture
+      },{
+
+      path: 'quizz',
+      name: 'Chapitre1Quizz1',
+      component: Quizz
+      }
+    ]
   },
   {
     path: '/chap2',
