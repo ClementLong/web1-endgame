@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Team from '../views/Team.vue'
-import Intro from '../views/Intro.vue'
+import Home from '../views/Home.vue';
+import Team from '../views/Team.vue';
+import Intro from '../views/Intro.vue';
+import Chapitre0 from "@/views/Chapitre0.vue";
 import Chapitre1 from "@/views/Chapitre1.vue";
 import Chapitre2 from "@/views/Chapitre2.vue";
 import Chapitre3 from "@/views/Chapitre3.vue";
@@ -30,6 +31,10 @@ const routes = [
     path: '/intro',
     name: 'Intro',
     component: Intro
+  },{
+    path: 'chap0',
+    name: Chap0,
+    component: Chapitre0
   },
   {
     path: '/chap1',

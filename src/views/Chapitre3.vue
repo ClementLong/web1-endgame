@@ -15,7 +15,7 @@
   <section class="container__bottom">
     <router-link class="nextChapter" to="/chap4">
         <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-  </router-link>
+    </router-link>
   </section>
 </body>
 </template>
