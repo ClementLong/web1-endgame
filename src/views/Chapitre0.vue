@@ -54,16 +54,29 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-  background-image: url(../assets/img/background-temporaire-chap1.png);
+  background-image: url(../assets/img/chapter0.png);
+  overflow: hidden;
 }
 
 header {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 iframe {
   width: 100vw;
-  height: 100vh;
+  height: 140vh;
+  transform: translateY(-150px);
+}
+
+.container_currentChapter {
+  position: fixed;
+  z-index: 1;
+}
+
+progress[value][data-v-c55e1cb4] {
+  z-index: 1;
 }
 
 .place-card,
