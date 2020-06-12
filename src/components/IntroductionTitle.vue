@@ -45,7 +45,7 @@ h1 {
   text-align: left;
 
   @include desktop-up {
-    width: 5vw;
+    font-size: 5vw;
   }
 }
 
