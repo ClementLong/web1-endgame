@@ -16,6 +16,9 @@
 </script>
 
 <style lang="scss">
+@import "@/assets/css/vendors/reset.scss";
+@import "@/assets/css/global/mixin.scss";
+@import "@/assets/css/styles.scss";
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
   // -webkit-font-smoothing: antialiased;
