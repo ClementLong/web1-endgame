@@ -34,7 +34,6 @@ export default {
     color: #ffffff;
   }
   &__img {
-    background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100%;
     position: absolute;
@@ -43,6 +42,7 @@ export default {
     z-index: -1;
   }
   &__filter {
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-around;
     align-items: center;
