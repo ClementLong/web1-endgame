@@ -6,13 +6,13 @@
 </template>
 
 <script>
-// // import Header from '@/components/partials/Header.vue'
+import Header from "@/components/partials/Header.vue";
 
-// export default {
-//   components: {
-//     Header
-//   }
-// }
+export default {
+  components: {
+    Header
+  }
+};
 </script>
 
 <style lang="scss">
