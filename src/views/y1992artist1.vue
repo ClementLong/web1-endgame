@@ -1,6 +1,6 @@
 <template>
   <div class="template background1">
-    <Template link='/1987fact' />
+    <Template link='/1994home' />
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import Template from './template.vue'
 
 export default {
-    name: 'y1987joke',
+    name: 'y1992artist1',
     components: {
         Template
     }
@@ -28,6 +28,6 @@ export default {
         }
     }
      .background1 {
-        background-image: url('../img/backgrounds/background80s.png');
+        background-image: url('../img/backgrounds/backgroundearly90s.png');
     }
 </style>
