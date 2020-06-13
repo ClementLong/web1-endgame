@@ -1,164 +1,142 @@
-.backgroundPage {
-	background-color: #ccc;
+.species {
 	@include flexcenter(space-between, center, column);
-	@include size(100%, 100vw);
-
-	@include backgroundGradient;
-
-	.firstFrame {
-		span {
-			border-bottom: 2px solid $white;
+	&__background {
+		@include background(url(../img/speciesBackground.jpg));
+		@include flexcenter(center, center, column);
+	}
+	.speciesVideoFrame {
+		@include size(100vh, 100vw);
+		position: relative;
+		video {
+			position: absolute;
+			right: 0;
+			top: 0;
+			min-width: 100%;
+			min-height: 100%;
+			max-height: 120%;
+			z-index: -100;
+			@include size(auto, auto);
 		}
-		text-align: start;
-		.nemo {
-			width: 30vw;
-			max-width: 500px;
-			@media (max-width: 750px) {
-				width: 90vw;
-			}
+	}
+	.speciesDescription {
+		@include size(100vh, 100vw);
+		@include flexcenter(space-evenly, center, column);
+
+		&__title {
+			@include title(abel, normal, none, 80px, $white, 1.5);
 		}
-
-		@include size(90vh, 100vw);
-		@include flexcenter(space-around, center, column);
-		//=================================================
-		@media (max-width: 750px) {
-			@include size(100%, 90vw);
-		}
-
-		h1 {
-			@include title(abel, normal, none, 96px, $white, 1.5);
-			text-shadow: 5px 5px 5px black;
-			//=================================================
-
-			@media (max-width: 750px) {
-				@include title(abel, normal, none, 48px, $white, 1.5);
+		.speciesInformation {
+			@include flexcenter(space-between, center, row);
+			@include size(auto, 90vw);
+			max-width: 1900px;
+			&__description {
+				@include title(abel, normal, none, 24px, $white, 1.5);
+				text-align: start;
+				max-width: 700px;
 			}
-		}
-		.species {
-			align-self: flex-end;
-			@include size(100%, 100vw);
-			@include flexcenter(space-around, center, column);
-			@include title(abel, normal, none, 24px, $white, 1.5);
-			//=================================================
-
-			@include phone {
-				@include size(100%, 90vw);
-			}
-			&__spec {
-				@include flexcenter(space-around, center, row);
-				//=================================================
-
-				@include phone {
-					@include flexcenter(space-around, center, column);
-					@include size(100%, 100vw);
-					padding-bottom: 100px;
-					max-width: 90vw;
-				}
-				@include size(40vh, 100vw);
-				p {
-					max-width: 800px;
-				}
-			}
-			&__info {
-				@include flexcenter(space-around, flex-start, row);
-				@include size(40vh, 100vw);
-				max-width: 90vw;
-				//=================================================
-
-				@include phone {
-					@include flexcenter(space-around, center, column);
-					@include size(100%, 100vw);
-					max-width: 90vw;
-				}
-				.spec {
-					@include phone {
-						padding-bottom: 100px;
-					}
-				}
-				.info {
-					max-width: 800px;
+			&__image {
+				img {
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+					border-radius: 15px;
 				}
 			}
 		}
 	}
-	.secondFrame {
-		@include size(100%, 100vw);
-		@include flexcenter(space-around, center, column);
-		position: relative;
-		padding-top: 100px;
+	.speciesInfo {
+		@include size(80vh, 90vw);
 
-		&__video {
-			@include size(100vh, 100vw);
-
-			@include flexcenter(space-around, center, column);
-			//=================================================
-
-			@include phone {
-				@include flexcenter(center, center, column);
+		@include flexcenter(space-evenly, center, row);
+		@include title(abel, normal, none, 24px, $white, 1.5);
+		max-width: 1900px;
+		&__first {
+			@include size(100%, 35%);
+			text-align: start;
+			@include flexcenter(space-between, flex-start, column);
+			img {
+				padding: 15px;
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				@include size(100px, 100px);
 			}
-			iframe {
-				@include size(50vh, 90vw);
-				max-width: 900px;
-				//=================================================
+			.food {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
 
-				@include phone {
-					@include size(50vh, 90vw);
-					max-width: 90vw;
-					padding-bottom: 120px;
+				p {
+					max-width: 400px;
 				}
 			}
-			.photo {
-				@include size(70vh, 100vw);
+			.reproduction {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
 
-				@include flexcenter(center, center, row);
-				@include phone {
-					@include flexcenter(center, center, column);
-					@include size(50vh, 100vw);
+				p {
+					max-width: 300px;
 				}
-				img:first-child {
-					@include size(50vh, 40vw);
-					max-width: 600px;
+			}
+			.geo {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
 
-					@include phone {
-						@include size(auto, 90vw);
-						max-width: 90vw;
-						padding: 25px 0 25px 0;
-					}
-				}
-				img:nth-child(2) {
-					@include size(50vh, 40vw);
-
-					max-width: 600px;
-
-					@include phone {
-						@include size(auto, 90vw);
-						max-width: 90vw;
-
-						padding: 0px 0 25px 0;
-					}
+				p {
+					max-width: 350px;
 				}
 			}
 		}
-
-		&__tips {
-			position: relative;
-			color: white;
+		&__second {
+			@include size(60%, 30%);
 			@include flexcenter(center, center, column);
-			padding-bottom: 50px;
-			span {
-				font-size: 24px;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			.img {
+				@include size(100%, 100%);
+				max-height: 350px;
+				max-width: 350px;
+				background-image: url(../img/Species/clown/nemo.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
 			}
-			p {
-				max-width: 500px;
-				width: 90vw;
-				padding: 10px;
-				background-color: #025b83;
-				border-radius: 20px;
-				@include title(abel, normal, none, 18px, $white, 1.5);
+		}
+		&__third {
+			@include size(100%, 30%);
+
+			text-align: start;
+			@include flexcenter(space-between, flex-end, column);
+			img {
+				padding: 15px;
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				@include size(100px, 100px);
 			}
-			@include phone {
-				padding: 100px 0px 10px 0px;
+			.life {
+				img {
+					padding: 15px;
+					background-color: rgba(0, 0, 0, 0.3);
+					border-radius: 50%;
+				}
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
 			}
+			.depth {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+			}
+			.size {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+			}
+		}
+	}
+	.more {
+		@include flexcenter(center, center, column);
+		@include size(50vh, 100vw);
+		&__youKnow {
+			max-width: 600px;
+			background-color: #025a83;
+			padding: 10px;
+			border-radius: 35px;
+			@include title(abel, normal, none, 24px, $white, 1.5);
 		}
 	}
 }

@@ -35,3 +35,15 @@
 	opacity: 0;
 	transition: all 0.1s;
 }
+.profond[data-scroll] {
+	transition: all 2.5s;
+}
+.profond[data-scroll='in'] {
+	opacity: 1;
+}
+.profond[data-scroll='out'] {
+	transform: scale(0.1);
+	transform: translatex(400px);
+	opacity: 0;
+	transition: all 0.1s;
+}

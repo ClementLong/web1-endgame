@@ -1,75 +1,75 @@
 <template>
-  <div class="backgroundPage">
-    <headr />
+  <div class="species">
+    <div class="speciesVideoFrame">
+      <headr style="position:absolute;" />
+      <video loop muted autoplay>
+        <source src="@/video/clown.mp4" />
+      </video>
+    </div>
+    <!-- // -->
+    <div class="species__background">
+      <div class="speciesDescription">
+        <h1 class="speciesDescription__title">Le poisson-clown</h1>
 
-    <div class="firstFrame">
-      <h1>
-        <span>Orque</span>
-      </h1>
-      <div class="species">
-        <div class="species__spec">
-          <img src="@/img/Species/orque/orque.svg" class="nemo" alt />
+        <div class="speciesInformation">
+          <div class="speciesInformation__description">
+            <p>
+              Le poisson clown est un type de poisson qui vit dans les habitats d'eau salée. Les poissons-clowns sont généralement des poissons orange très brillants qui ont trois bandes blanches, une à la tête, au milieu et à la queue. Si vous regardez de très près, vous remarquerez peut-être qu'il y a de fines lignes noires autour des rayures blanches.
+              De plus, les extrémités de leurs nageoires ont une fine bande arrondie noire.
+            </p>
+          </div>
+          <div class="speciesInformation__image">
+            <img src="@/img/Species/clown/nemo2.svg" alt />
+          </div>
+        </div>
+      </div>
+      <!-- // -->
+      <div class="speciesInfo">
+        <div class="speciesInfo__first">
+          <div class="food">
+            <p>Habitude Alimentaire: petits poissons,des anchois, des mulets, des sardines</p>
+            <img src="@/img/Species/food.svg" alt />
+          </div>
+          <div class="reproduction">
+            <p>
+              Reproduction: Les poissons-clowns pondent leurs œufs par lots sur le corail.
+              Le poisson clown mâle construira un nid sur le corail près de l'anémone afin d'être protégé contre les prédateurs
+            </p>
+            <img src="@/img/Species/reproduction1.svg" alt />
+          </div>
+          <div class="geo">
+            <p>Zone geographique: Ocean Pacifique et Indien</p>
+            <img src="@/img/Species/geo.svg" alt />
+          </div>
+        </div>
+        <div class="speciesInfo__second">
+          <div class="img"></div>
+        </div>
+        <div class="speciesInfo__third">
+          <div class="life">
+            <img src="@/img/Species/life.svg" alt />
+            <p>Durée de vie: 3 - 5 ans</p>
+          </div>
+          <div class="depth">
+            <img src="@/img/Species/depth.svg" alt />
+
+            <p>Profondeur: 0 - 12 m</p>
+          </div>
+          <div class="size">
+            <img src="@/img/Species/size.svg" alt />
+
+            <p>Poids/Taille: 250g / 88 mm</p>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <div class="more__youKnow">
+          <h2>Le saviez-vous?</h2>
           <p>
-            Le grand requin blanc est l'un des plus grands prédateurs vivant actuellement dans les océans.
-            La partie dorsale présente une coloration grise parfois sombre qui contraste avec la blancheur du ventre. Le corps est massif et fusiforme.
-            Le museau est allongé et conique et les mâchoires sont équipées de quatre à six rangées de dents triangulaires et crantées, tranchantes comme des lames de rasoir.
+            Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
+            Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
           </p>
         </div>
-        <div class="species__info">
-          <div class="spec">
-            <p>
-              <span>Profondeur:</span>
-              0 - {{species}} m
-            </p>
-            <p>
-              <span>Durée de vie:</span> 17 - 29 ans
-            </p>
-            <p>
-              <span>Poids/Taille:</span>
-              7000kg / 9m
-            </p>
-          </div>
-          <div class="info">
-            <p>
-              <span>Zone geographique:</span> les régions arctiques et antarctiques jusqu'aux mers tropicales
-            </p>
-            <br />
-            <p>
-              <span>Habitude Alimentaire:</span>
-              Carnivore
-            </p>
-            <br />
-
-            <p>
-              <span>Reproduction:</span> L'accouplement des orques commence à l'automne et au début d'hiver.
-              Plusieurs groupes d'orques se réunissent alors pour former une harde (troupeau) avec des centaines d'individus.
-              La gestation dure normalement 14 mois
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="secondFrame">
-      <div class="secondFrame__video">
-        <iframe
-          src="https://www.youtube.com/embed/qg6s_9QfsQo"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-        <div class="photo">
-          <img src="@/img/Species/orque/orque2.svg" alt />
-          <img src="@/img/Species/orque/orque1.svg" alt />
-        </div>
-      </div>
-      <div class="secondFrame__tips">
-        <p>
-          <span>Le saviez-vous?</span>
-          <br />l’Orque est le super prédateur par excellence.
-          Située au sommet de la chaine alimentaire, on ne lui connaît aucun ennemi,
-          en dehors de l’homme
-        </p>
       </div>
     </div>
   </div>

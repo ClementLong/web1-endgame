@@ -14,8 +14,9 @@
           <br />la vie commence..
         </h2>
         <div class="btn-scroll">
-          <h2 class>Dive deeper</h2>
-          <img src="@/img/scroll-down.svg" alt />
+          <h2 class>{{info}}</h2>
+
+          <img alt />
         </div>
       </div>
     </div>
@@ -31,7 +32,6 @@
           <img src="@/img/bublle.svg" alt />
           <img src="@/img/bublle.svg" alt />
         </div>
-
         <div>
           <h3 class="scaner">Attention des espèces sont en approche !</h3>
           <br />
@@ -41,6 +41,7 @@
           </h3>
           <img src="@/img/scaner.svg" alt class="scan" />
         </div>
+        <p class="profond">150m</p>
       </div>
       <div class="three-h">
         <div>
@@ -76,8 +77,11 @@
             <br />N’oublie pas de clicker pour plus
             <br />d’informations
           </h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/clown" tag="button">
+            <img src="@/img/scaner.svg" alt class="scan" />
+          </router-link>
         </div>
+        <p class="profond">300m</p>
       </div>
       <div class="five-h">
         <div>
@@ -105,6 +109,7 @@
           <h3 class="scaner">Tu sais quoi faire !</h3>
           <img src="@/img/scaner.svg" alt class="scan" />
         </div>
+        <p class="profond">500m</p>
       </div>
       <div class="one-t">
         <div>
@@ -134,6 +139,7 @@
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
           <img src="@/img/scaner.svg" alt class="scan" />
         </div>
+        <p class="profond">1000m</p>
       </div>
       <div class="two-t">
         <div>
@@ -161,6 +167,7 @@
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
           <img src="@/img/scaner.svg" alt class="scan" />
         </div>
+        <p class="profond">2000m</p>
       </div>
       <div class="three-t">
         <div>
@@ -187,7 +194,8 @@
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
           <img src="@/img/scaner.svg" alt class="scan" />
-        </div>150
+        </div>
+        <p class="profond">3000m</p>
       </div>
       <div class="four-t">
         <div>
@@ -209,6 +217,7 @@
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
           <img src="@/img/scaner.svg" alt />
         </div>
+        <p class="profond">4000m</p>
       </div>
       <div class="five-t">
         <div>
@@ -248,21 +257,27 @@
 <script>
 import ScrollOut from "scroll-out";
 import naver from "../components/partials/Header.vue";
+
 export default {
   name: "secondPage",
   components: {
     naver
   },
+  data() {
+    return {
+      info: null
+    };
+  },
 
   mounted() {
-    this.so = ScrollOut({
+    ScrollOut({
       scope: this.$el,
       threshold: 0.5,
-      targets: [".bubble", ".scaner", ".scan"]
+      targets: [".bubble", ".scaner", ".scan", ".profond"]
     });
   },
   destroyed() {
-    this.so.teardown();
+    ScrollOut.teardown();
   }
 };
 </script>

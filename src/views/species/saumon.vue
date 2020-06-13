@@ -1,64 +1,75 @@
 <template>
-  <div class="backgroundPage">
-    <headr />
-    <div class="firstFrame">
-      <h1>
-        <span>Le saumon</span>
-      </h1>
-      <div class="species">
-        <div class="species__spec">
-          <img src="../../img/Species/saumon/saumon.svg" class="nemo" alt />
-          <p>Le saumon, ce poisson à la chair rose, a une vie plutôt particulière car elle se déroule dans deux eaux, la douce et la salée alors que la grande majorité des poissons vivent dans l'une ou dans l'autre. Il se reproduit et passe sa petite enfance dans l'eau douce et, quand il est en âge, vers deux ans, il s'en va vivre dans l'autre, celle de l'Atlantique ou du Pacifique pendant quelques années. Puis il revient sur son lieu de naissance : s'il est femelle, il pond, s'il est mâle, il bataille avec les autres pour lâcher sa semence sur les œufs fraîchement pondus.</p>
-        </div>
-        <div class="species__info">
-          <div class="spec">
-            <p>
-              <span>Profondeur:</span> 0 - 50 m
-            </p>
-            <p>
-              <span>Durée de vie:</span> 2 - 8 ans
-            </p>
-            <p>
-              <span>Poids/Taille:</span>
-              4 - 35kg / 45 - 60cm
-            </p>
-          </div>
-          <div class="info">
-            <p>
-              <span>Zone geographique:</span> Ocean Arctique Pacifique Atlantique
-            </p>
-            <br />
-            <p>
-              <span>Habitude Alimentaire:</span>Crustasés ( crevettes...)
-            </p>
-            <br />
-
-            <p>
-              <span>Reproduction:</span> Pond ses oeuf en eau douce
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="species">
+    <div class="speciesVideoFrame">
+      <headr style="position:absolute;" />
+      <video loop muted autoplay>
+        <source src="@/video/clown.mp4" />
+      </video>
     </div>
-    <div class="secondFrame">
-      <div class="secondFrame__video">
-        <iframe
-          src="https://www.youtube.com/embed/ys7Km8tAe2A"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+    <!-- // -->
+    <div class="species__background">
+      <div class="speciesDescription">
+        <h1 class="speciesDescription__title">Le poisson-clown</h1>
 
-        <div class="photo">
-          <img src="../../img/Species/clown/nemo2.svg" alt />
-          <img src="../../img/Species/clown/nemo1.svg" alt />
+        <div class="speciesInformation">
+          <div class="speciesInformation__description">
+            <p>
+              Le poisson clown est un type de poisson qui vit dans les habitats d'eau salée. Les poissons-clowns sont généralement des poissons orange très brillants qui ont trois bandes blanches, une à la tête, au milieu et à la queue. Si vous regardez de très près, vous remarquerez peut-être qu'il y a de fines lignes noires autour des rayures blanches.
+              De plus, les extrémités de leurs nageoires ont une fine bande arrondie noire.
+            </p>
+          </div>
+          <div class="speciesInformation__image">
+            <img src="@/img/Species/clown/nemo2.svg" alt />
+          </div>
         </div>
       </div>
-      <div class="secondFrame__tips">
-        <p>
-          <span>Le saviez-vous?</span>
-          <br />Après avoir passé des années dans l’océan, le saumon parcourt de phénoménales distances pour remonter la rivière qui l’a vu naître, afin de se reproduire à son tour.
-        </p>
+      <!-- // -->
+      <div class="speciesInfo">
+        <div class="speciesInfo__first">
+          <div class="food">
+            <p>Habitude Alimentaire: petits poissons,des anchois, des mulets, des sardines</p>
+            <img src="@/img/Species/food.svg" alt />
+          </div>
+          <div class="reproduction">
+            <p>
+              Reproduction: Les poissons-clowns pondent leurs œufs par lots sur le corail.
+              Le poisson clown mâle construira un nid sur le corail près de l'anémone afin d'être protégé contre les prédateurs
+            </p>
+            <img src="@/img/Species/reproduction1.svg" alt />
+          </div>
+          <div class="geo">
+            <p>Zone geographique: Ocean Pacifique et Indien</p>
+            <img src="@/img/Species/geo.svg" alt />
+          </div>
+        </div>
+        <div class="speciesInfo__second">
+          <div class="img"></div>
+        </div>
+        <div class="speciesInfo__third">
+          <div class="life">
+            <img src="@/img/Species/life.svg" alt />
+            <p>Durée de vie: 3 - 5 ans</p>
+          </div>
+          <div class="depth">
+            <img src="@/img/Species/depth.svg" alt />
+
+            <p>Profondeur: 0 - 12 m</p>
+          </div>
+          <div class="size">
+            <img src="@/img/Species/size.svg" alt />
+
+            <p>Poids/Taille: 250g / 88 mm</p>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <div class="more__youKnow">
+          <h2>Le saviez-vous?</h2>
+          <p>
+            Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
+            Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
+          </p>
+        </div>
       </div>
     </div>
   </div>
