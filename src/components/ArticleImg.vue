@@ -50,6 +50,7 @@ export default {
   }
   &__description {
     font-family: "Roboto";
+
     font-size: 16px;
     color: $white;
     line-height: 24px;
@@ -80,6 +81,7 @@ export default {
   }
 
   &__filter {
+
     position: absolute;
     background-color: $filterColor;
     width: 100vw;
@@ -87,5 +89,6 @@ export default {
     // z-index: -1;
     top: 0;
   }
+
 }
 </style>
