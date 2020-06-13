@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import mainPage from '@/views/MainPages.vue';
-import Team from '@/views/Team.vue';
 import secondPage from '@/views/SecondPage.vue';
+
 import clown from '@/views/species/PoissonClown.vue';
 import dauphin from '@/views/species/dauphin.vue';
 import mammiferes from '@/views/familles/Mammiferes.vue';
@@ -21,11 +21,6 @@ const routes = [
 		path: '/',
 		name: 'mainPage',
 		component: mainPage,
-	},
-	{
-		path: '/team',
-		name: 'Team',
-		component: Team,
 	},
 
 	{
