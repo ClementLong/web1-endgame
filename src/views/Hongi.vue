@@ -1,12 +1,10 @@
 <template>
   <div class="hongi">
-    <div class="hongiContenair">
-      <ArticleImg
-        :title="title"
-        :description="description"
-        :img="img"
-      ></ArticleImg>
-    </div>
+    <ArticleImg
+      :title="title"
+      :description="description"
+      :img="img"
+    ></ArticleImg>
   </div>
 </template>
 
@@ -14,7 +12,7 @@
 export default {
   data() {
     return {
-      img: require("../assets/img/backgroundHongi.svg"),
+      // img: require("../assets/img/backgroundHongi.svg"),
       title: "HONGI",
       description:
         "Le hongi est le salut traditionnel maori, l’origine de ce geste remonterait à la création de l'humanité.",
@@ -24,12 +22,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .hongiContenair {
-//   width: 100vw;
-//   height: 100vh;
-//   background-image: url("../assets/img/backgroundHongi.svg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: top center;
-// }
+@import "@/assets/css/styles.scss";
+.hongi {
+  background-image: url("../assets/img/backgroundHongi.svg");
+  @include backgroundImg(no-repeat, cover, top center);
+  width: 100vw;
+  height: 100vh;
+}
 </style>
