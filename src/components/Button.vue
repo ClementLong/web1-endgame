@@ -7,8 +7,8 @@
 <script>
 export default {
   props: {
-    buttonText: String
-  }
+    buttonText: String,
+  },
 };
 </script>
 
@@ -19,8 +19,9 @@ button {
   width: 199px;
   height: 36px;
   color: rgba(54, 58, 61, 0.92);
-  font-size: 13px;
+  font-size: 17px;
   line-height: 15px;
   font-family: "Roboto";
+  margin-top: 70px;
 }
 </style>

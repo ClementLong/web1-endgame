@@ -108,5 +108,6 @@ input[type="text"] {
   bottom: 0;
   color: white;
   font-size: 10px;
+  line-height: 20px;
 }
 </style>
