@@ -35,12 +35,13 @@ export default {
   }
   &__img {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
   }
+<<<<<<< Updated upstream
   &__filter {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -54,5 +55,20 @@ export default {
     height: 100%;
     z-index: -1;
   }
+=======
+  // &__filter {
+  // background-color: rgba(0, 0, 0, 0.5);
+  //   display: flex;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100vw;
+  //   height: 100%;
+  //   z-index: -1;
+  // }
+>>>>>>> Stashed changes
 }
 </style>

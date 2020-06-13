@@ -1,30 +1,40 @@
 <template>
   <div class="largeInformations">
-    <div class="largeInformations__filter">
+    <div classe="largeInformations__infos">
       <h1 class="largeInformations__title">{{ title }}</h1>
-      <p
-        class="largeInformations__description largeInformations__description--first"
-      >
-        {{ descriptionFirst }}
-      </p>
-      <p
-        class="largeInformations__description largeInformations__description--second"
-      >
-        {{ descriptionSecond }}
-      </p>
-      <p
-        class="largeInformations__description largeInformations__description--tirdh"
-      >
-        {{ descriptionThird }}
-      </p>
-      <p
-        class="largeInformations__description largeInformations__description--fourth"
-      >
-        {{ descriptionFourth }}
-      </p>
-      <div class="largeInformations__filter"></div>
-      <img :src="img" alt="" class="largeInformations__img" />
+
+      <div>
+        <p
+          class="largeInformations__description largeInformations__description--first"
+        >
+          {{ descriptionFirst }}
+        </p>
+      </div>
+
+      <div>
+        <p
+          class="largeInformations__description largeInformations__description--second"
+        >
+          {{ descriptionSecond }}
+        </p>
+      </div>
+      <div>
+        <p
+          class="largeInformations__description largeInformations__description--tirdh"
+        >
+          {{ descriptionThird }}
+        </p>
+      </div>
+
+      <div>
+        <p
+          class="largeInformations__description largeInformations__description--fourth"
+        >
+          {{ descriptionFourth }}
+        </p>
+      </div>
     </div>
+    <img :src="img" alt="" class="largeInformations__img" />
   </div>
 </template>
 
@@ -37,8 +47,8 @@ export default {
     descriptionThird: String,
     descriptionFourth: String,
     filter: String,
-    img: String
-  }
+    img: String,
+  },
 };
 </script>
 
@@ -52,22 +62,48 @@ export default {
   }
 
   &__description {
+    width: 562px;
     font-family: "Roboto";
     font-size: 24px;
     color: #ffffff;
   }
 
-  &__filter {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
+  // &__filter {
+  //   // background-color: rgba(0, 0, 0, 0.5);
+  //   width: 100vw;
+  //   height: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   z-index: -1;
+  // }
 
   // &__img {
   // }
+}
+
+.largeInformations__description {
+  color: #ffffff;
+  width: 562px;
+  font-family: "Roboto";
+  font-size: 24px;
+}
+
+.largeInformations__img {
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.largeInformations__infos {
+  display: flex;
+  position: relative;
+}
+
+.largeInformations__title {
+  color: #ffffff;
+  font-family: "CinzelDecorative";
+  font-size: 36px;
 }
 </style>
