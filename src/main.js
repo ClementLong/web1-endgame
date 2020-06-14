@@ -7,7 +7,7 @@ import articleVideo from "@/components/ArticleVideo.vue";
 import button from "@/components/Button.vue";
 import largeInformations from "@/components/LargeInformations.vue";
 import moreInformations from "@/components/MoreInformations.vue";
-import timeLineHover from "@/components/TimeLineHover.vue";
+import timeLine from "@/components/TimeLine.vue";
 import Audio from "@/components/Audio.vue";
 
 Vue.config.productionTip = false;
@@ -16,9 +16,8 @@ Vue.component("ArticleVideo", articleVideo);
 Vue.component("Button", button);
 Vue.component("LargeInformations", largeInformations);
 Vue.component("MoreInformations", moreInformations);
-Vue.component("TimeLineHover", timeLineHover);
+Vue.component("TimeLine", timeLine);
 Vue.component("Audio", Audio);
-
 
 new Vue({
   router,
