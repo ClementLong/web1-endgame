@@ -12,6 +12,10 @@
         />
       </router-link>
     </section>
+    <ArticleVideo
+      title="Et si vous aviez la même vue que les poissons ?"
+      text="Les coraux sont constitués de milliers de petits organismes appelés polybes, principalement formé d’une bouche et d’un estomac. Le squelette des polypes est constitué à l’exterieur de ses tissus et se compose de carbonate de calcium tout comme la roche calcaire. Le corail est également composé de micro algues qui vivent dans les cellules des polypes. Il est donc à la fois animal, minéral et végétale!"
+    />
     <section class="container__bottom">
       <router-link class="nextChapter" to="/chap5">
         <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
@@ -24,6 +28,7 @@
 import Header from "@/components/partials/Header.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
 import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
+import ArticleVideo from "@/components/partials/ArticleVideo.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 
 export default {
@@ -32,6 +37,7 @@ export default {
     Header,
     ProgressBar,
     ChapterTitleAndReturn,
+    ArticleVideo,
     NextChapterButton,
   },
 };
