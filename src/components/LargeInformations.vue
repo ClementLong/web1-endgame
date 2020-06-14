@@ -85,29 +85,4 @@ export default {
     font-size: 36px;
   }
 }
-
-.largeInformations__description {
-  color: #ffffff;
-  width: 562px;
-  font-family: "Roboto";
-  font-size: 24px;
-}
-
-.largeInformations__img {
-  left: 0;
-  top: 0;
-  z-index: -1;
-  position: absolute;
-}
-
-.largeInformations__infos {
-  display: flex;
-  position: relative;
-}
-
-.largeInformations__title {
-  color: #ffffff;
-  font-family: "CinzelDecorative";
-  font-size: 36px;
-}
 </style>

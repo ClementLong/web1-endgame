@@ -51,7 +51,6 @@ export default {
   }
   &__description {
     font-family: "Roboto";
-
     font-size: 16px;
     color: $white;
     line-height: 24px;
