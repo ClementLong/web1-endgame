@@ -1,8 +1,8 @@
 <template>
   <div class="template background">
     <Template link='/80s' />
-    <div>Mid-80s/Late 80s :</div>
-    <div>The First Steps</div>
+    <img id="traproll" src="../img/home/logo.png" />
+    <img id="sub" src="../img/home/subtitle.png" />
   </div>
 </template>
 
@@ -30,6 +30,22 @@ export default {
 
 .background {
   background-image: url("../img/home/background.png");
+  margin:0;
+  padding:0;
+  background-size: cover;
+}
+
+#traproll {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+#sub {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 </style>

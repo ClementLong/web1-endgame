@@ -31,5 +31,8 @@ export default {
     }
     .background1 {
         background-image: url('../img/backgrounds/background80s.png');
+        margin:0;
+        padding:0;
+        background-size: cover;
     }
 </style>
