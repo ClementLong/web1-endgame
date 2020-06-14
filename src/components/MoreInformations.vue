@@ -14,15 +14,9 @@ export default {
     title: String,
     description: String,
     filter: String,
-<<<<<<< Updated upstream
     img: String,
   },
 };
-=======
-    img: String
-  }
-}
->>>>>>> Stashed changes
 </script>
 
 <style lang="scss" scoped>
