@@ -26,7 +26,8 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
+@import "@/assets/css/styles.scss";
     .item1 {
   grid-area: header;
 }

@@ -28,7 +28,7 @@ export default {
             x.play();
             x.addEventListener("ended", myEnded);
             function myEnded() {
-                y.innerHTML = "<h1 class='hello'>Haero Mai François!</h1>";
+                y.innerHTML = "<h1 style='font-size:36px;margin-bottom: 10px;'>HAERO MAI FRANÇOIS!</h1><p style='font-size:20px;'>Bienvenue Francois!</p><p style='font-size:26px';>Bienvenue Francois dans ce voyage exceptionnel!</p><p style='font-size:26px;'>À travers la cérémonie d’accueil du powihiri tu pourras découvrir la culture maori.</p> <img src='../assets/img/group.png'><p style='font-size:19px;display:flex;flex-direction:row-reverse;'>Clique sur ce symbole pour avoir plus d’informations</p><button style='width:199px;height:36px;background-color:#FEEDCC;border:1px solid #FEEDCC;cursor:pointer;'>Découvrir la cérémonie</button>";
             }
         }
     },
@@ -38,7 +38,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
-
 .homepage__video, .homepage__video video {
   position: relative;
 }
@@ -50,7 +49,7 @@ export default {
 
 .homepage__text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
@@ -60,7 +59,7 @@ export default {
   font-family: "CinzelDecorative";
 }
 
-.hello {
+.test {
     font-size:36px;
     margin-bottom: 650px;
 }
