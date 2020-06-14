@@ -16,9 +16,9 @@ export default {
       // img: require("../assets/img/backgroundHongi.svg"),
       title: "HONGI",
       description:
-        "Le hongi est le salut traditionnel maori, l’origine de ce geste remonterait à la création de l'humanité."
+        "Le hongi est le salut traditionnel maori, l’origine de ce geste remonterait à la création de l'humanité.",
     };
-  }
+  },
 };
 </script>
 
