@@ -15,11 +15,7 @@ export default {
     description: String,
     filter: String,
     img: String,
-<<<<<<< Updated upstream
   },
-=======
-  }
->>>>>>> Stashed changes
 };
 </script>
 

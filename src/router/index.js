@@ -7,6 +7,7 @@ import Karanga from "../views/Karanga.vue";
 import Hongi from "../views/Hongi.vue";
 import Haka from "../views/Haka.vue";
 import Hangi from "../views/Hangi.vue";
+import Tatoo from "../views/Tatoo.vue";
 
 Vue.use(VueRouter);
 
@@ -14,7 +15,7 @@ Vue.use(VueRouter);
 // Chaque route doivent avoir au minimum un path et un component associé
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "Home",
     component: Home,
   },
@@ -47,6 +48,11 @@ const routes = [
     path: "/hangi",
     name: "Hangi",
     component: Hangi,
+  },
+  {
+    path: "/tatoo",
+    name: "Tatoo",
+    component: Tatoo,
   },
 ];
 

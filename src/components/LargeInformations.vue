@@ -53,7 +53,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.LargeInformations {
+@import "@/assets/css/styles.scss";
+
+.largeInformations {
   &__title {
     font-size: 36px;
     line-height: 49px;
@@ -67,43 +69,20 @@ export default {
     font-size: 24px;
     color: #ffffff;
   }
-
-  // &__filter {
-  //   // background-color: rgba(0, 0, 0, 0.5);
-  //   width: 100vw;
-  //   height: 100%;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   z-index: -1;
-  // }
-
-  // &__img {
-  // }
-}
-
-.largeInformations__description {
-  color: #ffffff;
-  width: 562px;
-  font-family: "Roboto";
-  font-size: 24px;
-}
-
-.largeInformations__img {
-  left: 0;
-  top: 0;
-  z-index: -1;
-  position: absolute;
-}
-
-.largeInformations__infos {
-  display: flex;
-  position: relative;
-}
-
-.largeInformations__title {
-  color: #ffffff;
-  font-family: "CinzelDecorative";
-  font-size: 36px;
+  &__img {
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+  }
+  &__infos {
+    display: flex;
+    position: relative;
+  }
+  &__title {
+    color: #ffffff;
+    font-family: "CinzelDecorative";
+    font-size: 36px;
+  }
 }
 </style>

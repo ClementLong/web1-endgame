@@ -17,9 +17,9 @@ export default {
   props: {
     img: String,
     title: String,
-    description: String
+    description: String,
     // filter: String //voir avec Bastien si on passe le filtre en props ou en css
-  }
+  },
 };
 </script>
 
@@ -29,6 +29,7 @@ export default {
 .articleImg {
   &__container {
     @include flexbox(column, center, center);
+    width: 100vw;
     height: 80vh;
     position: absolute;
     z-index: 1;
@@ -81,7 +82,6 @@ export default {
   }
 
   &__filter {
-
     position: absolute;
     background-color: $filterColor;
     width: 100vw;
@@ -89,6 +89,5 @@ export default {
     // z-index: -1;
     top: 0;
   }
-
 }
 </style>
