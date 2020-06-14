@@ -11,7 +11,8 @@
 
 export default {
   props: {
-    video: String
+    video: String,
+    display: String
   },
   methods: {
     myAudioFunction: function () {
