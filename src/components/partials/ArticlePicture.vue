@@ -1,8 +1,9 @@
 <template>
-  <body>
+  <section v-if="isClose">
     <div class="content">
       <div class="buttonSection">
         <svg
+          @click="isClose = !isClose"
           class="stopButton"
           width="40"
           height="40"
@@ -74,7 +75,7 @@
         </aside>
       </div>
     </div>
-  </body>
+  </section>
 </template>
 
 <script>
@@ -84,11 +85,16 @@ export default {
     title: String,
     text: String,
   },
+  data() {
+    return {
+      isClose: true,
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
-body {
+section {
   backdrop-filter: blur(8px);
   background: $backgroundBoxes;
   min-height: 50vh;

@@ -28,7 +28,7 @@ export default {
 
 <style scoped lang="scss">
 .container_currentChapter {
-  max-width: 300px;
+  max-width: 370px;
   padding: 8px;
   margin-left: 15px;
   font-family: $montserrat;
