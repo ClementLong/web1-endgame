@@ -1,8 +1,7 @@
 <template>
   <div class="karanga" id="karanga">
-
     <ArticleImg :title="title" :description="description" />
-
+    <TimeLine />
   </div>
 </template>
 
@@ -15,10 +14,7 @@ export default {
       description:
         "Un Karanga (appel, invocation) est un élément du protocole culturel du peuple maori d'Aotearoa en Nouvelle-Zélande. C'est un échange d'appels qui fait partie du powhiri, une cérémonie d'accueil maorie. Elle a lieu lorsqu'un groupe de visiteurs se déplace sur le marae ou dans la zone de réunion officielle. Le Karanga est effectué presque exclusivement par des femmes et en langue maorie, et est initié par le tangata whenua ou des hôtes, et répondu par les visiteurs.",
 
-
       scrollTop: 0
-
-
     };
   },
   created() {

@@ -9,7 +9,10 @@
         autocomplete="off"
         required
       />
-      <button class="home__button">Découvrir</button>
+
+      <router-link to="/intro"
+        ><button class="home__button">Découvrir</button></router-link
+      >
     </form>
     <div class="home__filter"></div>
     <div class="home__footer">

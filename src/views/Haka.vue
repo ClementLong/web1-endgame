@@ -1,6 +1,6 @@
 <template>
   <div class="haka">
-    <TimeLineHover />
+    <TimeLine />
   </div>
 </template>
 
