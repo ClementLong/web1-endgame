@@ -127,6 +127,7 @@
 				@include size(auto, 100%);
 			}
 		}
+		position: relative;
 	}
 	.more {
 		@include flexcenter(center, center, column);
@@ -138,5 +139,19 @@
 			border-radius: 35px;
 			@include title(abel, normal, none, 24px, $white, 1.5);
 		}
+	}
+	.backbtn {
+		max-width: 1900px;
+		@include size(100%, 90vw);
+		@include flexcenter(flex-start, center, row);
+
+		position: relative;
+		img {
+			padding: 0 20px 20px 0;
+		}
+	}
+	.line {
+		position: absolute;
+		bottom: 0;
 	}
 }

@@ -245,9 +245,10 @@
             cela exclut la possibilité d’un chant de baleine.
           </p>
         </div>
+        <img src="@/img/nautil.svg" alt />
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" width="100px" alt class="scan" />
+          <img src="@/img/scaner.svg" alt class="scan" />
         </div>
       </div>
     </div>

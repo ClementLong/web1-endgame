@@ -126,10 +126,7 @@
 		position: relative;
 		border-right: snow 5px solid;
 		@include size(200vh, 90vw);
-		@include flexcenter(space-between, center, column);
-		img {
-			@include size(500px, 50%);
-		}
+
 		.bubble {
 			@include size(100%, 100vw);
 			@include flexcenter(space-evenly, center, row);
