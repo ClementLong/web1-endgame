@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
-    .item1 {
+.item1 {
   grid-area: header;
 }
 .item2 {
@@ -50,15 +50,15 @@ export default {
   grid-area: F2;
 }
 
-.grid-container {
-  display: grid;
-  width: 80%;
-  float: right;
-  grid-template-areas:
-    "header header menu menu main main right right"
-    "header header menu menu main main right right"
-    "header header menu menu footer footer F1 F1"
-    "F2 F2 F2 F2 footer footer F1 F1"
-    "F2 F2 F2 F2 footer footer F1 F1";
-}
+// .grid-container {
+//   display: grid;
+//   width: 80%;
+//   float: right;
+//   grid-template-areas:
+//     "header header menu menu main main right right"
+//     "header header menu menu main main right right"
+//     "header header menu menu footer footer F1 F1"
+//     "F2 F2 F2 F2 footer footer F1 F1"
+//     "F2 F2 F2 F2 footer footer F1 F1";
+// }
 </style>
