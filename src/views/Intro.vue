@@ -3,13 +3,20 @@
     <video
       id="myVideo"
       name="test"
-      src="../assets/video/firstpage.mp4"
+      src="../assets/video/video-intro.mp4"
       muted
     ></video>
     <div class="homepage__text" id="test">
       <h1>VOYAGE À LA DECOUVERTE DE LA CULTURE MAORI</h1>
     </div>
     <ArticleVideo :filter="filter"></ArticleVideo>
+
+    <!-- <embed
+      id="myVideo"
+      name="test"
+      src="https://youtu.be/lhIoaYM_xFU"
+      allowfullscreen="true"
+    /> -->
   </div>
 </template>
 <script>
@@ -48,7 +55,10 @@ export default {
 .homepage__video video {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: top center;
+  //   width: 100vw;
+  height: 100vh;
+  //   background-position: 50%;
 }
 
 .homepage__text {
