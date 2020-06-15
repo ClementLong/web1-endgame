@@ -1,56 +1,24 @@
 <template>
   <div class="wero" id="wero">
-    <ArticleImg :title="msg" :description="msg2" :filter="filter"></ArticleImg>
-    <video
-      id="myVideo"
-      name="test"
-      src="../assets/video/video-wero.mp4"
-      muted
-    ></video>
+    <ArticleVideo :video="video" />
+    <ArticleImg :title="title" :description="description"></ArticleImg>
     <TimeLine />
   </div>
 </template>
 
-//
 <script>
-// export default {
-//   data() {
-//     return {
-//   msg2:
-//     "Lors de l’accueil des manuhiri (visiteurs) un des guerriers de la tribu s’avance pour effectuer une danse: Le Wero.Cette danse de guerrier permet au guerrier de confirmer les intentions des manhuri (visiteurs) et de les dissuader de les attaquer.Il dépose ensuite un rautapu (feuille) que le manuhiri (visiteur) ramasse en signe de paix ",
-//   msg: "WERO",
-//       filter: "filter",
-//     };
-//   },
-// };
-
 export default {
   data() {
     return {
-      msg: "WERO",
-      //   msg2:
-      //     "Lors de l’accueil des manuhiri (visiteurs) un des guerriers de la tribu s’avance pour effectuer une danse: Le Wero.Cette danse de guerrier permet au guerrier de confirmer les intentions des manhuri (visiteurs) et de les dissuader de les attaquer.Il dépose ensuite un rautapu (feuille) que le manuhiri (visiteur) ramasse en signe de paix ",
-      filter: "filter",
+      title: "wero",
+      description:
+        "Lors de l’accueil des manuhiri (visiteurs) un des guerriers de la tribu s’avance pour effectuer une danse Le Wero Cette danse permet au guerrier de confirmer les intentions des manhuri (visiteurs) et de les dissuader de les attaquer. Il dépose ensuite un rautapu (feuille) que le manuhiri (visiteur) ramasse en signe de paix",
+      video: require("@/assets/video/video-wero.mp4")
     };
-  },
-  mounted() {
-    this.myFunction();
-  },
-  methods: {
-    myFunction: function() {
-      var x = document.getElementById("myVideo");
-      x.play();
-    },
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
-// .wero {
-//   background-image: url("../assets/img/werodance.png");
-//   @include backgroundImg(no-repeat, cover, top center);
-//   width: 100vw;
-//   height: 100vh;
-// }
 </style>
