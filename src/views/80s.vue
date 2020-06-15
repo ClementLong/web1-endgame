@@ -1,7 +1,7 @@
 <template>
   <div class="template background1">
     <Template link='/1987home' />
-    <div>Mid-80s/Late 80s :</div>
+    <div>Mid-80s/Late 80s:</div>
     <div>The First Steps</div>
   </div>
 </template>
