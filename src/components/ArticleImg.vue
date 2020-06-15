@@ -27,9 +27,6 @@ export default {
 @import "@/assets/css/styles.scss";
 
 .articleImg {
-  // position: absolute;
-  // top: 0;
-  // z-index: -1;
   &__container {
     @include flexbox(column, center, center);
     width: 100vw;
