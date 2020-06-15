@@ -1,18 +1,60 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to your final web1 projet"/>
-  </div>
+	<div class="outer-wrapper">
+		<div class="wrapper">
+			<IntroductionTitle />
+			<Disclaimer />
+			<StartArticle use="Utilisez simplement votre doigt pour naviguer."/>
+		</div>
+	</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Disclaimer from "@/components/Disclaimer.vue";
+import IntroductionTitle from "@/components/IntroductionTitle.vue";
+import StartArticle from "@/components/StartArticle.vue";
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+	name: "Home",
+		components: {
+		Disclaimer,
+		IntroductionTitle,
+		StartArticle,
+	}
+};
 </script>
+
+<style scoped lang="scss">
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 300vw;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+	background-image: url("tmp-background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.outer-wrapper {
+	width: 100vh;
+	height: 100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+
+
+</style>

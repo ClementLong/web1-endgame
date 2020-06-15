@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view/>
+    <transition name="transition" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
-import Header from '@/components/partials/Header.vue'
-
 export default {
-  components: {
-    Header
-  }
-}
+  components: {}
+};
 </script>
 
 <style lang="scss">
@@ -21,6 +18,22 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #333;
+  font-family: $montserrat;
+}
+
+header {
+  display: flex;
+}
+
+.transition-enter,
+.transition-leave-to {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.transition-enter-active,
+.transition-leave-active {
+  transition: all 0.3s ease;
 }
 </style>
