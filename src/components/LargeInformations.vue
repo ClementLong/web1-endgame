@@ -52,10 +52,8 @@ export default {
     descriptionFirst: String,
     descriptionSecond: String,
     descriptionThird: String,
-    descriptionFourth: String,
-    filter: String,
-    img: String,
-  },
+    descriptionFourth: String
+  }
 };
 </script>
 
@@ -81,19 +79,19 @@ export default {
 
   text-align: justify;
 
-  &__img {
-    // background-image: url(../assets/img/backgroundTatouage4.svg);
-    // @include backgroundImg(no-repeat, cover, top center);
-    // width: 80vw;
-    // height: 100vh;
-    // right: 0;
-    // top: 0;
-    // z-index: -1;
-    // position: absolute;
-  }
+  // &__img {
+  // background-image: url(../assets/img/backgroundTatouage4.svg);
+  // @include backgroundImg(no-repeat, cover, top center);
+  // width: 80vw;
+  // height: 100vh;
+  // right: 0;
+  // top: 0;
+  // z-index: -1;
+  // position: absolute;
+  // }
 
-  &__info {
-  }
+  // &__info {
+  // }
 
   // @include flexbox(column, center, center);
   // display: flex;
