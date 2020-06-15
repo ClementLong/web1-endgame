@@ -3,9 +3,23 @@
     <video
       id="myVideo"
       name="test"
-      src="../assets/video/firstpage.mp4"
+      src="../assets/video/video-intro.mp4"
+      <!--
       muted
-    ></video>
+      --
+    >
+      >
+    </video>
+    <!-- <embed
+      id="myVideo"
+      name="test"
+      src="https://www.youtube.com/watch?v=lhIoaYM_xFU"
+      muted
+      fullscreen="true"
+      width="425"
+      height="344"
+    /> -->
+
     <div class="homepage__text" id="test">
       <h1>VOYAGE À LA DECOUVERTE DE LA CULTURE MAORI</h1>
     </div>
@@ -40,7 +54,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
-
 .homepage__video,
 .homepage__video video {
   position: relative;
@@ -53,7 +66,7 @@ export default {
 
 .homepage__text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -63,7 +76,7 @@ export default {
   font-family: "CinzelDecorative";
 }
 
-.hello {
+.test {
   font-size: 36px;
   margin-bottom: 650px;
 }
