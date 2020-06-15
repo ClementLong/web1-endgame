@@ -17,9 +17,9 @@ export default {
   props: {
     img: String,
     title: String,
-    description: String
+    description: String,
     // filter: String //voir avec Bastien si on passe le filtre en props ou en css
-  }
+  },
 };
 </script>
 
@@ -36,7 +36,8 @@ export default {
   }
   &__title {
     color: white;
-    font-family: "CinzelDecorative";
+    font-family: $Cinzel;
+
     margin-bottom: 100px;
     font-size: 24px;
     text-transform: uppercase;
