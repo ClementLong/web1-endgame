@@ -1,40 +1,47 @@
 <template>
   <div class="largeInformations">
-    <div classe="largeInformations__infos">
-      <h1 class="largeInformations__title">{{ title }}</h1>
+    <div class="largeInformations__img"></div>
+    <!-- <div class="largeInformations__img">
+      <img :src="img" alt="" />
+    </div> -->
+    <div class="largeInformations__contenair">
+      <div classe="largeInformations__infos">
+        <div class="largeInformations__title">
+          <h1>{{ title }}</h1>
+        </div>
 
-      <div>
-        <p
-          class="largeInformations__description largeInformations__description--first"
-        >
-          {{ descriptionFirst }}
-        </p>
-      </div>
+        <div>
+          <p
+            class="largeInformations__description largeInformations__description--first"
+          >
+            {{ descriptionFirst }}
+          </p>
+        </div>
 
-      <div>
-        <p
-          class="largeInformations__description largeInformations__description--second"
-        >
-          {{ descriptionSecond }}
-        </p>
-      </div>
-      <div>
-        <p
-          class="largeInformations__description largeInformations__description--tirdh"
-        >
-          {{ descriptionThird }}
-        </p>
-      </div>
+        <div>
+          <p
+            class="largeInformations__description largeInformations__description--second"
+          >
+            {{ descriptionSecond }}
+          </p>
+        </div>
+        <div>
+          <p
+            class="largeInformations__description largeInformations__description--tirdh"
+          >
+            {{ descriptionThird }}
+          </p>
+        </div>
 
-      <div>
-        <p
-          class="largeInformations__description largeInformations__description--fourth"
-        >
-          {{ descriptionFourth }}
-        </p>
+        <div>
+          <p
+            class="largeInformations__description largeInformations__description--fourth"
+          >
+            {{ descriptionFourth }}
+          </p>
+        </div>
       </div>
     </div>
-    <img :src="img" alt="" class="largeInformations__img" />
   </div>
 </template>
 
@@ -56,6 +63,44 @@ export default {
 @import "@/assets/css/styles.scss";
 
 .largeInformations {
+  background-image: url(../assets/img/backgroundTatouage4.svg);
+  @include backgroundImg(no-repeat, cover, top center);
+  width: 80vw;
+  height: 200vh;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+
+  &__contenair {
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+  }
+
+  text-align: justify;
+
+  &__img {
+    // background-image: url(../assets/img/backgroundTatouage4.svg);
+    // @include backgroundImg(no-repeat, cover, top center);
+    // width: 80vw;
+    // height: 100vh;
+    // right: 0;
+    // top: 0;
+    // z-index: -1;
+    // position: absolute;
+  }
+
+  &__info {
+  }
+
+  // @include flexbox(column, center, center);
+  // display: flex;
+  // justify-content: column;
+  // flex-direction: center;
+  // align-items: center;
+
   &__title {
     font-size: 36px;
     line-height: 49px;
@@ -68,15 +113,27 @@ export default {
     font-family: "Roboto";
     font-size: 24px;
     color: #ffffff;
+
+    &--first {
+      margin-top: 80px;
+    }
+
+    &--second {
+      margin-top: 200px;
+    }
+
+    &--tirdh {
+      margin-top: 200px;
+    }
+
+    &--fourth {
+      margin-top: 200px;
+    }
   }
-  &__img {
-    left: 0;
-    top: 0;
-    z-index: -1;
-    position: absolute;
-  }
+
   &__infos {
-    display: flex;
+    text-align: justify;
+    // display: flex;
     position: relative;
   }
   &__title {
