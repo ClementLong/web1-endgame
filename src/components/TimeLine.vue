@@ -121,8 +121,8 @@ export default {
 @import "@/assets/css/styles.scss";
 
 .timeLine {
-  height: 100vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
 
   &__containt {
     height: 100px;
@@ -191,7 +191,6 @@ export default {
   }
 
   &__containerImg {
-    //display: none;
     width: 100vw;
     @include flexbox(row, space-around, baseline);
   }
@@ -284,17 +283,11 @@ export default {
     }
   }
 
-  &__filter {
-    background-color: $filterColor;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
-}
-
-.is-visible {
-  display: block;
-  // width: 100vw;
-  // @include flexbox(row, space-around, baseline);
+  // &__filter {
+  //   background-color: $filterColor;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   z-index: -1;
+  // }
 }
 </style>
