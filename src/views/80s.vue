@@ -1,7 +1,7 @@
 <template>
   <div class="template background1">
     <Template link='/1987home' />
-    <div>Mid-80s/Late 80s :</div>
+    <div id="mid">Mid-80s/Late 80s :</div>
     <div>The First Steps</div>
   </div>
 </template>
@@ -34,5 +34,9 @@ export default {
         margin:0;
         padding:0;
         background-size: cover;
+    }
+    #mid {
+        text-align: center;
+        padding-top: 250px;
     }
 </style>

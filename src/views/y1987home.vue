@@ -1,6 +1,9 @@
 <template>
   <div class="template background1">
     <Template link='/1987joke' />
+    <h1 id="date">1987</h1>
+    <h2 id="connection">The First Rap/Rock connection</h2>
+    <img id="g4" src="../img/group4.png" />
   </div>
 </template>
 
@@ -29,5 +32,20 @@ export default {
     }
      .background1 {
         background-image: url('../img/backgrounds/background80s.png');
+    }
+    #date {
+        color: white;
+        padding-top: 190px;
+        margin-left: 250px;
+        font-size: 100px;
+    }
+    #connection {
+        color: white;
+        margin-left: 250px;
+        font-size: 50px;
+    }
+    #g4 {
+        margin-left: 850px;
+        z-index: 2;
     }
 </style>
