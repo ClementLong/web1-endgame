@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div>
     <section class="container__top">
       <Header />
       <ProgressBar value="5" />
@@ -23,11 +23,9 @@
       tabindex="0"
     ></iframe>
     <section class="container__bottom">
-      <router-link class="nextChapter" to="/chap1">
-        <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
-      </router-link>
+      <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
     </section>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -48,6 +46,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 body {
   position: relative;
   @include format_vw-vh;
