@@ -17,9 +17,9 @@ export default {
   props: {
     img: String,
     title: String,
-    description: String,
+    description: String
     // filter: String //voir avec Bastien si on passe le filtre en props ou en css
-  },
+  }
 };
 </script>
 
@@ -27,6 +27,9 @@ export default {
 @import "@/assets/css/styles.scss";
 
 .articleImg {
+  // position: absolute;
+  // top: 0;
+  // z-index: -1;
   &__container {
     @include flexbox(column, center, center);
     width: 100vw;
@@ -61,16 +64,16 @@ export default {
     @include medium {
       font-size: 18px;
       line-height: 27px;
-      padding-right: 14px;
-      padding-left: 14px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
     @include large {
       font-size: 22px;
       line-height: 33px;
       padding-right: 110px;
       padding-left: 110px;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 60px;
+      padding-left: 60px;
     }
     @include extraLarge {
       font-size: 24px;
