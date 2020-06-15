@@ -8,7 +8,7 @@
           currentChapter="00"
           chapter="07"
           title="Visitez les récifs"
-          reviewChapter="revoir le chapitre précédent"
+          reviewChapter="revoir l'introduction"
         />
       </router-link>
     </section>
@@ -46,6 +46,7 @@ export default {
   },
 };
 </script>
+
 <style scoped lang="scss">
 body {
   position: relative;

@@ -6,7 +6,7 @@
       <NextChapterButton msg="PASSER L'INTRODUCTION" />
     </router-link>
     <!-- Pour tester il faut mettre un fichier "video.mp4" dans le dossier public -->
-    <video :src="info" autoplay loop>
+    <video :src="video" autoplay loop>
       Votre navigateur ne supporte pas la vidéo.
     </video>
   </div>
@@ -26,13 +26,14 @@ export default {
   },
   data() {
     return {
-      info: null,
+      video: null,
     };
   },
   mounted() {
     axios
       .get("http://167.71.55.113/api/page/2")
-      .then((response) => (this.info = response.data.data.video));
+      .then((response) => (this.video = response.data.data.video));
+    document.querySelector('video').play();
   },
 };
 </script>

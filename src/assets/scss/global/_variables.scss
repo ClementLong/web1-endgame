@@ -123,7 +123,7 @@ $desktop-megaLarge_2368: 2368px;
 
 @mixin background-boxes {
   background: $backgroundBoxes;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   border-radius: 8px;
 }
 

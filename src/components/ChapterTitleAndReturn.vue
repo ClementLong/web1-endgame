@@ -21,17 +21,18 @@ export default {
     currentChapter: String,
     chapter: String,
     title: String,
-    reviewChapter: String
-  }
+    reviewChapter: String,
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .container_currentChapter {
-  max-width: 300px;
+  max-width: 370px;
   padding: 8px;
   margin-left: 15px;
   font-family: $montserrat;
+  position: fixed;
 
   @include tablet-up {
     max-width: 850px;
