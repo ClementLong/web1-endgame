@@ -18,8 +18,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #333;
+  background-color: #333;
   font-family: $montserrat;
+}
+
+body {
+  background-color: #333;
 }
 
 header {
@@ -34,6 +38,6 @@ header {
 
 .transition-enter-active,
 .transition-leave-active {
-  transition: all 0.3s ease;
+  transition: all 250ms ease;
 }
 </style>
