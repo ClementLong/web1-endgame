@@ -3,7 +3,7 @@
     <section class="container__top">
       <Header />
       <ProgressBar value="25" />
-      <router-link class="previousChapter" to="/chap1">
+      <router-link class="previousChapter" to="/chap/1">
         <ChapterTitleAndReturn
           currentChapter="02"
           chapter="07"
@@ -13,7 +13,7 @@
       </router-link>
     </section>
     <section class="container__bottom">
-      <router-link class="nextChapter" to="/chap3">
+      <router-link class="nextChapter" to="/chap/3">
         <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
       </router-link>
     </section>
@@ -46,9 +46,9 @@
   <transition name="transition" mode="out-in">
       <router-view />
   </transition>
-    <video :src="data.video" autoplay loop>
+  <video :src="data.video" autoplay loop>
       Votre navigateur ne supporte pas la vidéo.
-    </video>
+  </video>
   </body>
 </template>
 
