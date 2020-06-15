@@ -1,80 +1,106 @@
 <template>
-  <div class="homepage__video">
-    <video
-      id="myVideo"
-      name="test"
-      src="../assets/video/video-intro.mp4"
-      muted
-    ></video>
-    <div class="homepage__text" id="test">
-      <h1>VOYAGE À LA DECOUVERTE DE LA CULTURE MAORI</h1>
+  <div class="intro">
+    <ArticleVideo :video="video" />
+    <div class="intro__wrapper">
+      <h1 class="intro__title">{{ title }}</h1>
+      <p class="intro__message">
+        À travers la cérémonie d’accueil du powihiri tu pourras découvrir la
+        culture maori.
+      </p>
+      <div class="intro__container">
+        <img
+          src="@/assets/icon/moreInformationsIcon.svg"
+          alt="symbôle maori"
+          class="intro__moreInformationsIcon"
+        />
+        <p class="intro__explain">
+          Clique sur ce symbole pour avoir plus d’informations
+        </p>
+      </div>
+      <router-link to="/wero">
+        <button class="intro__button">decouvrir la ceremonie</button>
+      </router-link>
     </div>
-    <ArticleVideo :filter="filter"></ArticleVideo>
-
-    <!-- <embed
-      id="myVideo"
-      name="test"
-      src="https://youtu.be/lhIoaYM_xFU"
-      allowfullscreen="true"
-    /> -->
+    <div class="intro__filter"></div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
     return {
-      filter: "filter",
+      video: require("@/assets/video/firstpage.mp4")
     };
-  },
-  mounted() {
-    this.myFunction();
-  },
-  methods: {
-    myFunction: function() {
-      var x = document.getElementById("myVideo");
-      var y = document.getElementById("test");
-
-      x.play();
-      x.addEventListener("ended", myEnded);
-      function myEnded() {
-        y.innerHTML =
-          "<h1 style='font-size:36px;margin-bottom: 10px;'>HAERO MAI FRANÇOIS!</h1><p style='font-size:20px;'>Bienvenue Francois!</p><p style='font-size:26px';>Bienvenue Francois dans ce voyage exceptionnel!</p><p style='font-size:26px;'>À travers la cérémonie d’accueil du powihiri tu pourras découvrir la culture maori.</p> <img src='../assets/img/group.png'><p style='font-size:19px;display:flex;flex-direction:row-reverse;'>Clique sur ce symbole pour avoir plus d’informations</p><button style='width:199px;height:36px;background-color:#FEEDCC;border:1px solid #FEEDCC;cursor:pointer;'>Découvrir la cérémonie</button>";
-      }
-    },
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
 
-.homepage__video,
-.homepage__video video {
-  position: relative;
-}
-.homepage__video video {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  //   width: 100vw;
-  height: 100vh;
-  //   background-position: 50%;
-}
+.intro {
+  &__wrapper {
+    height: 60vh;
+    @include flexbox(column, space-around, center);
+    font-family: "robotto";
+    font-size: 16px;
+    color: $white;
+    margin: 10px;
+    text-align: center;
+    line-height: 24px;
+    @include medium {
+      font-size: 18px;
+    }
+    @include large {
+      font-size: 22px;
+    }
+  }
 
-.homepage__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 60px;
-  line-height: 49px;
-  color: #ffffff;
-  font-family: "CinzelDecorative";
-}
+  &__container {
+    @include flexbox(column, center, center);
+    @include medium {
+      @include flexbox(row, center, center);
+    }
+  }
 
-.hello {
-  font-size: 36px;
-  margin-bottom: 650px;
+  &__explain {
+    margin-top: 10px;
+    @include medium {
+      margin-left: 10px;
+    }
+  }
+
+  &__button {
+    background-color: #feedcc;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 180px;
+    height: 36px;
+
+    @include medium {
+      font-size: 12px;
+      width: 200px;
+      height: 40px;
+    }
+
+    @include extraLarge {
+      width: 230px;
+      height: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__filter {
+    background-color: $filterColor;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
 }
 </style>
