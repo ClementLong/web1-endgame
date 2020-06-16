@@ -2,7 +2,7 @@
   <div class="template background4">
     <Template link='/' />
     <div>
-        <p class="fact2_2008__text1">“808s was the first album of that kind, you know? It was the first, like, black new wave album.”
+        <p class="fact2_2008__text1 legend">“808s was the first album of that kind, you know? It was the first, like, black new wave album.”
 - Kanye West</p>
     </div >
 

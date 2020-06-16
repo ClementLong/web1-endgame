@@ -41,7 +41,4 @@ export default {
         z-index: 10;
     }
 
-    .textG {
-        color: white;
-    }
 </style>

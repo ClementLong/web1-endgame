@@ -3,7 +3,7 @@
         <Template link='/2008fact' />
         <div class="home2008__text">
             <p class= "home2008__text__year title">2008</p>
-            <p class= "home2008__text__fact textG">Heartbroken Kanye West brings vulnerability to Hip Hop </p>
+            <p class= "home2008__text__fact legend">Heartbroken Kanye West brings vulnerability to Hip Hop </p>
         </div>
         <div  >
             <img class= "home2008__image" src="../img/kanyewest.png" alt="kanye">   
