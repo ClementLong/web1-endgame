@@ -68,6 +68,80 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
+      linkVideo : null,
+      currentChapitre : "0",
+      chapitres : {
+      "0": {
+        currentChapter: "00",
+        chapter: "07",
+        value: 10,
+        title: "Bienvenue dans la mer de Corail",
+        reviewChapter: "Revoir l'introduction",
+        redirectionPageTo: "/intro",
+        nextChapter: "Passer au chapitre suivant",
+        iframe : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156449.32414891524!2d152.61685865575492!3d-22.309161340170448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6be685c1eee86d69%3A0x6ceefcee6bc6dead!2sDicks%20Reef!5e1!3m2!1sfr!2sfr!4v1591974235777!5m2!1sfr!2sfr"
+      },
+      "1": {
+        currentChapter: "01",
+        chapter: "07",
+        value: 25,
+        title: "Qu'est-ce qu'un corail?",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap0",
+        nextChapter: "Passer au chapitre suivant"
+      },
+      "2": {
+        currentChapter: "02",
+        chapter: "07",
+        value: 35,
+        title: "Quel est leur rôle?",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap1",
+        nextChapter: "Passer au chapitre suivant",
+        pathNextChapter: "/chap3"
+      },
+      "3": {
+        currentChapter: "03",
+        chapter: "07",
+        value: 50,
+        title: "Mais que se passe t-il ?",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap2",
+        nextChapter: "Passer au chapitre suivant",
+        pathNextChapter: "/chap4"
+      },
+      "4": {
+        currentChapter: "04",
+        chapter: "07",
+        value: 60,
+        title: "Le blanchissement devient régulier",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap3",
+        nextChapter: "Passer au chapitre suivant",
+        pathNextChapter: "/chap5"
+      },
+      "5": {
+        currentChapter: "05",
+        chapter: "07",
+        value: 75,
+        title: "Aujourd’hui, 50% sont déjà morts",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap4",
+        nextChapter: "Passer au chapitre suivant",
+        pathNextChapter: "/chap6"
+      },
+      "6": {
+        currentChapter: "06",
+        chapter: "07",
+        value: 90,
+        title: "Il est encore temps d'agir",
+        reviewChapter: "Revoir le chapitre précédent",
+        redirectionPageTo: "/chap5",
+        nextChapter: "Passer au chapitre suivant",
+        pathNextChapter: "/assos"
+      } 
+=======
       linkVideo: null,
       music: null,
       currentChapitre: 0,
@@ -143,6 +217,7 @@ export default {
           nextChapter: "Passer au chapitre suivant",
           pathNextChapter: "/assos"
         }
+>>>>>>> 0b2d5c634a22aefede82ea9bd3272a0a6b031527
       }
     };
   },
