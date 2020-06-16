@@ -8,7 +8,8 @@
   </div>
 </template>
 <script>
-import contentServices from "@/services/contentService.js";
+// import contentServices from "@/services/contentService.js";
+
 export default {
   data() {
     return {
@@ -17,42 +18,43 @@ export default {
       title: "wero",
       description:
         "Lors de l’accueil des manuhiri (visiteurs) un des guerriers de la tribu s’avance pour effectuer une danse : le Wero. Cette danse permet au guerrier de confirmer les intentions des manhuri (visiteurs) et de les dissuader de les attaquer. Il dépose ensuite un rautapu (feuille) que le manuhiri (visiteur) ramasse en signe de paix.",
-      video: require("@/assets/video/video-wero.mp4"),
+      video: require("@/assets/video/video-wero.mp4")
     };
   },
-  mounted() {
 
+  // mounted() {
+  //   contentServices.getArticles().then(response => {
+  //     contentServices.getArticles().then(response => {
+  //       console.log(response.data.articles);
+  //     });
+  //   });
+  // },
+  mounted() {
     this.myFunction();
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     myFunction: function() {
       var x = document.getElementById("myVideo");
       x.play();
     },
-    handleScroll (event) {
-      this.scrollTop = event.target.scrollingElement.scrollTop
-      var maxScrolldown = event.target.scrollingElement.scrollHeight - event.target.scrollingElement.clientHeight;
+    handleScroll(event) {
+      this.scrollTop = event.target.scrollingElement.scrollTop;
+      var maxScrolldown =
+        event.target.scrollingElement.scrollHeight -
+        event.target.scrollingElement.clientHeight;
       //console.log(this.scrollTop)
       if (this.scrollTop >= maxScrolldown) {
         window.location.href = "http://localhost:8080/karanga";
       }
-    },
-  },
-};
-</script>
-
-    contentServices.getArticles().then((response) => {
-      console.log(response.data.articles);
-    });
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped></style>
-

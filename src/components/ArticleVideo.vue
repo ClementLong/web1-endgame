@@ -1,6 +1,6 @@
 <template>
   <div class="articleVideo">
-    <video autoplay muted class="articleVideo__video">
+    <video autoplay class="articleVideo__video" id="video">
       <source :src="video" type="video/mp4" />
       Your browser does not support the video tag.
     </video>

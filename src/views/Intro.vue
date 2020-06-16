@@ -1,5 +1,6 @@
 <template>
   <div class="intro">
+    <Muted />
     <ArticleVideo :video="video" />
     <div class="intro__wrapper">
       <h1 class="intro__title">{{ title }} {{ name }}</h1>
@@ -62,6 +63,7 @@ export default {
 
   &__title {
     text-transform: uppercase;
+    font-size: $CinzelDecorative;
     @include extraLarge {
       font-size: 24px;
     }
@@ -97,7 +99,6 @@ export default {
   }
 
   &__explain {
-    margin-top: 10px;
     @include medium {
       margin-left: 10px;
     }

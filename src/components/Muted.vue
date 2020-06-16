@@ -1,13 +1,17 @@
 <template>
   <div class="mutedContainer">
-    <button @click="mute" class="mutedContainer__mutedButton">
+    <button
+      class="mutedContainer__muteButton mutedContainer__muteButton--mute"
+      id="unmuteIcon"
+      v-on:click="mute"
+      :class="[isVisible ? visible : display]"
+    >
       <svg
         width="40"
         height="40"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        :class="[active ? activeClass : '']"
       >
         " >
         <path
@@ -21,14 +25,18 @@
         />
       </svg>
     </button>
-    <button class="mutedContainer__unmutedButton">
+    <button
+      class="mutedContainer__muteButton mutedContainer__muteButton--unmute"
+      id="muteIcon"
+      v-on:click="unmute"
+      :class="[isVisible ? display : visible]"
+    >
       <svg
         width="40"
         height="40"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="mutedContainer__unmutedIcon"
       >
         <path
           d="M34.1501 5.85114C26.3509 -1.95071 13.6592 -1.95005 5.85939 5.85114C2.08116 9.63034 0 14.6555 0 20.0001C0 25.3448 2.08116 30.3699 5.85939 34.1491C9.75898 38.0504 14.8822 40 20.0047 40C25.1273 40 30.2505 38.0497 34.1501 34.1491C41.95 26.3473 41.95 13.653 34.1501 5.85114ZM6.80228 6.79427C10.4425 3.15381 15.2236 1.33358 20.0047 1.33358C24.5778 1.33358 29.1489 3.00373 32.7238 6.33471L28.0067 11.053V6.73157C28.0067 5.97987 27.6172 5.3082 26.9644 4.93535C26.3122 4.56117 25.5354 4.5665 24.8872 4.94803C24.8452 4.97271 24.8066 5.00205 24.7712 5.0354L15.9411 13.2575C15.8418 13.3055 15.7324 13.3302 15.6217 13.3302H10.0711C8.93012 13.3302 8.00123 14.2593 8.00123 15.4005V23.9334C8.00123 25.0746 8.92945 26.0038 10.0711 26.0038H13.0598L6.34217 32.7231C3.11007 29.2554 1.33365 24.7651 1.33365 20.0001C1.33365 15.0117 3.27611 10.322 6.80228 6.79427ZM14.3941 24.6691H10.0717C9.6663 24.6691 9.33555 24.3389 9.33555 23.9327V15.3999C9.33555 14.9943 9.66563 14.6635 10.0717 14.6635H15.6224C15.9898 14.6635 16.3525 14.5654 16.6706 14.378C16.7126 14.354 16.752 14.3247 16.788 14.2906L25.6194 6.06658C25.9295 5.91584 26.1982 6.03123 26.3029 6.09126C26.4136 6.15596 26.673 6.34605 26.673 6.73091V12.3864L14.3941 24.6691ZM26.673 14.2733V32.6017C26.673 32.9865 26.4136 33.1766 26.3022 33.2407C26.1969 33.3007 25.9275 33.4154 25.6187 33.2653L16.7873 25.0413C16.7513 25.0073 16.712 24.9779 16.67 24.9539C16.5206 24.8659 16.3592 24.8012 16.1945 24.7538L26.673 14.2733ZM33.2072 33.206C26.0855 40.3288 14.5975 40.4789 7.28573 33.6655L14.9462 26.0031H15.6217C15.7324 26.0031 15.8411 26.0278 15.9411 26.0758L24.7712 34.2985C24.8066 34.3319 24.8459 34.3612 24.8872 34.3859C25.2153 34.5787 25.5761 34.6754 25.9368 34.6754C26.2896 34.6754 26.6423 34.5833 26.9644 34.3986C27.6172 34.0251 28.0067 33.3534 28.0067 32.6023V12.9393L33.6667 7.27784C40.4789 14.5915 40.3289 26.0825 33.2072 33.206Z"
@@ -38,29 +46,54 @@
     </button></div
 ></template>
 
+.
 <script>
 export default {
   data() {
     return {
-      active: false,
-      activeClass: "activeLink"
+      isVisible: true,
+      display: "displayed",
+      visible: "visible"
     };
+  },
+  methods: {
+    mute() {
+      document.getElementById("video").muted = true;
+      this.isVisible = !this.isVisible;
+    },
+    unmute() {
+      document.getElementById("video").muted = false;
+      this.isVisible = !this.isVisible;
+    }
   }
-  // methods: {
-  //   mute() {
-  //     let mute = document.getElementById("video");
-  //   }
-  // }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
-.activeLink {
-  display: none;
-}
+
 .mutedContainer {
   position: absolute;
   z-index: 2;
+  right: 10px;
+  top: 10px;
+
+  &__muteButton {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    &--unmute {
+      display: none;
+    }
+  }
+}
+.visible {
+  display: block;
+}
+
+.displayed {
+  display: none;
 }
 </style>
