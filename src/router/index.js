@@ -5,10 +5,7 @@ import Team from "../views/Team.vue";
 import Intro from "../views/Intro.vue";
 import map from "@/views/Map.vue";
 import Chapitre from "@/views/Chapitre.vue";
-// import ArticlePicture1 from "@/views/ArticlePicture1.vue";
-// import ArticlePicture2 from "@/views/ArticlePicture2.vue";
-// import ArticlePicture4 from "@/views/ArticlePicture4.vue";
-// import ArticlePicture5 from "@/views/ArticlePicture5.vue";
+import Article from "@/views/Article.vue";
 // import Quizz1 from "@/views/Quizz1.vue";
 // import Quizz2 from "@/views/Quizz2.vue";
 // import Quizz3 from "@/views/Quizz3.vue";
@@ -51,7 +48,11 @@ const routes = [
     path: "/chapitre/:number",
     name: "chapitre",
     component: Chapitre,
-  },
+  },{
+    path: "/article/:number",
+    name: "article",
+    component: Article
+  }
 ];
 
 const router = new VueRouter({

@@ -231,4 +231,12 @@ progress[value][data-v-c55e1cb4] {
   padding: 9px 4px 9px 11px;
   display: none;
 }
+
+.coralButton {
+    position: fixed;
+    right: 5vw;
+    top: 10vh;
+    z-index: 1;
+}
+
 </style>
