@@ -40,8 +40,7 @@ export default {
         left: calc((100% - 66px) / 2);
         z-index: 10;
     }
-
-    
+ 
 .legend {
   color: white;
   font-size: 1.5em;

@@ -1,10 +1,8 @@
 <template>
   <div class="template background1">
     <Template link='/1987home' />
-    <div class="title">
-      <h1>Mid 80s/Late 80s</h1>
-      <h1>The First Steps</h1>
-    </div>
+    <div>Mid-80s/Late 80s:</div>
+    <div>The First Steps</div>
   </div>
 </template>
 
