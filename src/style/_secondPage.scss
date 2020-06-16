@@ -126,6 +126,7 @@
 		position: relative;
 		border-right: snow 5px solid;
 		@include size(200vh, 90vw);
+		@include flexcenter(space-between, center, column);
 
 		.bubble {
 			@include size(100%, 100vw);
@@ -171,6 +172,70 @@
 		}
 	}
 	.five-t {
+		position: relative;
+		border-right: snow 5px solid;
+		@include size(200vh, 90vw);
+		@include flexcenter(space-between, center, column);
+		.bubble {
+			@include size(100%, 100vw);
+			@include flexcenter(space-evenly, center, row);
+			img {
+				@include size(500px, 50%);
+			}
+		}
+		div {
+			@include flexcenter(center, center, column);
+		}
+	}
+	.six-t {
+		position: relative;
+		border-right: snow 5px solid;
+		@include size(200vh, 90vw);
+		@include flexcenter(space-between, center, column);
+		.bubble {
+			@include size(100%, 100vw);
+			@include flexcenter(space-evenly, center, row);
+			img {
+				@include size(500px, 50%);
+			}
+		}
+		div {
+			@include flexcenter(center, center, column);
+		}
+	}
+	.seven-t {
+		position: relative;
+		border-right: snow 5px solid;
+		@include size(200vh, 90vw);
+		@include flexcenter(space-between, center, column);
+		.bubble {
+			@include size(100%, 100vw);
+			@include flexcenter(space-evenly, center, row);
+			img {
+				@include size(500px, 50%);
+			}
+		}
+		div {
+			@include flexcenter(center, center, column);
+		}
+	}
+	.eight-t {
+		position: relative;
+		border-right: snow 5px solid;
+		@include size(200vh, 90vw);
+		@include flexcenter(space-between, center, column);
+		.bubble {
+			@include size(100%, 100vw);
+			@include flexcenter(space-evenly, center, row);
+			img {
+				@include size(500px, 50%);
+			}
+		}
+		div {
+			@include flexcenter(center, center, column);
+		}
+	}
+	.ten-t {
 		position: relative;
 		border-right: snow 5px solid;
 		@include size(200vh, 90vw);

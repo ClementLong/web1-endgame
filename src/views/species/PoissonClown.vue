@@ -9,33 +9,47 @@
     <!-- // -->
     <div class="species__background">
       <div class="speciesDescription">
-        <h1 class="speciesDescription__title">Le poisson-clown</h1>
+        <h1 class="speciesDescription__title">
+          <span class="underline">{{info.name}}</span>
+        </h1>
 
         <div class="speciesInformation">
-          <div class="speciesInformation__description" v-for="inf in info" :key="inf">
-            <p v-if="inf.id ==='8'">{{inf.description}}</p>
+          <div class="speciesInformation__description">
+            <p>{{info.description}}</p>
           </div>
           <div class="speciesInformation__image">
-            <img src="@/img/Species/clown/nemo2.svg" alt />
+            <img :src="info.image_link" :alt="image_alt" />
           </div>
         </div>
       </div>
       <!-- // -->
       <div class="speciesInfo">
         <div class="speciesInfo__first">
-          <div class="food" v-for="inf in info" :key="inf">
-            <p v-if="inf.id ==='8'">Habitude Alimentaire:{{inf.food}}</p>
+          <div class="food">
+            <div>
+              <p>
+                <span class="underline">Habitude Alimentaire:</span>
+                {{info.food}}
+              </p>
+            </div>
             <img src="@/img/Species/food.svg" alt />
           </div>
           <div class="reproduction">
-            <p>
-              Reproduction: Les poissons-clowns pondent leurs œufs par lots sur le corail.
-              Le poisson clown mâle construira un nid sur le corail près de l'anémone afin d'être protégé contre les prédateurs
-            </p>
+            <div>
+              <p>
+                <span class="underline">Reproduction:</span>
+                {{info.reproduction}}
+              </p>
+            </div>
             <img src="@/img/Species/reproduction1.svg" alt />
           </div>
           <div class="geo">
-            <p>Zone geographique: Ocean Pacifique et Indien</p>
+            <div>
+              <p>
+                <span class="underline">Zone geographique:</span>
+                {{info.life_area}}
+              </p>
+            </div>
             <img src="@/img/Species/geo.svg" alt />
           </div>
         </div>
@@ -45,23 +59,39 @@
         <div class="speciesInfo__third">
           <div class="life">
             <img src="@/img/Species/life.svg" alt />
-            <p>Durée de vie: 3 - 5 ans</p>
+            <div>
+              <p>
+                <span class="underline">Durée de vie:</span>
+                {{info.life_time}} ans
+              </p>
+            </div>
           </div>
           <div class="depth">
             <img src="@/img/Species/depth.svg" alt />
 
-            <p>Profondeur: 0 - 12 m</p>
+            <p>
+              <span class="underline">Profondeur:</span>
+              {{info.deep_min}} - {{info.deep_max}}
+            </p>
           </div>
           <div class="size">
             <img src="@/img/Species/size.svg" alt />
-
-            <p>Poids/Taille: 250g / 88 mm</p>
+            <div>
+              <p>
+                <span class="underline">Poids/Taille:</span>
+                {{info.weight}}g / {{info.size}}cm
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="more">
         <div class="more__youKnow">
           <h2>Le saviez-vous?</h2>
+          <p>
+            Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
+            Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
+          </p>
         </div>
       </div>
       <div class="backbtn">
@@ -80,6 +110,7 @@ export default {
   components: {
     headr
   },
+
   data() {
     return {
       info: null
@@ -88,13 +119,13 @@ export default {
   mounted() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/ec2-15-188-207-33.eu-west-3.compute.amazonaws.com/src/index.php?url=list"
+        "https://cors-anywhere.zelazna.fr/https://pal.romain-feregotto.fr/?url=list",
+        {
+          method: "GET",
+          headers: { Authorization: "Basic " + btoa("admin:admin") }
+        }
       )
-      .then(response => (this.info = response.data.results.species));
-    // const ax = axios.create({
-    //   baseURL: "http://localhost:8080/"
-    // });
-    // ax.get("species.json");
+      .then(response => (this.info = response.data.results.species[0]));
   }
 };
 </script>

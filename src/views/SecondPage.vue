@@ -249,6 +249,128 @@
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
           <img src="@/img/scaner.svg" alt class="scan" />
+          <p class="profond">5000m</p>
+        </div>
+      </div>
+      <div class="six-t">
+        <div>
+          <h2 class="secondPage-title">
+            tu est actuellement au palié des 5000 métres la profondeur de la fosse manille
+            situé dans la mer de Chine méridionale, à l'ouest des Philippines
+          </h2>
+
+          <div>
+            <p>Infos sur profondeur</p>
+            <button>
+              <img src="@/img/Polygon.svg" alt />
+            </button>
+          </div>
+        </div>
+        <div></div>
+        <img src="@/img/nautil.svg" alt />
+        <div>
+          <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
+          <img src="@/img/scaner.svg" alt class="scan" />
+          <p class="profond">6000m</p>
+        </div>
+      </div>
+      <div class="seven-t">
+        <div>
+          <h2 class="secondPage-title">
+            Te voila au palier des 4000 metres connu sous le nom
+            <br />de La zone abyssale
+          </h2>
+          <p>
+            La température ici est proche du point de congélation et très
+            peu d'animaux peuvent survivre à la pression extrême
+          </p>
+          <div>
+            <p>Infos sur profondeur</p>
+            <button>
+              <img src="@/img/Polygon.svg" alt />
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2 class="secondPage-title">
+            Coulé, le 25 octobre 1944, lors de la bataille de Samar (au centre de l’archipel des Philippines)
+            retrouver a une profondeur record de 6221metres
+          </h2>
+        </div>
+        <img src="@/img/nautil.svg" alt />
+        <div>
+          <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
+          <img src="@/img/scaner.svg" alt class="scan" />
+          <p class="profond">7000m</p>
+        </div>
+      </div>
+      <div class="eight-t">
+        <div>
+          <h2 class="secondPage-title">
+            Te voila au palier des 4000 metres connu sous le nom
+            <br />de La zone abyssale
+          </h2>
+          <p>
+            La température ici est proche du point de congélation et très
+            peu d'animaux peuvent survivre à la pression extrême
+          </p>
+          <div>
+            <p>Infos sur profondeur</p>
+            <button>
+              <img src="@/img/Polygon.svg" alt />
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2
+            class="secondPage-title"
+          >“On a recensé dans l'océan un son toujours inexpliqué à ce jour”</h2>
+          <p>
+            On l’appelle « Upsweep » et impossible de savoir d’où ça vient. Étant donné qu’il est identique à chaque occurrence,
+            cela exclut la possibilité d’un chant de baleine.
+          </p>
+        </div>
+        <img src="@/img/nautil.svg" alt />
+        <div>
+          <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
+          <img src="@/img/scaner.svg" alt class="scan" />
+          <p class="profond">8000m</p>
+        </div>
+      </div>
+      <div class="ten-t">
+        <div>
+          <h2 class="secondPage-title">
+            Te voila au palier des 4000 metres connu sous le nom
+            <br />de La zone abyssale
+          </h2>
+          <p>
+            La température ici est proche du point de congélation et très
+            peu d'animaux peuvent survivre à la pression extrême
+          </p>
+          <div>
+            <p>Infos sur profondeur</p>
+            <button>
+              <img src="@/img/Polygon.svg" alt />
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2
+            class="secondPage-title"
+          >“On a recensé dans l'océan un son toujours inexpliqué à ce jour”</h2>
+          <p>
+            On l’appelle « Upsweep » et impossible de savoir d’où ça vient. Étant donné qu’il est identique à chaque occurrence,
+            cela exclut la possibilité d’un chant de baleine.
+          </p>
+        </div>
+        <img src="@/img/nautil.svg" alt />
+        <div>
+          <h3
+            class="scaner"
+          >tu as atteint le palier des 10 000mètres te voila arriver à la fin de ton periple</h3>
+          <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
+          <img src="@/img/scaner.svg" alt class="scan" />
+          <p class="profond">10 000m</p>
         </div>
       </div>
     </div>

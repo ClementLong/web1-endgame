@@ -1,4 +1,7 @@
 .species {
+	.underline {
+		border-bottom: 2px solid $white;
+	}
 	@include flexcenter(space-between, center, column);
 	&__background {
 		@include background(url(../img/speciesBackground.jpg));
@@ -36,6 +39,7 @@
 			}
 			&__image {
 				img {
+					max-height: 500px;
 					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 					border-radius: 15px;
 				}
@@ -144,7 +148,6 @@
 		max-width: 1900px;
 		@include size(100%, 90vw);
 		@include flexcenter(flex-start, center, row);
-
 		position: relative;
 		img {
 			padding: 0 20px 20px 0;
