@@ -9,8 +9,8 @@
 import Header from '@/components/partials/Header.vue'
 
 export default {
-  components: {
-    Header
+   components: {
+    Header,
   }
 }
 </script>
