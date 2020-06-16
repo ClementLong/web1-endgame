@@ -31,12 +31,12 @@
 export default {
   data() {
     return {
-      video: require("@/assets/video/firstpage.mp4"),
+      video: require("@/assets/video/video-intro.mp4"),
       name: this.$route.params.name,
       title: "Haero mai",
-      subtitle: "bienvenue"
+      subtitle: "bienvenue",
     };
-  }
+  },
 };
 </script>
 
