@@ -53,7 +53,6 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 import ButtonSvg from "@/components/ButtonSvg";
 import axios from "axios";
-
 export default {
   name: "Chapitre",
   components: {
@@ -169,13 +168,11 @@ export default {
 header {
   display: flex;
 }
-
 .iframe-map {
   width: 100vw;
   height: 140vh;
   transform: translateY(-150px);
 }
-
 video {
   object-fit: cover;
   width: 100vw;
@@ -185,7 +182,6 @@ video {
   left: 0;
   z-index: 0;
 }
-
 .chapitre {
   position: relative;
   @include format_vw-vh;
@@ -196,39 +192,32 @@ video {
   background-image: url(../assets/img/chapter0.png);
   overflow: hidden;
 }
-
 header {
   display: flex;
   position: relative;
   z-index: 1;
 }
-
 iframe {
   width: 100vw;
   height: 140vh;
   transform: translateY(-290px);
 }
-
 .container_currentChapter {
   position: fixed;
   z-index: 1;
 }
-
 progress[value][data-v-c55e1cb4] {
   z-index: 1;
 }
-
 .place-card,
 .place-card-large {
   display: none;
 }
-
 .gm-style,
 .place-card-large {
   padding: 9px 4px 9px 11px;
   display: none;
 }
-
 .coralButton {
     position: fixed;
     right: 5vw;
@@ -236,4 +225,8 @@ progress[value][data-v-c55e1cb4] {
     z-index: 1;
 }
 
+.container__top {
+  position: absolute;
+  z-index: 999
+}
 </style>
