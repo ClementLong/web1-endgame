@@ -48,11 +48,13 @@ const routes = [
     path: "/chapitre/:number",
     name: "chapitre",
     component: Chapitre,
-  },{
-    path: "/article/:number",
+    children: [{
+      
+      path: "/article/:number",
     name: "article",
     component: Article
-  }
+    }]
+  } 
 ];
 
 const router = new VueRouter({
