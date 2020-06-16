@@ -32,4 +32,8 @@ export default {
     .background1 {
         background-image: url('../img/backgrounds/background80s.png');
     }
+    #mid {
+        text-align: center;
+        padding-top: 250px;
+    }
 </style>
