@@ -1,5 +1,11 @@
 <template>
   <div class="team">
+    <div class="audio">
+      <iframe :src="data.music" allow="autoplay" id="audio" style="display: none"></iframe>
+      <audio id="player" autoplay loop>
+        <source :src="data.music" type="audio/mp3" />
+      </audio>
+    </div>
     <Header />
     <h1>Voici la team qui a participé à ce joli projet passionnant</h1>
     <section class="teams">
@@ -58,17 +64,24 @@
 <script>
 import TeamCard from "@/components/partials/TeamCard.vue";
 import Header from "@/components/partials/Header.vue";
-//import axios from "axios";
+import axios from "axios";
 
 export default {
   data() {
     return {
+      data: null,
+      music: null,
       members: ["PA", "Annie", "Priska", "Anthony", "Nicoraux", "Axel"]
     };
   },
   components: {
     Header,
     TeamCard
+  },
+  mounted() {
+    axios
+      .get("http://167.71.55.113/api/page/03")
+      .then(response => (this.data = response.data.data));
   }
 };
 </script>
