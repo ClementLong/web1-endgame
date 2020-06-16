@@ -1,6 +1,14 @@
 <template>
-  <div class="template background1">
+  <div class="template background2">
     <Template link='/1994home' />
+    <div class="tom">
+      <div class="tom__legend legend">Tom Morello, the "DJ Guitarist" from RATM</div>
+      <img class="tom__img" src="../img/90s/TOM.png" />
+    </div>
+    <div class="dod">
+      <img class="dod__img" src="../img/90s/DOD-WHAMMYDT-Large 1.png" />
+      <div class="dod__legend legend">The main ingredient of his sound</div>
+    </div>
   </div>
 </template>
 
@@ -17,17 +25,29 @@ export default {
 </script>
 
 <style lang="scss">
-    .template {
-        width: 100%;
-        height: 100%;
 
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-     .background1 {
-        background-image: url('../img/backgrounds/backgroundearly90s.png');
-    }
+.legend {
+  color: white;
+  font-size: 1.5em;
+}
+
+.tom {
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+
+  &__legend {
+    margin-left: 25%;
+  }
+}
+
+.dod {
+  position: absolute;
+  right: 0%;
+
+  &__legend {
+    margin-left: 20%;
+  }
+}
+
 </style>
