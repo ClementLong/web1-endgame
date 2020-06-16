@@ -1,7 +1,7 @@
 <template>
   <div class="template background1">
     <Template link='/1987home' />
-    <div id="mid">Mid-80s/Late 80s :</div>
+    <div>Mid-80s/Late 80s:</div>
     <div>The First Steps</div>
   </div>
 </template>
@@ -22,18 +22,13 @@ export default {
     .template {
         width: 100%;
         height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-    .background1 {
-        background-image: url('../img/backgrounds/background80s.png');
         margin:0;
         padding:0;
         background-size: cover;
+        background-color: black;
+    }
+    .background1 {
+        background-image: url('../img/backgrounds/background80s.png');
     }
     #mid {
         text-align: center;

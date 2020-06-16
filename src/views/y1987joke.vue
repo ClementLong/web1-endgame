@@ -21,19 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-    .template {
-        width: 100%;
-        height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-     .background1 {
-        background-image: url('../img/backgrounds/background80s.png');
-    }
     #at {
         margin-left: auto;
         margin-right: auto;
