@@ -35,10 +35,10 @@ export default {
       //console.log(maxScrolldown)
       //console.log(event.target.scrollingElement.scrollTop)
       if (this.scrollTop >= maxScrolldown) {
-        window.location.href = "http://localhost:8080/Haka";
+        window.location.href = "Haka";
       }
       if (this.scrollTop < 1) {
-        window.location.href = "http://localhost:8080/Karanga";
+        window.location.href = "Karanga";
       }
     },
   },

@@ -32,10 +32,10 @@ export default {
       //console.log(maxScrolldown)
       //console.log(event.target.scrollingElement.scrollTop)
       if (this.scrollTop >= maxScrolldown) {
-        window.location.href = "http://localhost:8080/Hangi";
+        window.location.href = "Hangi";
       }
       if (this.scrollTop < 1) {
-        window.location.href = "http://localhost:8080/Hongi";
+        window.location.href = "Hongi";
       }
     },
   },

@@ -52,7 +52,7 @@ export default {
       var maxScrolldown = event.target.scrollingElement.scrollHeight - event.target.scrollingElement.clientHeight;
       //console.log(this.scrollTop)
       if (this.scrollTop >= maxScrolldown) {
-        window.location.href = "http://localhost:8080/karanga";
+        window.location.href = "karanga";
       }
     },
   },

@@ -32,7 +32,7 @@ export default {
     handleScroll (event) {
       this.scrollTop = event.target.scrollingElement.scrollTop;
       if (this.scrollTop < 1) {
-        window.location.href = "http://localhost:8080/Haka";
+        window.location.href = "Haka";
       }
     },
   },
