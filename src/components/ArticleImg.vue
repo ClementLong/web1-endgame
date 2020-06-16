@@ -26,7 +26,7 @@ export default {
   &__container {
     @include flexbox(column, center, center);
     width: 100vw;
-    height: 80vh;
+    height: 101vh;
     position: absolute;
     z-index: 1;
   }

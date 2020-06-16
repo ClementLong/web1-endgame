@@ -21,6 +21,32 @@ export default {
     };
   },
   mounted() {
+
+    this.myFunction();
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    myFunction: function() {
+      var x = document.getElementById("myVideo");
+      x.play();
+    },
+    handleScroll (event) {
+      this.scrollTop = event.target.scrollingElement.scrollTop
+      var maxScrolldown = event.target.scrollingElement.scrollHeight - event.target.scrollingElement.clientHeight;
+      //console.log(this.scrollTop)
+      if (this.scrollTop >= maxScrolldown) {
+        window.location.href = "http://localhost:8080/karanga";
+      }
+    },
+  },
+};
+</script>
+
     contentServices.getArticles().then((response) => {
       console.log(response.data.articles);
     });
@@ -29,3 +55,4 @@ export default {
 </script>
 
 <style lang="scss" scoped></style>
+
