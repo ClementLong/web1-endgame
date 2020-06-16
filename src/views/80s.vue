@@ -1,8 +1,7 @@
 <template>
   <div class="template background1">
     <Template link='/1987home' />
-    <div>Mid-80s/Late 80s:</div>
-    <div>The First Steps</div>
+    <h1 id="title">Mid-80s/Late 80s :<br>The First Steps</h1>
   </div>
 </template>
 
@@ -33,5 +32,11 @@ export default {
     #mid {
         text-align: center;
         padding-top: 250px;
+    }
+    #title {
+        text-align: center;
+        color: white;
+        padding-top: 220px;
+        font-size: 65px;
     }
 </style>

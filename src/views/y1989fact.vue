@@ -1,6 +1,7 @@
 <template>
   <div class="template background1">
     <Template link='/90s' />
+    <img src="../img/rundmcaerosmith.png"/>
   </div>
 </template>
 
