@@ -7,14 +7,24 @@
         name="name"
         placeholder="Prénom"
         autocomplete="off"
-        required
+        v-model="name"
       />
-      <router-link to="/intro">
+      <router-link :to="{ name: 'Intro', params: { name: name } }">
         <button class="form__button">Decouvrir</button>
       </router-link>
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: ""
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/css/styles.scss";
@@ -55,9 +65,8 @@
     height: 36px;
 
     @include medium {
-      font-size: 12px;
-      width: 170px;
-      height: 40px;
+      width: 160px;
+      height: 38px;
     }
 
     @include extraLarge {

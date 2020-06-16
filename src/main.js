@@ -11,6 +11,7 @@ import timeLine from "@/components/TimeLine.vue";
 import Audio from "@/components/Audio.vue";
 import Gallery from "@/components/gallery.vue";
 import form from "@/components/Form.vue";
+// import muted from "@/components/Muted.vue";
 // import sliderContainer from "@/components/sliderContainer.vue";
 
 Vue.config.productionTip = false;
@@ -23,6 +24,7 @@ Vue.component("TimeLine", timeLine);
 Vue.component("Audio", Audio);
 Vue.component("Gallery", Gallery);
 Vue.component("Form", form);
+// Vue.component("Muted", muted);
 // Vue.component("sliderContainer", sliderContainer);
 
 new Vue({

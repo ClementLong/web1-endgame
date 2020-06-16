@@ -49,6 +49,11 @@
         />
       </svg>
 
+      <!-- <div
+        class="timeLine__wrapper"
+        @mouseover="hoverTimeline"
+        @mouseleave="leaveTimeline"
+      > -->
       <div
         class="timeLine__wrapper"
         @mouseover="hover = true"
@@ -280,7 +285,7 @@
       </div>
     </div>
 
-    <div class="timeLine__filter"></div>
+    <!-- <div :class="[filter ? filtered : '']"></div> -->
   </div>
 </template>
 
@@ -288,11 +293,22 @@
 export default {
   data() {
     return {
-      hover: false,
-      active: false,
-      activeClass: "timeLine__filter"
+      hover: false
+      // filter: false,
+      // filtered: "timeLine__filter"
     };
   }
+  // methods: {
+  //   hoverTimeline() {
+  //     this.hover = true;
+  //     this.active = true;
+  //   },
+
+  //   leaveTilemine() {
+  //     this.hover = false;
+  //     this.active = false;
+  //   }
+  // }
 };
 </script>
 <style lang="scss" scoped>
@@ -320,6 +336,7 @@ export default {
   &__icon {
     position: absolute;
     bottom: 0;
+    margin-left: 10px;
 
     &--mobile {
       left: 0;
@@ -348,13 +365,19 @@ export default {
   }
 
   &__containerBall {
-    @include flexbox(row, space-around, center);
+    @include flexbox(row, space-between, center);
     width: 100vw;
     bottom: 0;
-  }
-  &__test {
-    position: absolute;
-    bottom: 0;
+    padding-right: 34px;
+    padding-left: 34px;
+    @include medium {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    @include large {
+      padding-right: 94px;
+      padding-left: 94px;
+    }
   }
 
   &__wrapper {
@@ -475,11 +498,12 @@ export default {
     }
   }
 
-  &__filter {
-    background-color: $filterColor;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
+  // &__filter {
+  //   // background-color: $filterColor;
+  //   background-color: red;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   z-index: -1;
+  // }
 }
 </style>
