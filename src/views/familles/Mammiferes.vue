@@ -1,6 +1,6 @@
 <template>
   <div>
-    <naver />
+    <headerFamilles />
     <h1>
       De nouvelles especes sont apparues, scroll
       <br />pour les decouvrir !
@@ -14,11 +14,12 @@
 </template>
 
 <script>
-import naver from "@/components/partials/Header";
+import headerFamilles from "@/components/partials/headerFamilles";
+
 export default {
   name: "mammiferes",
   components: {
-    naver
+    headerFamilles
   }
 };
 </script>
