@@ -3,7 +3,9 @@
   <section class="container__top">
     <Header />
     <ProgressBar :value="chapitres[currentChapitre].value" />
-    <ButtonSvg />
+    <router-link :to="{ name: 'article', params: { number: currentChapitre }}">
+        <ButtonSvg class="coralButton"/>
+    </router-link>
     <router-link class="previousChapter" :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}">
       <ChapterTitleAndReturn
         :currentChapter="chapitres[currentChapitre].currentChapter"
@@ -18,8 +20,6 @@
       <NextChapterButton msg="PASSER AU CHAPITRE SUIVANT" />
     </router-link>
   </section>
-
-  <ButtonSvg />
 
   <div>
  <iframe
@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       linkVideo : null,
-      currentChapitre : 0,
+      currentChapitre : "0",
       chapitres : {
       "0": {
         currentChapter: "00",
@@ -226,6 +226,13 @@ progress[value][data-v-c55e1cb4] {
 .place-card-large {
   padding: 9px 4px 9px 11px;
   display: none;
+}
+
+.coralButton {
+    position: fixed;
+    right: 5vw;
+    top: 10vh;
+    z-index: 1;
 }
 
 </style>
