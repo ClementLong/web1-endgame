@@ -17,49 +17,49 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: Home
   },
   {
-    path: "/intro",
+    path: "/intro/:name",
     name: "Intro",
-    component: Intro,
+    component: Intro
   },
   {
     path: "/wero",
     name: "Wero",
-    component: Wero,
+    component: Wero
   },
   {
     path: "/karanga",
     name: "Karanga",
-    component: Karanga,
+    component: Karanga
   },
   {
     path: "/hongi",
     name: "Hongi",
-    component: Hongi,
+    component: Hongi
   },
   {
     path: "/haka",
     name: "Haka",
-    component: Haka,
+    component: Haka
   },
   {
     path: "/hangi",
     name: "Hangi",
-    component: Hangi,
+    component: Hangi
   },
   {
     path: "/tatoo",
     name: "Tatoo",
-    component: Tatoo,
-  },
+    component: Tatoo
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;

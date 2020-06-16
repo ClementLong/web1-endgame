@@ -24,11 +24,16 @@ export default {
       descriptionSecond:
         "Homme et femme ne portaient pas les mêmes tatouages. Ceux des femmes se limitent aux extremités du corps comme les mains, les pieds, les lèvres. Seules les femmes de haut rang (femme de chef) pouvaient avoir les cuisses et les fesses tatouées. Les hommes eux ont le corps entièrement tatoué. ",
       descriptionThird:
+<<<<<<< Updated upstream
         "Plus l’homme était tatoué, plus son prestige était grand. Être tatoué était un signe de force, de pouvoir et de richesse pour l’individu. On pouvait observer les tatouages les plus élaborés sur les guerriers ou les chefs. Les individus non tatoués étaient méprisés tandis que ceux qui étaient entièrement tatoués de la tête au pied pouvaient jouir d’un grand prestige.",
       SecondTitle: "La signification du tatouage",
+=======
+        "Plus l’homme était tatoué, plus son prestige était grand. Être tatoué était un signe de force, de pouvoir et de richesse pour l’individu. On pouvait observer les tatouages les plus élaborés sur les guerriers ou les chefs. Les individus non tatoués étaient méprisés tandis que ceux qui étaient entièrement tatoués de la tête au pied pouvaient jouir d’un grand prestige."
+>>>>>>> Stashed changes
     };
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped></style>
+```
