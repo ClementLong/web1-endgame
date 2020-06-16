@@ -1,0 +1,33 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+.item6 {
+  grid-area: F1;
+}
+.item7 {
+  grid-area: F2;
+}
+
+.grid-container {
+  display: grid;
+  width: 80%;
+  float: right;
+  grid-template-areas:
+    "header header menu menu main main right right"
+    "header header menu menu main main right right"
+    "header header menu menu footer footer F1 F1"
+    "F2 F2 F2 F2 footer footer F1 F1"
+    "F2 F2 F2 F2 footer footer F1 F1";
+}

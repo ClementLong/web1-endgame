@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cinzel"), url("/assets/fonts/Cinzel-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cinzel Decorative"),
+    url("/assets/fonts/CinzelDecorative-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Cinzel semiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cinzel semiBold"),
+    url("/assets/fonts/Cinzel-SemiBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto"), url("/assets/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("RobotoThin"), url("/assets/fonts/Roboto-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir"), url("/assets/fonts/AvenirLTStd-Book.otf") format("otf");
+}
