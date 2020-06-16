@@ -1,6 +1,10 @@
 <template>
   <div class="template background3">
     <Template link='/1999home' />
+    <div class="title">
+      <h1>Late 90s/Early 00s :</h1>
+      <h1>The Golden Age</h1>
+    </div>
   </div>
 </template>
 
