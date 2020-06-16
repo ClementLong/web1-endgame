@@ -13,6 +13,7 @@
 export default {
     name: "CrossButtonSvg"
 }
+
 </script>
 
 <style>

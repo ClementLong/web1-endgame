@@ -1,29 +1,36 @@
 <template>
-  <div>
+  <div class="background">
     <div class="buttons">
         <router-link :to="{ name: 'chapitre', params: { number: currentChapitre }}">
             <CrossButtonSvg />
         </router-link>
         <infoSvg />
     </div>
-    <ArticlePicture :title="articles[currentChapitre].title" :text="articles[currentChapitre].text" />
-    <router-link :to="{ name: 'quizz', params: { number: currentChapitre }}">
-      <StartButton class="quizzButton" msg="répondre au quizz" v-if="isClose" />
-    </router-link>
+    <div class="content">
+        <div class="textContent">
+            <ArticleText :title="articles[currentChapitre].title" :text="articles[currentChapitre].text" />
+            <router-link :to="{ name: 'quizz', params: { number: currentChapitre }}">
+                <StartButton class="quizzButton" msg="répondre au quizz" v-if="isClose" />
+            </router-link>
+        </div>
+        <div class="mediaContent">
+            <img src="@/assets/img/background-temporaire-chap1.png" />
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
-import ArticlePicture from "@/components/partials/ArticlePicture.vue";
 import StartButton from "@/components/start_button.vue";
 import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
 import InfoSvg from "@/components/InfoSvg.vue";
+import ArticleText from "@/components/partials/ArticleText.vue";
 export default {
   components: {
-    ArticlePicture,
     StartButton,
     CrossButtonSvg,
-    InfoSvg
+    InfoSvg,
+    ArticleText
   },
   data() {
     return {
@@ -52,7 +59,7 @@ export default {
         },
         "6": {
           title: "Sauvez les Coraux",
-          text: "Pour essayer d'aider l'écosystème à continuer de fournir les services écologiques nécessaires, des méthodes très récentes sont apparues, comme la restauration écologique active.Il faut considérer ces méthodes avec prudence car de nos jours il est impossible de recréer un récif comme ceux présents naturellement. Si nous ne voulons pas perdre la richesse en biodiversité, il faut agir localement, mais surtout globalement.Limiter le réchauffement climatique à moins de 2 °C est l'urgence absolue. Chacun peut aussi agir en en parlant autour de soi, en essayant d'adopter un mode de vie plus respectueux de l'environnement et en faisant un petit geste : l'adoption d’un corail !Il est donc important d’agir immédiatement, en sensibilisant en premier lieu les populations qui en dépendent directement."
+          text: "Pour essayer d'aider l'écosystème à continuer de fournir les services écologiques nécessaires, des méthodes très récentes sont apparues, comme la restauration écologique active.Il faut considérer ces méthodes avec prudence car de nos jours il est impossible de recréer un récif comme ceux présents naturellement. Si nous ne voulons pas perdre </span>la richesse en biodiversité, il faut agir localement, mais surtout globalement.Limiter le réchauffement climatique à moins de 2 °C est l'urgence absolue. Chacun peut aussi agir en en parlant autour de soi, en essayant d'adopter un mode de vie plus respectueux de l'environnement et en faisant un petit geste : l'adoption d’un corail !Il est donc important d’agir immédiatement, en sensibilisant en premier lieu les populations qui en dépendent directement."
         }
       }
     };
@@ -62,21 +69,60 @@ export default {
 
 <style scoped lang="scss">
 .quizzButton {
-  position: absolute;
-  bottom: 200px;
-  left: 150px;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .buttons {
-    backdrop-filter: blur(8px);
-    background: $backgroundBoxes;
     display: flex;
     justify-content: space-between;
     padding: 16px 16px 0px 16px;
+}
 
-    @include tablet-up {
+.background {
+    min-height: 94vh;
+    backdrop-filter: blur(8px);
+    background: $backgroundBoxes;
+}
+
+.content {
+    padding: 24px 24px 24px 24px;
+}
+
+@include tablet-up {
+    .content {
+        padding: 48px 10vw 48px 10vw;
+    }
+
+    .quizzButton {
+    margin-bottom: 48px;
+}
+}
+
+@include desktop-Xlarge{
+.content {
+    display: flex;
+
+    .textContent {
+        margin: 0px 96px 0px 96px;
+        }
+
+    .mediaContent {
+        width: 50%;
+        margin-right: 96px;
+        display: table-cell;
+        vertical-align: middle;
+
+      img {
+        min-width: 400px;
+        max-width: 600px;
+      }
+    }
+}
+
+.buttons {
         padding: 24px 32px 0px 24px;
     }
 }
+
 </style>
