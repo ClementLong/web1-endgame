@@ -9,7 +9,6 @@
 </template>
 <script>
 // import contentServices from "@/services/contentService.js";
-
 export default {
   data() {
     return {
@@ -21,14 +20,12 @@ export default {
       video: require("@/assets/video/video-wero.mp4")
     };
   },
-
   // mounted() {
   //   contentServices.getArticles().then(response => {
-  //     contentServices.getArticles().then(response => {
-  //       console.log(response.data.articles);
-  //     });
+  //     console.log(response.data.articles);
   //   });
   // },
+
   mounted() {
     this.myFunction();
   },
