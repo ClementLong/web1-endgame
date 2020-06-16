@@ -21,13 +21,8 @@ export default {
     };
   },
   mounted() {
-<<<<<<< Updated upstream
-    contentServices.getArticle().then((response) => {
-      console.log(response);
-=======
-    contentServices.getArticles().then(response => {
+    contentServices.getArticles().then((response) => {
       console.log(response.data.articles);
->>>>>>> Stashed changes
     });
   },
 };
