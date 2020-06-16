@@ -31,6 +31,7 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    
     handleScroll(event) {
       this.scrollTop = event.target.scrollingElement.scrollTop;
       if (this.scrollTop < 1) {

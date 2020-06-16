@@ -8,6 +8,7 @@ import Hongi from "../views/Hongi.vue";
 import Haka from "../views/Haka.vue";
 import Hangi from "../views/Hangi.vue";
 import Tatoo from "../views/Tatoo.vue";
+import Tissage from "../views/Tissage.vue";
 
 Vue.use(VueRouter);
 
@@ -53,6 +54,11 @@ const routes = [
     path: "/tatoo",
     name: "Tatoo",
     component: Tatoo
+  }, 
+  {
+    path: "/Tissage",
+    name: "Tissage",
+    component: Tissage
   }
 ];
 

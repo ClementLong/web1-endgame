@@ -54,7 +54,6 @@ export default {
   background-image: url("../assets/img/BackgroundTatouage6.svg");
   @include backgroundImg(no-repeat, cover, top center);
   width: 100vw;
-
   height: 101vh;
 
   &__filter {
