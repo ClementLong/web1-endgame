@@ -6,11 +6,7 @@ import Intro from "../views/Intro.vue";
 import map from "@/views/Map.vue";
 import Chapitre from "@/views/Chapitre.vue";
 import Article from "@/views/Article.vue";
-// import Quizz1 from "@/views/Quizz1.vue";
-// import Quizz2 from "@/views/Quizz2.vue";
-// import Quizz3 from "@/views/Quizz3.vue";
-// import Quizz4 from "@/views/Quizz4.vue";
-// import Quizz5 from "@/views/Quizz5.vue";
+import Quizz from "@/views/Quizz.vue";
 import Assos from "@/views/Assos.vue";
 
 Vue.use(VueRouter);
@@ -52,6 +48,10 @@ const routes = [
     path: "/article/:number",
     name: "article",
     component: Article
+  },{
+    path: "/quizz/:number",
+    name: "quizz",
+    component: Quizz
   }
 ];
 
