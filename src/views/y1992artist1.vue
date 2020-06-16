@@ -26,11 +26,6 @@ export default {
 
 <style lang="scss">
 
-.legend {
-  color: white;
-  font-size: 1.5em;
-}
-
 .tom {
   position: absolute;
   left: 5%;

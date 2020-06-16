@@ -23,19 +23,6 @@ export default {
 
 <style lang="scss">
 
-.title {
-  color: white;
-  text-align: center;
-
-  h1 {
-    font-size: 8em;
-  }
-
-  h2 {
-    font-size: 4em;
-  }
-}
-
 .ratm {
   position: absolute;
   right: 0%;
