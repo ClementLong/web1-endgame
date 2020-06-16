@@ -10,7 +10,7 @@ export default {
 
 <style scoped lang="scss">
 progress {
-  height: 0.5vh;
+  height: 4px;
   position: absolute;
   left: 0;
 }
