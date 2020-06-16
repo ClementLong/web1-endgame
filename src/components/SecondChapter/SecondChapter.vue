@@ -1,27 +1,30 @@
 <template>
     <div class="SecondChapter">
-        <div class="media">
-                <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
-                <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
-            </div>
+        <div class="media2">
+            <div v-on:click="photo" class="img_noactivate photo" v-bind:class="{iconPhoto_activate: activated_photo}"></div>
+            <div v-on:click="video" class="img_noactivate video" v-bind:class="{iconVideo_activate: activated_video}"></div>
+        </div>
         <div id="chapter2" class="title_chapter">
             <Title chapter="II" title_chapter="DISCOURS D’HIMMLER DEVANT LE REICHSTAG " date="27 avril 1940"/>
             <ChapterText text="Himmler donne l’ordre d’aménager un camp de concentration dans les anciennes casernes 
             de l’artillerie polonaise à Oswiecim, rebaptisé Auschwitz. Construit par des Juifs de la ville requis par 
             les nazis, le camp d’Auschwitz reçoit un premier transport de prisonniers polonais, le 14 juin 1940."/>
         </div>
-        <div class="photo_noactivate" v-bind:class="{photo_activate: activated_photo}">
+        <div class="photo_noactivate2" v-bind:class="{photo_activate2: activated_photo}">
             <img v-on:click="photo" src="../../assets/croix.svg">
             <div class="power">
-                <p>Le 4 octobre 1943, Heinrich Himmler fait un discours devant une assemblée d’officiers supérieurs SS réunis 
-                    dans le nouvel hôtel de ville de Posen. Le SS-Reichsführer justifie l’extermination des juifs d’Europe en 
-                    cours, présentée par lui comme une nécessité. Le discours, long de trois heures, </p>
+                <h1> Heinrich Himmler 1900-1945</h1>
+                <p>Il est Reichsführer-SS, le maître absolu de la SS, Chef der Deutschen Polizei (chef de toutes les 
+                    polices allemandes, dont la Gestapo) et, à partir de 1943, ministre de l'Intérieur du Reich et 
+                    Chef der Heeresrüstung und Befehlshaber des Ersatzheers (responsable de l'équipement militaire 
+                    de l'Armée de terre et commandant en chef de l'Armée de terre de réserve). Criminel de guerre, 
+                    il est qualifié par certains auteurs allemands de « meurtrier du siècle »</p>
             </div>
         </div>
-        <div v-bind:class="{video_activate: activated_video}" class="video_noactivate">
+        <div v-bind:class="{video_activate2: activated_video}" class="video_noactivate2">
             <img v-on:click="video" src="../../assets/croix.svg">
-            <iframe src="https://www.youtube.com/embed/XgvqaLFZWM4" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dY9EVQoUJRI" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </template>
@@ -61,7 +64,7 @@ export default {
     position: relative;
 }
 
-.media {
+.media2 {
     height: 110px;
     width: auto;
     display: flex;
@@ -98,14 +101,14 @@ export default {
     }
 }
 
-.photo_noactivate {
+.photo_noactivate2 {
     position: fixed;
     z-index: -100;
     height: 5%;
     transition: height 0.5s ease-in-out;
 }
 
-.photo_activate {
+.photo_activate2 {
     z-index: 10;
     position: fixed;
     top: 0;
@@ -129,13 +132,13 @@ export default {
     }
 }
 
-.video_noactivate {
+.video_noactivate2 {
     position: fixed;
     z-index: -100;
     height: 5%;
 }
 
-.video_activate {
+.video_activate2 {
     z-index: 10;
     position: fixed;
     top: 0;
