@@ -152,7 +152,7 @@ svg:hover {
     margin: 0px 16px;
   }
 }
-
+// 
 .controls-window {
   display: flex;
   justify-content: space-around;
