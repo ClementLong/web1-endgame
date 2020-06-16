@@ -1,5 +1,5 @@
 <template>
-  <div class="template background1">
+  <div class="template background3">
     <Template link='/1999context2' />
   </div>
 </template>
@@ -17,17 +17,4 @@ export default {
 </script>
 
 <style lang="scss">
-    .template {
-        width: 100%;
-        height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-    .background1 {
-        background-image: url('../img/backgrounds/backgroundlate90s.png');
-    }
 </style>

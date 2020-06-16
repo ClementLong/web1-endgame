@@ -1,6 +1,10 @@
 <template>
-  <div class="template background1">
+  <div class="template background2">
     <Template link='/1992home' />
+    <div class="title">
+      <h1>Early 90s/Mid 90s :</h1>
+      <h1>The Fusion Rock</h1>
+    </div>
   </div>
 </template>
 
@@ -17,17 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .template {
-        width: 100%;
-        height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-    .background1 {
+    .background2 {
         background-image: url('../img/backgrounds/backgroundearly90s.png');
     }
 </style>

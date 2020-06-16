@@ -1,6 +1,11 @@
 <template>
-  <div class="template background1">
+  <div class="template background2">
     <Template link='/1994fact' />
+    <div class="title">
+      <h1>1994</h1>
+      <h2>Nu Metal is born, hail Nu Metal</h2>
+    </div>
+    <img class="ratm" src="../img/90s/Korn.png"/>
   </div>
 </template>
 
@@ -17,17 +22,4 @@ export default {
 </script>
 
 <style lang="scss">
-    .template {
-        width: 100%;
-        height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-    .background1 {
-        background-image: url('../img/backgrounds/backgroundearly90s.png');
-    }
 </style>

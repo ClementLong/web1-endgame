@@ -22,17 +22,16 @@ export default {
     .template {
         width: 100%;
         height: 100%;
-
-        div {
-            color: white;
-            text-align: center;
-            font-size: 60px;
-        }
-    }
-    .background1 {
-        background-image: url('../img/backgrounds/background80s.png');
         margin:0;
         padding:0;
         background-size: cover;
+        background-color: black;
+    }
+    .background1 {
+        background-image: url('../img/backgrounds/background80s.png');
+    }
+    #mid {
+        text-align: center;
+        padding-top: 250px;
     }
 </style>
