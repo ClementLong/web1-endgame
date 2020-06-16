@@ -40,4 +40,27 @@ export default {
         left: calc((100% - 66px) / 2);
         z-index: 10;
     }
+
+    
+.legend {
+  color: white;
+  font-size: 1.5em;
+}
+
+    .title {
+        color: white;
+        text-align: center;
+
+        h1 {
+            font-size: 8em;
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+    }
 </style>
