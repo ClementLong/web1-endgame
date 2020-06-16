@@ -34,10 +34,5 @@ export default {
 
 <style scope>
 
-.pop-upArticle{
-  position: absolute;
-  right: 50px;
-  top: 150px;
-}
 
 </style>

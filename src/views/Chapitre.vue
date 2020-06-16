@@ -2,8 +2,9 @@
 <div class="chapitre">
   <section class="container__top">
     <Header />
-    <ProgressBar value="15" />
-    <router-link class="previousChapter" to="/chap0">
+    <ProgressBar :value="chapitres[currentChapitre].value" />
+    <ButtonSvg />
+    <router-link class="previousChapter" :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}">
       <ChapterTitleAndReturn
         :currentChapter="chapitres[currentChapitre].currentChapter"
         :chapter="chapitres[currentChapitre].chapter"
