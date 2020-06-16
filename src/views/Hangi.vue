@@ -16,9 +16,10 @@ export default {
       // img: require("../assets/img/backgroundHangi.svg"),
       title: "HANGI",
       description:
-        " Hangi est un plat traditionnel en Nouvelle-Zélande. Le hangi n’est pas seulement un plat, mais aussi un mode de cuisson ancestral. On trouve ce plat le plus souvent dans la région de Rotorua au Nord de l’île.Le hangi traditionnel consiste à envelopper des paniers d’aliments contenant de la viande (poulet ou autres) et des légumes (patate douce, pomme de terre etc…)."
+        " Le hangi traditionnel consiste à envelopper des paniers d’aliments contenant de la viande et des légumes (patate douce, maïs, carotte…) et de les cuire dans un trou creusé dans le sol au fond duquel sont déposées des pierres volcaniques chauffées. On trouve ce plat le plus souvent dans la région de Rotorua au Nord de l’île..",
     };
   },
+
   mounted () {
     window.scrollTo(0, 1)
   },
@@ -36,6 +37,7 @@ export default {
       }
     },
   },
+
 };
 </script>
 

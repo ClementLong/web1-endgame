@@ -1,7 +1,22 @@
 @font-face {
-  font-family: "CinzelDecorative";
+  font-family: "Cinzel";
   font-style: normal;
   font-weight: normal;
-  src: local("CinzelDecorative"),
-    url("/assets/fonts/CinzelDecorative-Regular.ttf") format("tff");
+  src: local("Cinzel"), url("/assets/fonts/Cinzel-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cinzel Decorative"),
+    url("/assets/fonts/CinzelDecorative-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Cinzel semiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cinzel semiBold"),
+    url("/assets/fonts/Cinzel-SemiBold.otf") format("otf");
 }

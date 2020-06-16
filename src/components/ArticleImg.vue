@@ -4,11 +4,8 @@
       <h1 class="articleImg__title">{{ title }}</h1>
       <p class="articleImg__description">{{ description }}</p>
     </div>
-    <!-- <img :src="img" alt="" class="articleImg__img" /> -->
     <div class="articleImg__img"></div>
     <div class="articleImg__filter"></div>
-
-    <!-- <div v-if="filter" class="articleImg__filter">{{ filter }}</div> -->
   </div>
 </template>
 
@@ -17,9 +14,8 @@ export default {
   props: {
     img: String,
     title: String,
-    description: String
-    // filter: String //voir avec Bastien si on passe le filtre en props ou en css
-  }
+    description: String,
+  },
 };
 </script>
 
@@ -36,7 +32,8 @@ export default {
   }
   &__title {
     color: white;
-    font-family: "CinzelDecorative";
+    font-family: $Cinzel;
+
     margin-bottom: 100px;
     font-size: 24px;
     text-transform: uppercase;
@@ -61,16 +58,16 @@ export default {
     @include medium {
       font-size: 18px;
       line-height: 27px;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 48px;
+      padding-left: 48px;
     }
     @include large {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 33px;
       padding-right: 110px;
       padding-left: 110px;
-      padding-right: 60px;
-      padding-left: 60px;
+      padding-right: 80px;
+      padding-left: 80px;
     }
     @include extraLarge {
       font-size: 24px;

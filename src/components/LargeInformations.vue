@@ -1,45 +1,46 @@
 <template>
   <div class="largeInformations">
-    <div class="largeInformations__img"></div>
-    <!-- <div class="largeInformations__img">
+    <div class="largeInformations__img">
       <img :src="img" alt="" />
-    </div> -->
+    </div>
     <div class="largeInformations__contenair">
-      <div classe="largeInformations__infos">
-        <div class="largeInformations__title">
-          <h1>{{ title }}</h1>
-        </div>
+      <div class="largeInformations__title">
+        <h1>{{ title }}</h1>
+      </div>
 
-        <div>
-          <p
-            class="largeInformations__description largeInformations__description--first"
-          >
-            {{ descriptionFirst }}
-          </p>
-        </div>
+      <div class="">
+        <p
+          class="largeInformations__description largeInformations__description--first"
+        >
+          {{ descriptionFirst }}
+        </p>
+      </div>
 
-        <div>
-          <p
-            class="largeInformations__description largeInformations__description--second"
-          >
-            {{ descriptionSecond }}
-          </p>
-        </div>
-        <div>
-          <p
-            class="largeInformations__description largeInformations__description--tirdh"
-          >
-            {{ descriptionThird }}
-          </p>
-        </div>
+      <div class="largeInformations__position">
+        <p
+          class="largeInformations__description largeInformations__description--second"
+        >
+          {{ descriptionSecond }}
+        </p>
+      </div>
+      <div class="">
+        <p
+          class="largeInformations__description largeInformations__description--tirdh"
+        >
+          {{ descriptionThird }}
+        </p>
+      </div>
 
-        <div>
-          <p
-            class="largeInformations__description largeInformations__description--fourth"
-          >
-            {{ descriptionFourth }}
-          </p>
-        </div>
+      <div class="largeInformations__position">
+        <p
+          class="largeInformations__description largeInformations__description--fourth"
+        >
+          {{ descriptionFourth }}
+        </p>
+      </div>
+
+      <div class="largeInformations__titleSecond ">
+        <h2>{{ SecondTitle }}</h2>
       </div>
     </div>
   </div>
@@ -53,7 +54,7 @@ export default {
     descriptionSecond: String,
     descriptionThird: String,
     descriptionFourth: String,
-    filter: String,
+    SecondTitle: String,
     img: String,
   },
 };
@@ -63,45 +64,32 @@ export default {
 @import "@/assets/css/styles.scss";
 
 .largeInformations {
-  background-image: url(../assets/img/backgroundTatouage4.svg);
-  @include backgroundImg(no-repeat, cover, top center);
   width: 80vw;
-  height: 200vh;
-  right: 0;
-  top: 0;
-  z-index: -1;
+  height: 100vh;
   position: absolute;
-
-  &__contenair {
-    width: 80vw;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-  }
-
-  text-align: justify;
+  right: 0;
 
   &__img {
-    // background-image: url(../assets/img/backgroundTatouage4.svg);
-    // @include backgroundImg(no-repeat, cover, top center);
-    // width: 80vw;
-    // height: 100vh;
-    // right: 0;
-    // top: 0;
-    // z-index: -1;
-    // position: absolute;
+    @include backgroundImg(no-repeat, cover, top center);
+    width: 80vw;
+    height: 80vh;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
   }
-
-  &__info {
-  }
-
-  // @include flexbox(column, center, center);
-  // display: flex;
-  // justify-content: column;
-  // flex-direction: center;
-  // align-items: center;
+  // background-image: url(../assets/img/backgroundTatouage4.svg);
+  // @include backgroundImg(no-repeat, cover, top center);
+  // width: 80vw;
+  // height: 200vh;
 
   &__title {
+    margin-top: 60px;
+  }
+
+  &__title,
+  &__titleSecond {
+    text-align: center;
     font-size: 36px;
     line-height: 49px;
     color: #ffffff;
@@ -109,8 +97,11 @@ export default {
   }
 
   &__description {
-    width: 562px;
+    max-width: 562px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: "Roboto";
+    text-align: justify;
     font-size: 24px;
     color: #ffffff;
 
@@ -118,28 +109,16 @@ export default {
       margin-top: 80px;
     }
 
-    &--second {
-      margin-top: 200px;
-    }
-
-    &--tirdh {
-      margin-top: 200px;
-    }
-
+    &--second,
+    &--tirdh,
     &--fourth {
       margin-top: 200px;
     }
   }
+}
 
-  &__infos {
-    text-align: justify;
-    // display: flex;
-    position: relative;
-  }
-  &__title {
-    color: #ffffff;
-    font-family: "CinzelDecorative";
-    font-size: 36px;
-  }
+.largeInformations__position {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
