@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
+import index from '../views/index.vue'
 
 Vue.use(VueRouter)
 
@@ -9,14 +9,14 @@ Vue.use(VueRouter)
 // Chaque route doivent avoir au minimum un path et un component associé
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
     path: '/team',
     name: 'Team',
     component: Team
+  },
+  {
+    path: '/index',
+    name: 'index',
+    component: index
   }
 ]
 
