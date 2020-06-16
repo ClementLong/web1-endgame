@@ -14,14 +14,8 @@ export default {
   props: {
     img: String,
     title: String,
-<<<<<<< Updated upstream
     description: String,
-    // filter: String //voir avec Bastien si on passe le filtre en props ou en css
   },
-=======
-    description: String
-  }
->>>>>>> Stashed changes
 };
 </script>
 
