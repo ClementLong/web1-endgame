@@ -32,7 +32,8 @@ export default {
         font-size: 50px;
     }
     #g4 {
-        margin-left: 850px;
-        z-index: 2;
+        margin-left: 980px;
+        width: 440px;
+        height: 383px;
     }
 </style>

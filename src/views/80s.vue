@@ -38,7 +38,8 @@ export default {
     #title {
         text-align: center;
         color: white;
-        padding-top: 220px;
-        font-size: 65px;
+        padding-top: 150px;
+        font-size: 85px;
+        line-height: 150%;
     }
 </style>

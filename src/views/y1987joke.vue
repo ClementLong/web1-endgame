@@ -32,8 +32,10 @@ export default {
         font-size: 45px;
     }
     #ghetto {
-      margin-left: 200px;
+      margin-left: 230px;
       padding-top: 50px;
+      width: 310px;
+      height: 300px;
     }
     #et {
       margin-left: 182px;
@@ -41,6 +43,8 @@ export default {
     }
     #van {
       margin-left: 170px;
+      width: 400px;
+      height: 300px;
     }
     #rap {
       color: white;
