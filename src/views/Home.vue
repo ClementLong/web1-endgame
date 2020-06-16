@@ -1,9 +1,9 @@
 <template>
   <div class="outer-wrapper">
     <div class="audio">
-      <iframe :src="data.music" allow="autoplay" id="audio" style="display: none"></iframe>
-      <audio id="player" autoplay loop>
-        <source :src="data.music" type="audio/mp3" />
+      <iframe v-if="data" :src="data.music" allow="autoplay" id="audio" style="display: none"></iframe>
+      <audio v-if="data" id="player" autoplay loop>
+        <source v-if="data" :src="data.music" type="audio/mpeg" />
       </audio>
     </div>
     <div class="wrapper">
