@@ -1,7 +1,13 @@
 <template>
   <div>
+    <div class="buttons">
+        <router-link :to="{ name: 'chapitre', params: { number: currentChapitre }}">
+            <CrossButtonSvg />
+        </router-link>
+        <infoSvg />
+    </div>
     <ArticlePicture :title="articles[currentChapitre].title" :text="articles[currentChapitre].text" />
-    <router-link :to="{ name: 'Chapitre1Quizz1' }">
+    <router-link :to="{ name: 'quizz', params: { number: currentChapitre }}">
       <StartButton class="quizzButton" msg="répondre au quizz" v-if="isClose" />
     </router-link>
   </div>
@@ -10,10 +16,14 @@
 <script>
 import ArticlePicture from "@/components/partials/ArticlePicture.vue";
 import StartButton from "@/components/start_button.vue";
+import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
+import InfoSvg from "@/components/InfoSvg.vue";
 export default {
   components: {
     ArticlePicture,
     StartButton,
+    CrossButtonSvg,
+    InfoSvg
   },
   data() {
     return {
@@ -56,5 +66,17 @@ export default {
   bottom: 200px;
   left: 150px;
   text-transform: uppercase;
+}
+
+.buttons {
+    backdrop-filter: blur(8px);
+    background: $backgroundBoxes;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 0px 16px;
+
+    @include tablet-up {
+        padding: 24px 32px 0px 24px;
+    }
 }
 </style>
