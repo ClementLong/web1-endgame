@@ -6,6 +6,9 @@
           <h1>{{ title }}</h1>
           <hr />
           <p>{{ text }}</p>
+          <router-link :to="{ name: 'quizz', params: { number: currentChapitre }}">
+            <StartButton class="quizzButton" msg="répondre au quizz" v-if="isClose" />
+          </router-link>
         </article>
         <aside class="subContent">
           <img src="@/assets/img/background-temporaire-chap1.png" />
@@ -17,11 +20,15 @@
 </template>
 
 <script>
+import StartButton from "@/components/StartButton.vue"
 export default {
   name: "ArticlePicture",
   props: {
     title: String,
     text: String,
+  },
+  components: {
+    StartButton,
   },
   data() {
     return {
@@ -48,15 +55,6 @@ section {
     color: $white;
     line-height: 1.5;
     margin: 24px 0px 8px 0px;
-  }
-}
-
-.buttonSection {
-  display: flex;
-  justify-content: space-between;
-
-  svg {
-    margin-bottom: 24px;
   }
 }
 
