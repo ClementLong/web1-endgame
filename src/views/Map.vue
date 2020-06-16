@@ -13,12 +13,13 @@
       </router-link>
     </section>
     <iframe
+      class="iframe-map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156449.32414891524!2d152.61685865575492!3d-22.309161340170448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6be685c1eee86d69%3A0x6ceefcee6bc6dead!2sDicks%20Reef!5e1!3m2!1sfr!2sfr!4v1591974235777!5m2!1sfr!2sfr"
       width="600"
       height="450"
       frameborder="0"
       style="border:0;"
-      allowfullscreen=""
+      allowfullscreen
       aria-hidden="false"
       tabindex="0"
     ></iframe>
@@ -40,13 +41,12 @@ export default {
     Header,
     ProgressBar,
     ChapterTitleAndReturn,
-    NextChapterButton,
-  },
+    NextChapterButton
+  }
 };
 </script>
 
 <style scoped lang="scss">
-
 body {
   position: relative;
   @include format_vw-vh;
@@ -64,7 +64,7 @@ header {
   z-index: 1;
 }
 
-iframe {
+.iframe-map {
   width: 100vw;
   height: 140vh;
   transform: translateY(-150px);
