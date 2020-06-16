@@ -83,8 +83,7 @@ export default {
         title: "Qu'est-ce qu'un corail?",
         reviewChapter: "Revoir le chapitre précédent",
         redirectionPageTo: "/chap0",
-        nextChapter: "Passer au chapitre suivant",
-        pathNextChapter: "/chap2"
+        nextChapter: "Passer au chapitre suivant"
       },
       "2": {
         currentChapter: "02",

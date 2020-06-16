@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ArticlePicture :title="articles[currentArticle].title" :text="articles[currentCArticle].text" />
+    <ArticlePicture :title="articles[currentChapitre].title" :text="articles[currentChapitre].text" />
     <router-link :to="{ name: 'Chapitre1Quizz1' }">
       <StartButton class="quizzButton" msg="répondre au quizz" v-if="isClose" />
     </router-link>
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      currentArticle: "2",
+      currentChapitre: this.$route.params.number,
       isClose: true,
       articles : {
         "0": {
