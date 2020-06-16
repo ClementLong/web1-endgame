@@ -6,7 +6,7 @@
             <p class= "home2008__text__fact legend">Heartbroken Kanye West brings vulnerability to Hip Hop </p>
         </div>
         <div  >
-            <img class= "home2008__image" src="../img/kanyewest.png" alt="kanye">   
+            <img class= "home2008__image" src="../img/2000s/kanyewest.png" alt="kanye">   
         </div>
     </div>
 </template>
