@@ -1,6 +1,6 @@
 <template>
     <div class="text_chapter">
-        <p>{{ text }}</p>
+        <p><img src="../../assets/up-chevron1.svg"/>{{ text }} <img src="../../assets/up-chevron2.svg"/></p>
     </div>
 </template>
 
