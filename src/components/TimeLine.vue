@@ -49,15 +49,10 @@
         />
       </svg>
 
-      <!-- <div
+      <div
         class="timeLine__wrapper"
         @mouseover="hoverTimeline"
         @mouseleave="leaveTimeline"
-      > -->
-      <div
-        class="timeLine__wrapper"
-        @mouseover="hover = true"
-        @mouseleave="hover = false"
       >
         <div class="timeLine__containerImg" v-if="hover">
           <svg
@@ -285,7 +280,7 @@
       </div>
     </div>
 
-    <!-- <div :class="[filter ? filtered : '']"></div> -->
+    <div :class="[filter ? filtered : '']"></div>
   </div>
 </template>
 
@@ -293,22 +288,22 @@
 export default {
   data() {
     return {
-      hover: false
-      // filter: false,
-      // filtered: "timeLine__filter"
+      hover: false,
+      filter: false,
+      filtered: "timeLine__filter"
     };
-  }
-  // methods: {
-  //   hoverTimeline() {
-  //     this.hover = true;
-  //     this.active = true;
-  //   },
+  },
+  methods: {
+    hoverTimeline() {
+      this.hover = true;
+      this.filter = true;
+    },
 
-  //   leaveTilemine() {
-  //     this.hover = false;
-  //     this.active = false;
-  //   }
-  // }
+    leaveTimeline() {
+      this.hover = false;
+      this.filter = false;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -336,7 +331,6 @@ export default {
   &__icon {
     position: absolute;
     bottom: 0;
-    margin-left: 10px;
 
     &--mobile {
       left: 0;
@@ -347,6 +341,7 @@ export default {
 
     &--medium {
       display: none;
+      margin-left: 8px;
       @include medium {
         display: block;
       }
@@ -361,23 +356,16 @@ export default {
         display: block;
         bottom: -8px;
       }
+      @include extraLarge {
+        margin-left: 18px;
+      }
     }
   }
 
   &__containerBall {
-    @include flexbox(row, space-between, center);
+    @include flexbox(row, space-around, center);
     width: 100vw;
     bottom: 0;
-    padding-right: 34px;
-    padding-left: 34px;
-    @include medium {
-      padding-right: 60px;
-      padding-left: 60px;
-    }
-    @include large {
-      padding-right: 94px;
-      padding-left: 94px;
-    }
   }
 
   &__wrapper {
@@ -498,12 +486,14 @@ export default {
     }
   }
 
-  // &__filter {
-  //   // background-color: $filterColor;
-  //   background-color: red;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   z-index: -1;
-  // }
+  &__filter {
+    background-color: $filterColorTimeline;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  .nextStep {
+    transform: translateX(20vw);
+  }
 }
 </style>

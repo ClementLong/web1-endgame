@@ -14,8 +14,8 @@ export default {
   props: {
     img: String,
     title: String,
-    description: String,
-  },
+    description: String
+  }
 };
 </script>
 
