@@ -12,7 +12,10 @@
       <router-link :to="{ name: 'article', params: { number: currentChapitre }}">
         <ButtonSvg class="coralButton" />
       </router-link>
-      <router-link class="previousChapter" :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}">
+      <router-link
+        class="previousChapter"
+        :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}"
+      >
         <ChapterTitleAndReturn
           :currentChapter="chapitres[currentChapitre].currentChapter"
           :chapter="chapitres[currentChapitre].chapter"
@@ -147,7 +150,7 @@ export default {
       this.currentChapitre = Number(this.$router.currentRoute.params.number);
     },
     currentChapitre: function() {
-      if (this.currentChapitre >= 1) {
+      if (this.currentChapitre >= 0) {
         axios
           .get("http://167.71.55.113/api/page/" + (this.currentChapitre + 3))
           .then(response => {
@@ -209,24 +212,16 @@ iframe {
 progress[value][data-v-c55e1cb4] {
   z-index: 1;
 }
-.place-card,
-.place-card-large {
-  display: none;
-}
-.gm-style,
-.place-card-large {
-  padding: 9px 4px 9px 11px;
-  display: none;
-}
+
 .coralButton {
-    position: fixed;
-    right: 5vw;
-    top: 10vh;
-    z-index: 1;
+  position: fixed;
+  right: 5vw;
+  top: 10vh;
+  z-index: 1;
 }
 
 .container__top {
   position: absolute;
-  z-index: 999
+  z-index: 999;
 }
 </style>
