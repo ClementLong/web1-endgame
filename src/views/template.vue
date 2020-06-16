@@ -40,4 +40,8 @@ export default {
         left: calc((100% - 66px) / 2);
         z-index: 10;
     }
+
+    .textG {
+        color: white;
+    }
 </style>

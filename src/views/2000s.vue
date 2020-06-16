@@ -1,5 +1,5 @@
 <template>
-  <div class="template background1">
+  <div class="template background4">
     <Template link='/2004home' />
   </div>
 </template>
@@ -17,4 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+    .background4 {
+        background-image: url('../img/backgrounds/backgroundearly00s.png');
+    }
 </style>
