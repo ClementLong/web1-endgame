@@ -93,16 +93,17 @@ export default {
     font-size: 36px;
     line-height: 49px;
     color: #ffffff;
-    font-family: "CinzelDecorative";
+    font-family: $Cinzel;
   }
 
   &__description {
     max-width: 562px;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "Roboto";
+    font-family: $Avenir;
     text-align: justify;
     font-size: 24px;
+    line-height: 36px;
     color: #ffffff;
 
     &--first {

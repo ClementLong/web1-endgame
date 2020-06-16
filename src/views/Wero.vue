@@ -17,7 +17,7 @@ export default {
       title: "wero",
       description:
         "Lors de l’accueil des manuhiri (visiteurs) un des guerriers de la tribu s’avance pour effectuer une danse : le Wero. Cette danse permet au guerrier de confirmer les intentions des manhuri (visiteurs) et de les dissuader de les attaquer. Il dépose ensuite un rautapu (feuille) que le manuhiri (visiteur) ramasse en signe de paix.",
-      video: require("@/assets/video/video-wero.mp4")
+      video: require("@/assets/video/video-wero.mp4"),
     };
   },
   // mounted() {
@@ -45,11 +45,12 @@ export default {
       var maxScrolldown =
         event.target.scrollingElement.scrollHeight -
         event.target.scrollingElement.clientHeight;
+      //console.log(this.scrollTop)
       if (this.scrollTop >= maxScrolldown) {
         window.location.href = "http://localhost:8080/karanga";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

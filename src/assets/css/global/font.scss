@@ -20,3 +20,24 @@
   src: local("Cinzel semiBold"),
     url("/assets/fonts/Cinzel-SemiBold.otf") format("otf");
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto"), url("/assets/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("RobotoThin"), url("/assets/fonts/Roboto-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir"), url("/assets/fonts/AvenirLTStd-Book.otf") format("otf");
+}
