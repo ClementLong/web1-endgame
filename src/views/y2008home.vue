@@ -3,7 +3,7 @@
         <Template link='/2008fact' />
         <div class="home2008__text">
             <p class= "home2008__text__year title">2008</p>
-            <p class= "home2008__text__fact legend">Heartbroken Kanye West brings vulnerability to Hip Hop </p>
+            <p class= "home2008__text__fact title">Heartbroken Kanye West brings vulnerability to Hip Hop </p>
         </div>
         <div  >
             <img class= "home2008__image" src="../img/2000s/kanyewest.png" alt="kanye">   
@@ -47,7 +47,7 @@ export default {
 }
 
 .home2008__text__fact {
-
+    text-align: left;
     font-size: 54px;
 }
 </style>

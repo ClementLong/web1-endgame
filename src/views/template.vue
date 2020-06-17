@@ -45,14 +45,17 @@ export default {
     }
  
     .legend {
-    color: white;
-    font-size: 1.5em;
+        color: white;
+        font-size: 1.5em;
+        font-family: "Domestic Manners" , "Arial";
+        letter-spacing: 5px ;
     }
-
+        
         .title {
             color: white;
             text-align: center;
-
+            font-family: "Athene" , arial;
+            letter-spacing: 5px ;
             h1 {
                 font-size: 8em;
             }
@@ -68,15 +71,18 @@ export default {
 
     .DMfont {
         font-family: "Domestic Manners" , "Arial";
+        color:white;
     }
 
     .OOGfont {
 
         font-family: "Over Obsessed Girlfriend" , arial;
+        color:white;
     }
 
     .Afont {
         font-family: "Athene" , arial;
+        color:white;
     }
 
 </style>
