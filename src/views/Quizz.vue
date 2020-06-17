@@ -17,34 +17,29 @@
 <script>
 import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
 import Quizz from "@/components/Quizz.vue";
-<<<<<<< Updated upstream
-import axios from "axios";
-export default {
-  components: {
-    CrossButtonSvg,
-    Quizz
-  },
-  data() {
-    return {
-      currentChapitre: this.$route.params.number,
-      data: null,
-    };
-  },
-  mounted() {
-    axios
-      .get("https://api.savethecorals.fr/api/page/" + (this.currentChapitre + 3))
-      .then(response => (this.data = response.data.data));
-=======
 import VraiFaux from "@/components/VraiFaux.vue";
+
+import axios from "axios";
 export default {
   components: {
     CrossButtonSvg,
     Quizz,
     VraiFaux
->>>>>>> Stashed changes
+  },
+  data() {
+    return {
+      currentChapitre: this.$route.params.number,
+      data: null
+    };
+  },
+  mounted() {
+    axios
+      .get(
+        "https://api.savethecorals.fr/api/page/" + (this.currentChapitre + 3)
+      )
+      .then(response => (this.data = response.data.data));
   }
 };
-
 </script>
 
 <style>
