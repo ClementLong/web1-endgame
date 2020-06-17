@@ -42,6 +42,12 @@
       ></iframe>
 
       <video v-else :src="linkVideo" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
+
+    </div>
+    <div id="app">
+        <transition name="transition" mode="out-in">
+            <router-view></router-view>
+        </transition>
     </div>
   </div>
 </template>

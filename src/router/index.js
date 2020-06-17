@@ -44,14 +44,18 @@ const routes = [
     path: "/chapitre/:number",
     name: "chapitre",
     component: Chapitre,
-  },{
-    path: "/article/:number",
-    name: "article",
-    component: Article
-  },{
-    path: "/quizz/:number",
-    name: "quizz",
-    component: Quizz
+    children: [
+      {
+        path: "article",
+        name: "article",
+        component: Article
+      },
+      {
+        path: "/quizz/:number",
+        name: "quizz",
+        component: Quizz
+      }
+    ]
   }
 ];
 
