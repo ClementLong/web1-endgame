@@ -157,7 +157,7 @@ export default {
     currentChapitre: function() {
       if (this.currentChapitre >= 0) {
         axios
-          .get("https://api.savethecorals.fr/api2/page/" + (this.currentChapitre + 3))
+          .get("https://api.savethecorals.fr/api/page/" + (this.currentChapitre + 3))
           .then(response => {
             this.linkVideo = response.data.data.video;
             this.music = response.data.data.music;

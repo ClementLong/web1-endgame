@@ -80,7 +80,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://api.savethecorals.fr/api/page/03")
+      .get("https://api.savethecorals.fr/api/page/3")
       .then(response => (this.data = response.data.data));
   }
 };
