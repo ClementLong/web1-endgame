@@ -81,7 +81,7 @@ export default {
           currentChapter: "00",
           chapter: "07",
           value: 10,
-          title: "Bienvenue dans la mer de Corail",
+          title: null,
           reviewChapter: "Revoir l'introduction",
           redirectionPageTo: "/intro",
           nextChapter: "Passer au chapitre suivant",
@@ -92,7 +92,7 @@ export default {
           currentChapter: "01",
           chapter: "07",
           value: 25,
-          title: "Qu'est-ce qu'un corail?",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap0",
           nextChapter: "Passer au chapitre suivant",
@@ -158,10 +158,12 @@ export default {
     currentChapitre: function() {
       if (this.currentChapitre >= 0) {
         axios
-          .get("http://167.71.55.113/api/page/" + (this.currentChapitre + 3))
+          .get("http://167.71.55.113/api2/page/" + (this.currentChapitre + 3))
           .then(response => {
             this.linkVideo = response.data.data.video;
             this.music = response.data.data.music;
+            this.chapitres[0].title = response.data.data.title;
+            this.chapitres[1].title = response.data.data.title;
           });
         //  console.log(this.$el.querySelector("video"))
         //  .play();
