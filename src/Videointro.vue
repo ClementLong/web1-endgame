@@ -6,9 +6,9 @@
                 </video>
             </div>
             <div class="divButton"> 
-                <!-- <router-link to="?"> -->
+                <router-link to="/index">
                     <button class="buttonSkip"> <a> Skip ▼ </a> </button>
-                <!-- </router-link> -->
+                </router-link>
             </div>
         </div>
     </div>
