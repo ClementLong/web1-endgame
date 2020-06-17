@@ -55,8 +55,8 @@ export default {
             responseD:"Sans coraux, les épisodes de canicule seont plus fréquent"
           }
         }
-    };
- }
+     };
+  }
 }
 </script>
 
