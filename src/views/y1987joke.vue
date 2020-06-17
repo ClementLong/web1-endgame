@@ -1,12 +1,18 @@
 <template>
   <div class="template background1">
     <Template link='/1987fact' />
-    <h1 id="at">At the time</h1>
-    <img id="ghetto" src="../img/ghettoblaster.png"/>
+    <h1 class="title" id="at">At the time</h1>
+    <div id="blockGhetto">
+      <img id="ghetto" src="../img/ghettoblaster.png"/>
+      <h2 class="DMfont" id="rap">RAP</h2>
+      <img id="blockGhetto__arrow" src="../img/misc/arrow.png" />
+    </div>
     <img id="et" src="../img/et.png"/>
-    <img id="van" src="../img/vanhalen.png"/>
-    <h2 id="rap">RAP</h2>
-    <h2 id="rock">ROCK</h2>
+    <div id="blockVan">
+      <img id="van" src="../img/vanhalen.png"/>
+      <h2 class="DMfont" id="rock">ROCK</h2>
+      <img id="blockVan__arrow" src="../img/misc/arrow.png" />
+    </div>
   </div>
 </template>
 
@@ -23,38 +29,61 @@ export default {
 </script>
 
 <style lang="scss">
-    #at {
-        margin-left: auto;
-        margin-right: auto;
-        width: 6em;
-        color: white;
-        padding-top: 50px;
-        font-size: 45px;
-    }
-    #ghetto {
-      margin-left: 230px;
-      padding-top: 50px;
-      width: 310px;
-      height: 300px;
+#at {
+  position: relative;
+  font-size: 48px;
+  top: 5vh;
+}
+    #blockGhetto {
+      position: absolute;
+      left: 8vw;
+      top: 25vh;
+      #ghetto {
+        width: 25vw;
+      }
+      #rap {
+        position: relative;
+        bottom: 55vh;
+        left: 25vw;
+        font-size: 56px;
+        transform: rotate(15deg);
+        color: gray;
+      }
+      #blockGhetto__arrow {
+        position: relative;
+        width: 13vw;
+        bottom: 60vh;
+        left: 18vw;
+      }
     }
     #et {
-      margin-left: 182px;
-      padding-bottom: 100px;
+      position: absolute;
+      left: 47vw;
+      top: 38vh;
     }
-    #van {
-      margin-left: 170px;
-      width: 400px;
-      height: 300px;
-    }
-    #rap {
-      color: white;
-      margin-left: 350px;
-      font-size: 40px;
-      padding-top: 40px;
-    }
-    #rock {
-      color: white;
-      margin-left: 1100px;
-      font-size: 40px;
+    #blockVan {
+      position: absolute;
+      right: 10vw;
+      top: 25vh;
+      #van {
+        width: 25vw;
+      }
+      #blockVan__arrow {
+        width: 12vw;
+        transform: rotate(40deg);
+        position: relative;
+        left: 8vw;
+        overflow: hidden;
+        bottom: 8vh;
+      }
+      #rock {
+        font-size: 56px;
+        color: gray;
+        position: relative;
+        left: 20vw;
+        width: 10vw;
+        transform: rotate(30deg);
+        top: 5vh;
+      }
     }
 </style>
