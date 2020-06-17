@@ -90,7 +90,7 @@ export default {
           currentChapter: "01",
           chapter: "07",
           value: 25,
-          title: "Qu'est-ce qu'un corail?",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap0",
           nextChapter: "Passer au chapitre suivant",
@@ -100,7 +100,7 @@ export default {
           currentChapter: "02",
           chapter: "07",
           value: 35,
-          title: "Quel est leur rôle?",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap1",
           nextChapter: "Passer au chapitre suivant",
@@ -110,7 +110,7 @@ export default {
           currentChapter: "03",
           chapter: "07",
           value: 50,
-          title: "Mais que se passe t-il ?",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap2",
           nextChapter: "Passer au chapitre suivant",
@@ -120,7 +120,7 @@ export default {
           currentChapter: "04",
           chapter: "07",
           value: 60,
-          title: "Le blanchissement devient régulier",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap3",
           nextChapter: "Passer au chapitre suivant",
@@ -130,7 +130,7 @@ export default {
           currentChapter: "05",
           chapter: "07",
           value: 75,
-          title: "Aujourd’hui, 50% sont déjà morts",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap4",
           nextChapter: "Passer au chapitre suivant",
@@ -140,7 +140,7 @@ export default {
           currentChapter: "06",
           chapter: "07",
           value: 90,
-          title: "Il est encore temps d'agir",
+          title: null,
           reviewChapter: "Revoir le chapitre précédent",
           redirectionPageTo: "/chap5",
           nextChapter: "Passer au chapitre suivant",
@@ -156,11 +156,18 @@ export default {
     currentChapitre: function() {
       if (this.currentChapitre >= 1) {
         axios
-          .get("http://167.71.55.113/api/page/" + (this.currentChapitre + 3))
+          .get("http://167.71.55.113/api2/page/" + (this.currentChapitre + 3))
           .then(response => {
             this.linkVideo = response.data.data.video;
             this.music = response.data.data.music;
-          });
+            this.chapitres[1].title = response.data.data.title;
+            this.chapitres[2].title = response.data.data.title;
+            this.chapitres[3].title = response.data.data.title;
+            this.chapitres[4].title = response.data.data.title;
+            this.chapitres[5].title = response.data.data.title;
+            this.chapitres[6].title = response.data.data.title;
+          })
+          .catch(error => console.log(error));
         //  console.log(this.$el.querySelector("video"))
         //  .play();
       }
