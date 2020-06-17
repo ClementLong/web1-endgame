@@ -41,10 +41,10 @@ export default {
         z-index: 10;
     }
  
-.legend {
-  color: white;
-  font-size: 1.5em;
-}
+    .legend {
+        color: white;
+        font-size: 1.5em;
+    }
 
     .title {
         color: white;

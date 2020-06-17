@@ -6,11 +6,11 @@
 - Kanye West</p>
     </div >
 
-    <img src="..\img\kanye3dpeintured.png" alt="kanye">
+    <img src="../img/kanye3dpeintured.png" alt="kanye">
 
     <div>
         <p class="fact2_2008__text2">New Wave was the most influent rock mouvment in the 80s</p>
-        <img class="" src="..\img\newwave.png" alt="newwave">
+        <img class="" src="../img/newwave.png" alt="newwave">
     </div>
 
     
