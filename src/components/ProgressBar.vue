@@ -4,13 +4,13 @@
 
 <script>
 export default {
-  name: "ProgressBar",
+  name: "ProgressBar"
 };
 </script>
 
 <style scoped lang="scss">
 progress {
-  height: 0.5vh;
+  height: 0.7vh;
   position: absolute;
   left: 0;
 }

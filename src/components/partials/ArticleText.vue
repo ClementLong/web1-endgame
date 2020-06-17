@@ -22,6 +22,7 @@ export default {
     font: bold rem(20px) / 1.3 $montserrat;
     color: $yellow;
   }
+
   hr {
     margin: 24px 0;
   }
@@ -43,6 +44,7 @@ export default {
       font-size: rem(40px);
       text-align: left;
     }
+
     hr {
       width: 40%;
       display: block;
@@ -64,6 +66,7 @@ export default {
       font-size: rem(40px);
       text-align: left;
     }
+
     hr {
       width: 40%;
       display: block;

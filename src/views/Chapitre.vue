@@ -12,7 +12,10 @@
       <router-link :to="{ name: 'article', params: { number: currentChapitre }}">
         <ButtonSvg class="coralButton" />
       </router-link>
-      <router-link class="previousChapter" :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}">
+      <router-link
+        class="previousChapter"
+        :to="{ name: 'chapitre', params: { number: currentChapitre - 1 }}"
+      >
         <ChapterTitleAndReturn
           :currentChapter="chapitres[currentChapitre].currentChapter"
           :chapter="chapitres[currentChapitre].chapter"
@@ -27,7 +30,7 @@
       </router-link>
     </section>
 
-    <div>
+    <div class="container__map-video">
       <iframe
         class="iframe-map"
         v-if="chapitres[currentChapitre].iframe"
@@ -42,12 +45,11 @@
       ></iframe>
 
       <video v-else :src="linkVideo" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
-
     </div>
     <div id="app">
-        <transition name="transition" mode="out-in">
-            <router-view></router-view>
-        </transition>
+      <transition name="transition" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
@@ -59,7 +61,6 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 import ButtonSvg from "@/components/ButtonSvg";
 import axios from "axios";
-
 export default {
   name: "Chapitre",
   components: {
@@ -79,7 +80,7 @@ export default {
           currentChapter: "00",
           chapter: "07",
           value: 10,
-          title: "Bienvenue dans la mer de Corail",
+          title: null,
           reviewChapter: "Revoir l'introduction",
           redirectionPageTo: "/intro",
           nextChapter: "Passer au chapitre suivant",
@@ -154,7 +155,7 @@ export default {
       this.currentChapitre = Number(this.$router.currentRoute.params.number);
     },
     currentChapitre: function() {
-      if (this.currentChapitre >= 1) {
+      if (this.currentChapitre >= 0) {
         axios
           .get("http://167.71.55.113/api2/page/" + (this.currentChapitre + 3))
           .then(response => {
@@ -182,14 +183,12 @@ export default {
 header {
   display: flex;
 }
-
 .iframe-map {
   width: 100vw;
   height: 140vh;
   position: absolute;
   left: 0;
 }
-
 video {
   object-fit: cover;
   width: 100vw;
@@ -199,7 +198,6 @@ video {
   left: 0;
   z-index: 0;
 }
-
 .chapitre {
   position: relative;
   @include format_vw-vh;
@@ -217,17 +215,10 @@ header {
   z-index: 1;
 }
 
-iframe {
-  width: 100vw;
-  height: 140vh;
-  transform: translateY(-290px);
-}
-
 .container_currentChapter {
   position: fixed;
   z-index: 1;
 }
-
 progress[value][data-v-c55e1cb4] {
   z-index: 1;
 }
@@ -250,4 +241,8 @@ coralButton {
   z-index: 1;
 }
 
+.container__top {
+  position: absolute;
+  z-index: 999;
+}
 </style>

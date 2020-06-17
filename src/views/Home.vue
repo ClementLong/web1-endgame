@@ -2,8 +2,8 @@
   <div class="outer-wrapper">
     <div class="audio">
       <iframe v-if="data" :src="data.music" allow="autoplay" id="audio" style="display: none"></iframe>
-      <audio v-if="data" id="player" autoplay loop>
-        <source v-if="data" :src="data.music" type="audio/mpeg" />
+      <audio id="player" autoplay loop>
+        <source v-if="data" :src="data.music" type="audio/mp3" />
       </audio>
     </div>
     <div class="wrapper">

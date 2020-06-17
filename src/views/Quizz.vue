@@ -7,8 +7,10 @@
 </template>
 
 <script>
-import Quizz from "@/components/Quizz.vue"
+import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
+import Quizz from "@/components/Quizz.vue";
 export default {
+
     components: {
         Quizz
     },
@@ -59,5 +61,4 @@ export default {
 </script>
 
 <style>
-
 </style>
