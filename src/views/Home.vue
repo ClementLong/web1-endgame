@@ -35,7 +35,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://167.71.55.113/api/page/03")
+      .get("https://api.savethecorals.fr/api/page/03")
       .then(response => (this.data = response.data.data));
   }
 };
