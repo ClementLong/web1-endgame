@@ -3,7 +3,7 @@
     <Template link='/2004fact' />
     <div class="home2004__texts">
       <h1 class="home2004__texts__year title">2004</h1>
-      <p class="home2004__texts__text1">The last Rap/Rock collaboration ?</p>
+      <p class="home2004__texts__text1 title">The last Rap/Rock collaboration ?</p>
     </div>
     <div>
       <img class="home2004__image1" src="../img/2000s/chesterpeintured.png" alt="">
