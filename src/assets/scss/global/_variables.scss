@@ -1,0 +1,137 @@
+//************************* COLORS *************************//
+
+// PRIMARY :
+$white: #ffffff;
+$dark: #333;
+
+// SECONDARY
+$blue: #0095FF;
+$yellow: #FFC94D;
+
+
+// COLORS WITH OPACITY :
+
+$backgroundBoxes: rgba(6, 6, 6, 0.65);
+
+
+
+//************************* FONTS *************************//
+
+
+$montserrat: "Montserrat",
+sans-serif;
+
+
+
+
+//************************* BREAKPOINTS *************************//
+
+
+$tablet-up: 768px;
+$tablet-down: 767px;
+$big-tablet: 1024px;
+
+$desktop-height: 750px;
+$desktop-down: 1199px;
+$desktop-up: 1200px;
+$desktop-large: 1366px;
+$desktop-Xlarge: 1570px;
+$desktop-xxLarge: 2078px;
+$desktop-megaLarge_2368: 2368px;
+
+
+
+//************************* MEDIA QUERIES *************************//
+
+
+
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+@mixin big-tablet {
+  @media (min-width: 1024px) and (min-height: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media (min-width: 1024px) and (min-height: $desktop-height) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// 1200px
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+// 1366px
+@mixin desktop-large {
+  @media (min-width: $desktop-large) {
+    @content;
+  }
+}
+
+// 1768px
+@mixin desktop-Xlarge {
+  @media (min-width: $desktop-Xlarge) {
+    @content;
+  }
+}
+
+// 2078px
+@mixin desktop-xxLarge {
+  @media (min-width: $desktop-xxLarge) {
+    @content;
+  }
+}
+
+// 2368px
+@mixin desktop-megaLarge_2368 {
+  @media (min-width: $desktop-megaLarge_2368) {
+    @content;
+  }
+}
+
+
+//************************* MIXINS *************************//
+
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin format_vw-vh {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@mixin background-boxes {
+  background: $backgroundBoxes;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+@mixin scale-animation-light {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
