@@ -30,7 +30,7 @@
       </router-link>
     </section>
 
-    <div>
+    <div class="container__map-video">
       <iframe
         class="iframe-map"
         v-if="chapitres[currentChapitre].iframe"
@@ -45,12 +45,11 @@
       ></iframe>
 
       <video v-else :src="linkVideo" autoplay loop>Votre navigateur ne supporte pas la vidéo.</video>
-
     </div>
     <div id="app">
-        <transition name="transition" mode="out-in">
-            <router-view></router-view>
-        </transition>
+      <transition name="transition" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
@@ -182,7 +181,7 @@ header {
 .iframe-map {
   width: 100vw;
   height: 140vh;
-  transform: translateY(-150px);
+  transform: translateY(-115px);
 }
 video {
   object-fit: cover;
@@ -203,16 +202,13 @@ video {
   background-image: url(../assets/img/chapter0.png);
   overflow: hidden;
 }
+
 header {
   display: flex;
   position: relative;
   z-index: 1;
 }
-iframe {
-  width: 100vw;
-  height: 140vh;
-  transform: translateY(-290px);
-}
+
 .container_currentChapter {
   position: fixed;
   z-index: 1;

@@ -29,6 +29,8 @@ export default {
   display: none;
 
   @include tablet-up {
+    position: relative;
+    z-index: 999;
     padding: 8px 12px 8px 8px;
     width: fit-content;
     max-width: 155px;
