@@ -6,12 +6,12 @@
     </div>
     <div class="crossover">
       <img class="crossover__img" src="../img/Late90s/crossover.png" />
-      <img class="crossover__arrow" src="../img/arrow.png" />
+      <img class="crossover__arrow" src="../img/misc/arrow.png" />
       <div class="crossover__legend legend">First Crossover Tour featuring Korn, Limp Bizkit, Rammstein and Icecube</div>
     </div>
     <div class="finger">
       <div class="finger__legend legend">The band showing their middle finger</div>
-      <img class="finger__arrow" src="../img/arrow.png" />
+      <img class="finger__arrow" src="../img/misc/arrow.png" />
       <img class="finger__img" src="../img/Late90s/finger.png" />
     </div>
   </div>
@@ -66,9 +66,9 @@ export default {
     position: absolute;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) rotate(-110deg);
-    width: 100px;
-    top: 30px;
-    left: 50px;
+    width: 120px;
+    top: 40px;
+    left: 30px;
   }
 }
 </style>

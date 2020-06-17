@@ -3,11 +3,11 @@
     <Template link='/' />
         <p class="fact2_2008__text1 legend">“808s was the first album of that kind, you know? It was the first, like, black new wave album.” <br> - Kanye West</p>
 
-    <img class="fact2_2008__image1" src="..\img\2000s\kanye3dpeintured.png" alt="kanye">
+    <img class="fact2_2008__image1" src="../img/2000s/kanye3dpeintured.png" alt="kanye">
     
     <div class="fact2_2008__imageBlock">
 
-        <img class="fact2_2008__imageBlock__image2" src="..\img\2000s\newwave.png" alt="newwave">
+        <img class="fact2_2008__imageBlock__image2" src="../img/2000s/newwave.png" alt="newwave">
         <img class="fact2_2008__imageBlock__arrow" src="../img/misc/arrow.png" alt="">
         <p class="fact2_2008__imageBlock__text2 legend">New Wave was the most influent rock mouvment in the 80s</p>    
         

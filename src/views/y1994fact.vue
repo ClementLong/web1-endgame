@@ -6,22 +6,22 @@
     </div>
     <div class="guitar">
       <img class="guitar__img" src="../img/90s/guitar.png" />
-      <img class="guitar__arrow" src="../img/arrow.png" />
+      <img class="guitar__arrow" src="../img/misc/arrow.png" />
       <div class="guitar__legend legend">7 strings guitar</div>
     </div>
     <div class="turntable">
       <div class="turntable__legend legend">Turntable</div>
-      <img class="turntable__arrow" src="../img/arrow.png" />
+      <img class="turntable__arrow" src="../img/misc/arrow.png" />
       <img class="turntable__img" src="../img/90s/turntable.png" />
     </div>
     <div class="addidas">
       <img class="addidas__img" src="../img/90s/addidas.png" />
-      <img class="addidas__arrow" src="../img/arrow.png" />
+      <img class="addidas__arrow" src="../img/misc/arrow.png" />
       <div class="addidas__legend legend">Addidas Tracksuit</div>
     </div>
     <div class="dreadlocks">
       <div class="dreadlocks__legend legend">Dreadlocks</div>
-      <img class="dreadlocks__arrow" src="../img/arrow.png" />
+      <img class="dreadlocks__arrow" src="../img/misc/arrow.png" />
       <img class="dreadlocks__img" src="../img/90s/dreadlocks.png" />
     </div>
   </div>

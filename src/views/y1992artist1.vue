@@ -4,11 +4,11 @@
     <div class="tom">
       <div class="tom__legend legend">Tom Morello, the "DJ Guitarist" from RATM</div>
       <img class="tom__img" src="../img/90s/TOM.png" />
-      <img class="tom__arrow" src="../img/arrow.png" />
+      <img class="tom__arrow" src="../img/misc/arrow.png" />
     </div>
     <div class="dod">
       <img class="dod__img" src="../img/90s/DOD-WHAMMYDT-Large 1.png" />
-      <img class="dod__arrow" src="../img/arrow.png" />
+      <img class="dod__arrow" src="../img/misc/arrow.png" />
       <div class="dod__legend legend">The main ingredient of his sound</div>
     </div>
   </div>
@@ -41,8 +41,8 @@ export default {
   &__arrow {
     position: absolute;
     transform: rotate(-30deg);
-    width: 100px;
-    top: 50px;
+    width: 120px;
+    top: 80px;
     left: 40%;
   }
 
