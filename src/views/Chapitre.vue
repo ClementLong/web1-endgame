@@ -186,7 +186,8 @@ header {
 .iframe-map {
   width: 100vw;
   height: 140vh;
-  transform: translateY(-150px);
+  position: absolute;
+  left: 0;
 }
 
 video {
@@ -242,11 +243,11 @@ progress[value][data-v-c55e1cb4] {
   display: none;
 }
 
-.coralButton {
-    position: fixed;
-    right: 5vw;
-    top: 10vh;
-    z-index: 1;
+coralButton {
+  position: fixed;
+  right: 15vw;
+  top: 20vh;
+  z-index: 1;
 }
 
 </style>
