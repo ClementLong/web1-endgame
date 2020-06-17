@@ -80,7 +80,7 @@ export default {
           currentChapter: "00",
           chapter: "07",
           value: 10,
-          title: null,
+          title: "Bienvenue dans la mer de Corail",
           reviewChapter: "Revoir l'introduction",
           redirectionPageTo: "/intro",
           nextChapter: "Passer au chapitre suivant",
