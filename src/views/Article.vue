@@ -83,6 +83,8 @@ export default {
     min-height: 94vh;
     backdrop-filter: blur(8px);
     background: $backgroundBoxes;
+    position: fixed;
+    z-index: 8;
 }
 
 .content {

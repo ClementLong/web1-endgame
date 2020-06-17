@@ -27,7 +27,7 @@ export default {
   background-color: $backgroundBoxes;
   border: 1px solid white;
   border-right: none;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 
   &:hover {
