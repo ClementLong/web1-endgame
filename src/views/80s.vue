@@ -1,8 +1,5 @@
 <template>
   <div class="template background1">
-    <audio autoplay loop  id="playAudio">
-        <source src="../audio/led-zeppelin-stairway-to-heaven.mp3">
-    </audio>
     <Template link='/1987home' />
     <h1 class="title" id="title">Mid-80s/Late 80s :<br>The First Steps</h1>
   </div>

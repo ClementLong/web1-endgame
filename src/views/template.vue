@@ -16,16 +16,18 @@ export default {
     name: 'template',
     props: {
         link: String
-    }
-}
+    },
 
-window.addEventListener('mousemove', function(){ 
-const router =  document.querySelector('.circle') 
-window.addEventListener('keydown', function(event) {
+created() {
+setInterval(function(){ 
+    let router =  document.querySelector('.circle')
+    window.addEventListener('keydown', function(event) {
     if (event.keyCode === 32)
      router.click()
 })
-})
+    }, 1000);
+}
+}
 </script>
  
 <style lang="scss">
