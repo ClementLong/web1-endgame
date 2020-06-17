@@ -10,12 +10,14 @@
       :responseC="data.quiz1.answer3Text"
       :responseD="data.quiz1.answer4Text"
     />
+    <VraiFaux state="Vrai" answer="lorem ipsum dolor si amhet" />
   </div>
 </template>
 
 <script>
 import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
 import Quizz from "@/components/Quizz.vue";
+<<<<<<< Updated upstream
 import axios from "axios";
 export default {
   components: {
@@ -32,6 +34,14 @@ export default {
     axios
       .get("https://api.savethecorals.fr/api/page/" + (this.currentChapitre + 3))
       .then(response => (this.data = response.data.data));
+=======
+import VraiFaux from "@/components/VraiFaux.vue";
+export default {
+  components: {
+    CrossButtonSvg,
+    Quizz,
+    VraiFaux
+>>>>>>> Stashed changes
   }
 };
 

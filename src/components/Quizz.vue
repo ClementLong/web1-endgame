@@ -2,24 +2,43 @@
   <section class="container__background">
     <div class="container quizz">
       <p class="quizz__question">{{ question }}</p>
-      <button id="resA" class="quizz__response">{{ responseA }}</button>
-      <button id="resB" class="quizz__response">{{ responseB }}</button>
-      <button id="resC" class="quizz__response">{{ responseC }}</button>
-      <button id="resD" class="quizz__response">{{ responseD }}</button>
+      <button id="resA" @click="isFalse = !isFalse" class="quizz__response">{{ responseA }}</button>
+      <button id="resB" @click="isTrue = !isTrue" class="quizz__response">{{ responseB }}</button>
+      <button id="resC" @click="isFalse = !isFalse" class="quizz__response">{{ responseC }}</button>
+      <button id="resD" @click="isFalse = !isFalse" class="quizz__response">{{ responseD }}</button>
     </div>
+    <VraiFaux state="Vrai" answer="lorem ipsum dolor si amhet" :class="{ isVisible : isTrue }" />
   </section>
 </template>
 
 <script>
+import VraiFaux from "@/components/VraiFaux.vue";
+
 export default {
   name: "Quizz",
+  components: {
+    VraiFaux
+  },
   props: {
     question: String,
     responseA: String,
     responseB: String,
     responseC: String,
     responseD: String
+  },
+  data() {
+    return {
+      isTrue: false,
+      isFalse: false
+    };
   }
+  // methods: {
+  //   isTrue: function() {
+  //     this.selected = document
+  //       .querySelector("vraiFaux")
+  //       .classList.add("isVisible");
+  //   }
+  // }
 };
 </script>
 
