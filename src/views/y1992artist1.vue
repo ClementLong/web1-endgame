@@ -42,7 +42,7 @@ export default {
     position: absolute;
     transform: rotate(-30deg);
     width: 120px;
-    top: 80px;
+    top: 100px;
     left: 40%;
   }
 

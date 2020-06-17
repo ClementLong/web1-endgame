@@ -48,9 +48,9 @@ export default {
     &__arrow {
       position: absolute;
       transform: rotate(80deg);
-      width: 100px;
-      bottom: 40px;
-      left: 20px;
+      width: 120px;
+      bottom: 60px;
+      left: 0;
     }
 
     &__legend {
@@ -108,9 +108,9 @@ export default {
 
     &__arrow {
       position: absolute;
-      transform: rotate(-90deg);
+      transform: rotate(-60deg);
       width: 100px;
-      top: 40px;
+      top: 60px;
       right: -30px;
     }
   }
