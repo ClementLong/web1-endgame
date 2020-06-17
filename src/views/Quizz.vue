@@ -4,11 +4,11 @@
       <CrossButtonSvg />
     </router-link>
     <Quizz
-      question="Test"
-      responseA="test1"
-      responseB="test2"
-      responseC="test3"
-      responseD="test4'"
+      :question="data.quiz1.question"
+      :responseA="data.quiz1.answer1Text"
+      :responseB="data.quiz1.answer2Text"
+      :responseC="data.quiz1.answer3Text"
+      :responseD="data.quiz1.answer4Text"
     />
   </div>
 </template>
@@ -16,12 +16,25 @@
 <script>
 import CrossButtonSvg from "@/components/CrossButtonSvg.vue";
 import Quizz from "@/components/Quizz.vue";
+import axios from "axios";
 export default {
   components: {
     CrossButtonSvg,
     Quizz
+  },
+  data() {
+    return {
+      currentChapitre: this.$route.params.number,
+      data: null,
+    };
+  },
+  mounted() {
+    axios
+      .get("https://api.savethecorals.fr/api/page/" + (this.currentChapitre + 3))
+      .then(response => (this.data = response.data.data));
   }
 };
+
 </script>
 
 <style>
