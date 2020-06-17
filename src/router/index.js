@@ -23,6 +23,8 @@ import y2004fact2 from '../views/y2004fact2.vue'
 import y2008home from '../views/y2008home.vue'
 import y2008fact from '../views/y2008fact.vue'
 import y2008fact2 from '../views/y2008fact2.vue'
+import '../font/style.scss'
+
 
 
 Vue.use(VueRouter)
