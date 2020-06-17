@@ -67,8 +67,8 @@ export default {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) rotate(-110deg);
     width: 120px;
-    top: 40px;
-    left: 30px;
+    top: 70px;
+    left: 20px;
   }
 }
 </style>
