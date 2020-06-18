@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import data from '@/views/data.vue';
 import VueRouter from 'vue-router';
 import mainPage from '@/views/MainPages.vue';
 import secondPage from '@/views/SecondPage.vue';
@@ -246,6 +247,11 @@ const routes = [
 		path: '/zooplancton',
 		name: 'zooplancton',
 		component: zooplancton,
+	},
+	{
+		path: '/data/:deep_min/:deep_max',
+		name: 'data',
+		component: data,
 	},
 ];
 const router = new VueRouter({
