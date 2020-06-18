@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import familles from '@/views/familles/familles.vue';
+//import familles from '@/views/familles/familles.vue';
 import VueRouter from 'vue-router';
 import mainPage from '@/views/MainPages.vue';
 import secondPage from '@/views/SecondPage.vue';
@@ -59,7 +59,7 @@ const routes = [
 		component: secondPage,
 	},
 	{
-		path: '/mammiferes',
+		path: '/mammiferes/:deep_min/:deep_max',
 		name: 'mammiferes',
 		component: mammiferes,
 	},
@@ -248,11 +248,11 @@ const routes = [
 		name: 'zooplancton',
 		component: zooplancton,
 	},
-	{
+	/*{
 		path: 'familles/:deep_min/:deep_max',
 		name: 'familles',
 		component: familles,
-	},
+	},*/
 ];
 const router = new VueRouter({
 	mode: 'history',

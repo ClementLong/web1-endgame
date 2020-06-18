@@ -73,13 +73,13 @@
         </div>
         <div>
           <h3 class="scaner">
-            De nouvelles especes!
-            <br />N’oublie pas de clicker pour plus
+            De nouvelles espèces!
+            <br />N’oublie pas de cliquer pour plus
             <br />d’informations
           </h3>
-          <router-link to="/clown" tag="button">
-            <img src="@/img/scaner.svg" alt class="scan" />
-          </router-link>
+          
+            <router-link to="/mammiferes/0/3000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
+         
         </div>
         <p class="profond">300m</p>
       </div>
