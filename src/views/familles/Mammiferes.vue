@@ -9,7 +9,7 @@
     <div class="speciesName">
       <h2>La tortue Verte</h2>
       <img src alt />
-      <router-link to="@/species/clown">En savoir plus</router-link>
+      <router-link to="/clown">En savoir plus</router-link>
     </div>
 </body>
 </template>
@@ -32,8 +32,6 @@ export default {
     };
   },
   mounted() {
-    let titlenode = document.querySelectorAll('speciesName');
-    console.log("query", titlenode);
     var min = this.$route.params.deep_min;
     var max = this.$route.params.deep_max;
 
@@ -46,18 +44,26 @@ export default {
         }
       )
       .then(response => response.data.results.species.filter( f => f.deep_min >= parseInt(min, 10) && f.deep_max <= parseInt(max, 10)))
-      .then((response) => {
-        console.log("hi", typeof(response))
-        let familys = response.family;
-        console.log("family", familys);
-        familys.forEach(element => {
+      .then((response) => (
+        this.info = response.forEach(element => {
+          console.log(response)
+          let titlenode = document.querySelector("div.speciesName");
+          console.log(titlenode)
           let ul = titlenode.appendChild(document.createElement("ul"));
+          let routerLink = ul.appendChild(document.createElement("a"))
           let lis = ul.appendChild(document.createElement("li"));
+          let family = element.family;
+          let names = element.name;
 
-          lis.textContent = `${element}`;
+          routerLink.setAttribute("href", routes);
+          let routes = '/' + `${encodeURI(names)}`;
+          routerLink.href = routes;
+          lis.textContent += `${family}`;
+
+          routerLink.appendChild(lis);
         })
 
-      });
+      ));
   }
 };
 </script>
