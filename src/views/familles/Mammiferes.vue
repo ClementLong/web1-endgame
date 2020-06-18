@@ -53,8 +53,6 @@ export default {
           let lis = ul.appendChild(document.createElement("li"));
           let family = element.family;
           let id = element.id;
-          let name = element.name;
-          console.log(name);
 
           routerLink.setAttribute("href", routes);
           let routes = '/template/' + `${id}`;

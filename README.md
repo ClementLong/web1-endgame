@@ -2,7 +2,8 @@
 
 # groupe 10
 
-# URL du site : https://vigilant-haibt-f7c868.netlify.app/
+# Version fonctionnel
+# URL du site : https://pal-hetic.netlify.app/
 
 # Déscription : PROJECT ABYS LIFE est un web documentaire qui a pour but de découvrir la vie dans les fonds océaniques.
 

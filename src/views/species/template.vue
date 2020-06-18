@@ -116,6 +116,7 @@ export default {
     };
   },
   mounted() {
+
      var id = this.$route.params.id;
     axios
       .get(
@@ -125,7 +126,7 @@ export default {
           headers: { Authorization: "Basic " + btoa("admin:admin") }
         }
       )
-      .then(response => (this.info = response.data.results.species));
+      .then(response => (this.info = response.data.results.species)); 
   }
 };
 </script>
