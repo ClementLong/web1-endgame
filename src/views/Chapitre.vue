@@ -9,6 +9,7 @@
     <section class="container__top">
       <Header />
       <ProgressBar :value="chapitres[currentChapitre].value" />
+      <div v-if="chapitres[currentChapitre].caroussel">test</div>
       <router-link :to="{ name: 'article', params: { number: currentChapitre }}">
         <ButtonSvg class="coralButton" />
       </router-link>
@@ -156,6 +157,7 @@ export default {
           redirectionPageTo:"/chap6",
           nextChapter:"Passer au chapitre suivant",
           pathNextChapter:"/intro",
+          caroussel:true,
         }
       }
     };
