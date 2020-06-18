@@ -1,0 +1,62 @@
+.bgFamilles {
+	@include backgroundGradient;
+	@include title(abel, normal, none, 36px, $white, 1.5);
+	span {
+		border-bottom: 2px solid $white;
+	}
+	.mammiferesSpecies {
+		@include size(90vh, 100vw);
+		@include grid {
+			grid-template-areas:
+				'. title title .'
+				'image1  text1 txt1 diver'
+				'image2  text2 txt2 diver'
+				'image3  text3 txt3 .';
+		}
+		@include gridMobileFamilles;
+
+		.diver {
+			grid-area: diver;
+		}
+		h1 {
+			grid-area: title;
+			@include title(abel, normal, none, 48px, $white, 1.5);
+		}
+		.mammiferesDescription {
+			@include title(abel, normal, none, 18px, $white, 1.5);
+			text-align: center;
+			max-width: 800px;
+		}
+		.txt1 {
+			grid-area: txt1;
+		}
+		.txt2 {
+			grid-area: txt2;
+		}
+		.txt3 {
+			grid-area: txt3;
+		}
+		.orque {
+			grid-area: image1;
+		}
+		.name1 {
+			grid-area: text1;
+			white-space: nowrap;
+		}
+
+		.balein {
+			grid-area: image2;
+		}
+		.name2 {
+			grid-area: text2;
+		}
+
+		.phoque {
+			grid-area: image3;
+			white-space: nowrap;
+		}
+		.name3 {
+			grid-area: text3;
+		}
+	}
+}

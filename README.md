@@ -1,51 +1,5 @@
 # web1-endgame
 
-## Stack du projet
+# groupe 10
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
-
-## Route
-
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
-
-## Command line pour démarrer le projet
-
-### Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-## Documentation
-
-https://vuejs.org/
-
-https://router.vuejs.org/
-
-https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
-
-https://marozed.ma/vue-cheatsheet/
-
-#Disclaimer
-
-"Ce site a été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC. Les contenus présentés n'ont pas fait l'objet d'une demande de droit d'utilisation. Ce site ne sera en aucun cas exploité à des fins commerciales et ne sera pas publié”.
+# URL du site : https://vigilant-haibt-f7c868.netlify.app/
