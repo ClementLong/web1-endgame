@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import data from '@/views/data.vue';
+import familles from '@/views/familles/familles.vue';
 import VueRouter from 'vue-router';
 import mainPage from '@/views/MainPages.vue';
 import secondPage from '@/views/SecondPage.vue';
@@ -249,9 +249,9 @@ const routes = [
 		component: zooplancton,
 	},
 	{
-		path: '/data/:deep_min/:deep_max',
-		name: 'data',
-		component: data,
+		path: 'familles/:deep_min/:deep_max',
+		name: 'familles',
+		component: familles,
 	},
 ];
 const router = new VueRouter({

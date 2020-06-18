@@ -1,10 +1,8 @@
 <template>
   <div class="header">
     <div class="header__logoHeader">
-      <img src="@/img/Logo.svg" alt />
-      <router-link to="/mammiferes">
+      <router-link to="/secondpage"><img src="@/img/Logo.svg" alt /></router-link>
         <button>Familles</button>
-      </router-link>
     </div>
     <div class="plonge">
       <router-link to="/secondPage">

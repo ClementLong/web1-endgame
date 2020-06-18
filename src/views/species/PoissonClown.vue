@@ -95,7 +95,7 @@
         </div>
       </div>
       <div class="backbtn">
-        <img src="@/img/back.svg" alt />
+        <a href="/secondpage"><img src="@/img/back.svg" alt /></a>
       </div>
     </div>
   </div>

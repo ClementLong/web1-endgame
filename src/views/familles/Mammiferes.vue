@@ -8,7 +8,7 @@
     <div>
       <h1>La tortue Verte</h1>
       <img src alt />
-      <router-link>En savoir plus</router-link>
+      <router-link to="/clown">En savoir plus</router-link>
     </div>
   </div>
 </template>
