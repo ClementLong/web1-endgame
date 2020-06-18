@@ -24,7 +24,7 @@ export default {
           headers: { Authorization: "Basic " + btoa("admin:admin")}
         }
       )
-      .then(response => (response.data.results.species.filter( f => f.deep_min >= this.$route.params.deep_min && f.deep_max <= this.$route.params.deep_max)));
+      .then(response => (response.data.results.species.filter( f => f.deep_min >= parseint(this.$route.params.deep_min, 10) && f.deep_max <= this.$route.params.deep_max)));
   }
 }
 </script>

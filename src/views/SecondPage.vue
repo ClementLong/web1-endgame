@@ -39,7 +39,7 @@
             Click sur le point rouge pour en
             <br />decouvrir plus
           </h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/150" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">150m</p>
       </div>
@@ -78,7 +78,7 @@
             <br />d’informations
           </h3>
           
-            <router-link to="/mammiferes/0/3000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
+            <router-link to="/mammiferes/0/300" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
          
         </div>
         <p class="profond">300m</p>
@@ -107,7 +107,7 @@
         <img src alt />
         <div>
           <h3 class="scaner">Tu sais quoi faire !</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/500" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">500m</p>
       </div>
@@ -137,7 +137,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/1000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">1000m</p>
       </div>
@@ -165,7 +165,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/2000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">2000m</p>
       </div>
@@ -193,7 +193,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/3000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">3000m</p>
       </div>
@@ -215,7 +215,7 @@
         </div>
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt />
+          <router-link to="/mammiferes/0/4000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
         </div>
         <p class="profond">4000m</p>
       </div>
@@ -248,7 +248,7 @@
         <img src="@/img/nautil.svg" alt />
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/5000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
           <p class="profond">5000m</p>
         </div>
       </div>
@@ -270,7 +270,7 @@
         <img src="@/img/nautil.svg" alt />
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/6000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
           <p class="profond">6000m</p>
         </div>
       </div>
@@ -300,7 +300,7 @@
         <img src="@/img/nautil.svg" alt />
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/7000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
           <p class="profond">7000m</p>
         </div>
       </div>
@@ -333,7 +333,7 @@
         <img src="@/img/nautil.svg" alt />
         <div>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
+          <router-link to="/mammiferes/0/8000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
           <p class="profond">8000m</p>
         </div>
       </div>
@@ -367,10 +367,10 @@
         <div>
           <h3
             class="scaner"
-          >tu as atteint le palier des 10 000mètres te voila arriver à la fin de ton periple</h3>
+          >Tu as atteint le palier des 11 000mètres te voila arriver à la fin de ton periple, la fosse des Mariannes</h3>
           <h3 class="scaner">Click sur le point rouge pour en decouvrir plus</h3>
-          <img src="@/img/scaner.svg" alt class="scan" />
-          <p class="profond">10 000m</p>
+          <router-link to="/mammiferes/0/11000" tag="button"><img src="@/img/scaner.svg" class="scan" /></router-link>
+          <p class="profond">11 000m</p>
         </div>
       </div>
     </div>
@@ -406,4 +406,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.scan{
+ cursor: pointer;
+ }
 </style>
