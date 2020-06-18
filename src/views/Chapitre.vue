@@ -62,7 +62,7 @@ import ChapterTitleAndReturn from "@/components/ChapterTitleAndReturn.vue";
 import NextChapterButton from "@/components/next-chapter_button.vue";
 import ButtonSvg from "@/components/ButtonSvg";
 import axios from "axios";
-import Carousel from "@/components/Carousel.vue";
+// import Carousel from "@/components/Carousel.vue";
 export default {
   name: "Chapitre",
   components: {
@@ -71,7 +71,7 @@ export default {
     ChapterTitleAndReturn,
     NextChapterButton,
     ButtonSvg,
-    Carousel,
+    // Carousel,
   },
   data() {
     return {
@@ -159,7 +159,7 @@ export default {
           redirectionPageTo:"/chap6",
           nextChapter:"Passer au chapitre suivant",
           pathNextChapter:"/intro",
-          carousel:true,
+          // carousel:true,
         }
       }
     };
