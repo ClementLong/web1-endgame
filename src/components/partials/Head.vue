@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../../img/Logo.svg" alt />
+    <router-link to="/secondpage"><img src="@/img/Logo.svg" alt /></router-link>
   </div>
 </template>
 

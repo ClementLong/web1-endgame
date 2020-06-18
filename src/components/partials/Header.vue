@@ -1,9 +1,6 @@
 <template>
   <div>
-    <img src="../../img/Logo.svg" alt />
-    <router-link class="btn" to="/mammiferes">
-      <button>Familles</button>
-    </router-link>
+    <router-link to="/secondpage"><img src="@/img/Logo.svg" alt /></router-link>
   </div>
 </template>
 
