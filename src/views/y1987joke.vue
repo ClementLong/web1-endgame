@@ -1,6 +1,6 @@
 <template>
   <div class="template background1">
-    <Template link='/1987fact' />
+    <Template link='/1987clip' />
     <h1 class="title" id="at">At the time</h1>
     <div id="blockGhetto">
       <img id="ghetto" src="../img/ghettoblaster.png"/>

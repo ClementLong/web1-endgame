@@ -1,6 +1,6 @@
 <template>
   <div class="template background2">
-    <Template link='/1994home' />
+    <Template link='/1992clip' />
     <div class="tom">
       <div class="tom__legend legend">Tom Morello, the "DJ Guitarist" from RATM</div>
       <img class="tom__img" src="../img/90s/TOM.png" />

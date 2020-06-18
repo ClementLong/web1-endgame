@@ -1,6 +1,6 @@
 <template>
   <div class="template background4">
-    <Template link='/2004fact2' />
+    <Template link='/2004clip' />
 
     <h1 class="fact1_2004__title title">Nothing to prove</h1>
 

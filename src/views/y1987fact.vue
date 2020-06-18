@@ -1,6 +1,6 @@
 <template>
   <div class="template background1">
-    <Template link='/90s' />
+    <Template link='/1989home' />
     <img id="studio" src="../img/rundmc_aerosmith_makingof.png"/>
     <h1 class="legend" id="imgtexte">Run D.M.C and Aerosmith recording Walk This Way</h1>
     <div id='steven__block'>

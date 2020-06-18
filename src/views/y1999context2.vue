@@ -1,6 +1,6 @@
 <template>
   <div class="template background3">
-    <Template link='/2000s' />
+    <Template link='/1999clip' />
     <div class="fred-durst">
       <img class="fred-durst__img" src="../img/Late90s/fred-durst.png" />
       <img class="fred-durst__arrow" src="../img/misc/arrow.png" />

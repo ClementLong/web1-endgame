@@ -1,6 +1,6 @@
 <template>
   <div class="template background2">
-    <Template link='/late90s' />
+    <Template link='/1994clip' />
     <div class="title">
       <h2>Nu Metal starter pack</h2>
     </div>

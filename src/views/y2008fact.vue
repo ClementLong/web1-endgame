@@ -1,6 +1,6 @@
 <template>
   <div class="template background4">
-    <Template link='/2008fact2' />
+    <Template link='/2008clip' />
 
     <div class="fact1_2008__texts">
       <h1 class="fact1_2008__texts__title title">The impact on the artists </h1>

@@ -3,6 +3,7 @@
     <Template link='/80s' />
     <img id="traproll" src="../img/home/logo.png" />
     <img id="sub" src="../img/home/subtitle.png" />
+    <p class = "command title">press spacebar to navigate</p>
   </div>
 </template>
 
@@ -26,6 +27,13 @@ export default {
   width: 100%;
   height: 100%;
 }
+.command {
+  margin-top:30vh;
+  font-size:30px;
+  text-align:center;
+  color:white;
+
+}
 
 .background {
   background-image: url("../img/home/background.png");
@@ -43,6 +51,7 @@ export default {
 
 #sub {
   display: block;
+  margin-top:10%;
   margin-left: auto;
   margin-right: auto;
 }
