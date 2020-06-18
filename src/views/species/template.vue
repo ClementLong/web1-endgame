@@ -3,7 +3,7 @@
     <div class="speciesVideoFrame">
       <headr style="position:absolute;" />
       <video loop muted autoplay>
-        <source src="@/video/clown.mp4" />
+        <source :src="info.video_link" />
       </video>
     </div>
     <!-- // -->
@@ -79,7 +79,7 @@
             <div>
               <p>
                 <span class="underline">Poids/Taille:</span>
-                {{info.weight}}g / {{info.size}}cm
+                {{info.weight}}kg / {{info.size}}cm
               </p>
             </div>
           </div>
@@ -89,13 +89,12 @@
         <div class="more__youKnow">
           <h2>Le saviez-vous?</h2>
           <p>
-            Il existe trente espèces de poissons-clowns, toutes faisant partie de la famille des Pomacentridés.
-            Une seule espèce est classée dans le genre Premnas, les autres appartenant au genre Amphiprion.
+            N'as jamais été inclus dans le formulaire, arrêtons de vous raconter des bêtises :)
           </p>
         </div>
       </div>
       <div class="backbtn">
-        <img src="@/img/back.svg" alt />
+        <router-link to="/mammiferes/0/150"><img src="@/img/back.svg" alt /></router-link>
       </div>
     </div>
   </div>
@@ -106,7 +105,7 @@ import headr from "../../components/partials/Head";
 import axios from "axios";
 
 export default {
-  name: "dauphin",
+  name: "template",
   components: {
     headr
   },
@@ -117,15 +116,16 @@ export default {
     };
   },
   mounted() {
+     var id = this.$route.params.id;
     axios
       .get(
-        "https://cors-anywhere.zelazna.fr/https://pal.romain-feregotto.fr/?url=list",
+        `https://cors-anywhere.zelazna.fr/https://pal.romain-feregotto.fr/?url=getone&id=${id}`,
         {
           method: "GET",
           headers: { Authorization: "Basic " + btoa("admin:admin") }
         }
       )
-      .then(response => (this.info = response.data.results.species[9]));
+      .then(response => (this.info = response.data.results.species));
   }
 };
 </script>

@@ -7,9 +7,9 @@
     </h1>
       </div>
     <div class="speciesName">
-      <h2>La tortue Verte</h2>
-      <img src alt />
-      <router-link to="/clown">En savoir plus</router-link>
+      <br />
+      <h2>Liste des Familles</h2>
+      <br />
     </div>
 </body>
 </template>
@@ -46,23 +46,23 @@ export default {
       .then(response => response.data.results.species.filter( f => f.deep_min >= parseInt(min, 10) && f.deep_max <= parseInt(max, 10)))
       .then((response) => (
         this.info = response.forEach(element => {
-          console.log(response)
+
           let titlenode = document.querySelector("div.speciesName");
-          console.log(titlenode)
           let ul = titlenode.appendChild(document.createElement("ul"));
           let routerLink = ul.appendChild(document.createElement("a"))
           let lis = ul.appendChild(document.createElement("li"));
           let family = element.family;
-          let names = element.name;
+          let id = element.id;
+          let name = element.name;
+          console.log(name);
 
           routerLink.setAttribute("href", routes);
-          let routes = '/' + `${encodeURI(names)}`;
+          let routes = '/template/' + `${id}`;
           routerLink.href = routes;
           lis.textContent += `${family}`;
 
           routerLink.appendChild(lis);
         })
-
       ));
   }
 };
