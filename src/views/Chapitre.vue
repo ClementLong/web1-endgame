@@ -146,6 +146,16 @@ export default {
           redirectionPageTo: "/chap5",
           nextChapter: "Passer au chapitre suivant",
           pathNextChapter: "/assos"
+        },
+        "7": {
+          currentChapitre:"07",
+          chapter:"07",
+          value: 100,
+          title: null,
+          reviewChapter: "Revoie le chapitre précédent",
+          redirectionPageTo:"/chap6",
+          nextChapter:"Passer au chapitre suivant",
+          pathNextChapter:"/intro",
         }
       }
     };
@@ -168,6 +178,7 @@ export default {
             this.chapitres[4].title = response.data.data.title;
             this.chapitres[5].title = response.data.data.title;
             this.chapitres[6].title = response.data.data.title;
+            this.chapitres[7].title = response.data.data.title;
           });
         //  console.log(this.$el.querySelector("video"))
         //  .play();
