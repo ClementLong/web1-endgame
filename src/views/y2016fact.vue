@@ -8,9 +8,9 @@ from the metal band Black Sabbath</p>
       <p class="fact1_2016__texts__text2 legend">Trippie Redd wearing a Sweat-Shirt from
 the german metal band Rammstein  </p>
     </div >
-    <div class="fact1_2016__images">
-      <img class="fact1_2016__image__image1" src="../img/2010s/liluzivert.png" alt="lil uzi vert">
-      <img class="fact1_2016__image__image2" src="../img/2010s/trippiereddpeintured.png" alt="trippieredd">
+    <div class="fact2_2016__images">
+      <img class="fact2_2016__image__image1" src="../img/2010s/liluzivert.png" alt="lil uzi vert">
+      <img class="fact2_2016__image__image2" src="../img/2010s/trippiereddpeintured.png" alt="trippieredd">
     </div>
 
   </div>
@@ -32,7 +32,7 @@ export default {
 .container {
     margin-left: 15%;
 }
-.fact1_2016__images {
+.fact2_2016__images {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -42,14 +42,14 @@ export default {
   overflow: hidden;
 
 
-  .fact1_2016__image__image1 {
+  .fact2_2016__image__image1 {
     position: relative;
     width: 25%;
     bottom: 0;
     left: -3vw;
   }
 
-  .fact1_2016__image__image2 {
+  .fact2_2016__image__image2 {
     position: relative;
     width: 20%;
     height: 20%;
