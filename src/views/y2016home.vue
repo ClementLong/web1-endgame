@@ -18,7 +18,7 @@
 import Template from './template.vue'
 
 export default {
-    name: 'y2008fact',
+    name: 'y2016fact',
     components: {
         Template
     }

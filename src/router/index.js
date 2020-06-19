@@ -33,6 +33,7 @@ import y2008fact2 from '../views/y2008fact2.vue'
 import y2010s from '../views/2010s.vue'
 import y2016home from '../views/y2016home.vue'
 import y2016fact from '../views/y2016fact.vue'
+import y2016clip from '../views/y2016clip.vue'
 import '../font/style.scss'
 
 
@@ -206,6 +207,11 @@ const routes = [
     path: '/2016fact',
     name: '2016fact',
     component: y2016fact
+  },
+  {
+    path: '/2016clip',
+    name: '2016clip',
+    component: y2016clip
   },
 
 
