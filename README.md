@@ -1,48 +1,12 @@
-# web1-endgame
+Trap'n'Roll
+Groupe 11 :boom: 
 
-## Stack du projet
+BINET Nathan,  
+GILLET Aymeric,  
+FLEURY Louis,  
+DADURE Melvyn,  
+DANIZEL Romain,  
+DENIEL Loic  
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
-
-## Route
-
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
-
-## Command line pour démarrer le projet
-
-### Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-## Documentation
-
-https://vuejs.org/
-
-https://router.vuejs.org/
-
-https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
-
-https://marozed.ma/vue-cheatsheet/
+lien netlify:  https://5eea47efa108c402900ca64c--trapnroll.netlify.app/
 
