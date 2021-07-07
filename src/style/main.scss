@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'variables';
+@import 'mixin';
+@import 'color';
+@import 'species';
+@import 'familles';
+@import 'secondPage';
+@import 'scrollOut';
+
+.homePage {
+	@include size(100vh, 100vw);
+	@include background(url(../img/HomePage.jpg));
+	@include flexcenter(space-between, center, column);
+	&__mainTitle {
+		@include title(aileronsregular, normal, uppercase, 96px, $black, 1.5);
+		@include phone {
+			@include title(aileronsregular, normal, uppercase, 48px, $black, 1.5);
+		}
+	}
+	&__secondTitle {
+		@include title(abel, normal, none, 48px, $white, 1.5);
+		@include phone {
+			max-width: 70vw;
+			@include title(abel, normal, none, 24px, $white, 1.5);
+		}
+	}
+	.btn {
+		cursor: pointer;
+		padding: 15px 40px;
+		border-radius: 16px;
+		border: 3px solid $black;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background: $white;
+		font-family: aileronsregular;
+		font-size: 36px;
+		line-height: 29px;
+		@include phone {
+			font-size: 18px;
+			line-height: 0px;
+			border: 1px solid #000;
+		}
+
+		margin-bottom: 10vh;
+	}
+}

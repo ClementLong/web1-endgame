@@ -1,0 +1,160 @@
+.species {
+	.underline {
+		border-bottom: 2px solid $white;
+	}
+	@include flexcenter(space-between, center, column);
+	&__background {
+		@include background(url(../img/speciesBackground.jpg));
+		@include flexcenter(center, center, column);
+	}
+	.speciesVideoFrame {
+		@include size(100vh, 100vw);
+		position: relative;
+		video {
+			position: absolute;
+			right: 0;
+			top: 0;
+			min-width: 100%;
+			min-height: 100%;
+			max-height: 120%;
+			z-index: -100;
+			@include size(auto, auto);
+		}
+	}
+	.speciesDescription {
+		@include size(100vh, 100vw);
+		@include flexcenter(space-evenly, center, column);
+
+		&__title {
+			@include title(abel, normal, none, 80px, $white, 1.5);
+		}
+		.speciesInformation {
+			@include flexcenter(space-between, center, row);
+			@include size(auto, 90vw);
+			max-width: 1900px;
+			&__description {
+				@include title(abel, normal, none, 24px, $white, 1.5);
+				text-align: start;
+				max-width: 700px;
+			}
+			&__image {
+				img {
+					max-height: 500px;
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+					border-radius: 15px;
+				}
+			}
+		}
+	}
+	.speciesInfo {
+		@include size(80vh, 90vw);
+
+		@include flexcenter(space-evenly, center, row);
+		@include title(abel, normal, none, 24px, $white, 1.5);
+		max-width: 1900px;
+		&__first {
+			@include size(100%, 35%);
+			text-align: start;
+			@include flexcenter(space-between, flex-start, column);
+			img {
+				padding: 15px;
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				@include size(100px, 100px);
+			}
+			.food {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+
+				p {
+					max-width: 400px;
+				}
+			}
+			.reproduction {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+
+				p {
+					max-width: 300px;
+				}
+			}
+			.geo {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+
+				p {
+					max-width: 350px;
+				}
+			}
+		}
+		&__second {
+			@include size(60%, 30%);
+			@include flexcenter(center, center, column);
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			.img {
+				@include size(100%, 100%);
+				max-height: 350px;
+				max-width: 350px;
+				background-image: url(../img/Species/clown/nemo.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+		&__third {
+			@include size(100%, 30%);
+
+			text-align: start;
+			@include flexcenter(space-between, flex-end, column);
+			img {
+				padding: 15px;
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				@include size(100px, 100px);
+			}
+			.life {
+				img {
+					padding: 15px;
+					background-color: rgba(0, 0, 0, 0.3);
+					border-radius: 50%;
+				}
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+			}
+			.depth {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+			}
+			.size {
+				@include flexcenter(space-between, center, row);
+				@include size(auto, 100%);
+			}
+		}
+		position: relative;
+	}
+	.more {
+		@include flexcenter(center, center, column);
+		@include size(50vh, 100vw);
+		&__youKnow {
+			max-width: 600px;
+			background-color: #025a83;
+			padding: 10px;
+			border-radius: 35px;
+			@include title(abel, normal, none, 24px, $white, 1.5);
+		}
+	}
+	.backbtn {
+		max-width: 1900px;
+		@include size(100%, 90vw);
+		@include flexcenter(flex-start, center, row);
+		position: relative;
+		img {
+			padding: 0 20px 20px 0;
+		}
+	}
+	.line {
+		position: absolute;
+		bottom: 0;
+	}
+}

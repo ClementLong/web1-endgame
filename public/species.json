@@ -1,0 +1,54 @@
+{
+	"data": {
+		"time": {
+			"updated": "Jun 12, 2020 10:03:00 UTC",
+			"updatedISO": "2020-06-12T10:03:00+00:00",
+			"updateduk": "Jun 12, 2020 at 11:03 BST"
+		},
+		"disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
+		"chartName": "Bitcoin",
+		"bpi": {
+			"USD": {
+				"code": "USD",
+				"symbol": "&#36;",
+				"rate": "9,472.7637",
+				"description": "United States Dollar",
+				"rate_float": 9472.7637
+			},
+			"GBP": {
+				"code": "GBP",
+				"symbol": "&pound;",
+				"rate": "7,504.0392",
+				"description": "British Pound Sterling",
+				"rate_float": 7504.0392
+			},
+			"EUR": {
+				"code": "EUR",
+				"symbol": "&euro;",
+				"rate": "8,367.0648",
+				"description": "Euro",
+				"rate_float": 8367.0648
+			}
+		}
+	},
+	"status": 200,
+	"statusText": "",
+	"headers": {
+		"cache-control": "max-age=15",
+		"content-length": "673",
+		"content-type": "application/javascript",
+		"expires": "Fri, 12 Jun 2020 10:05:07 UTC"
+	},
+	"config": {
+		"transformRequest": {},
+		"transformResponse": {},
+		"timeout": 0,
+		"xsrfCookieName": "XSRF-TOKEN",
+		"xsrfHeaderName": "X-XSRF-TOKEN",
+		"maxContentLength": -1,
+		"headers": { "Accept": "application/json, text/plain, */*" },
+		"method": "get",
+		"url": "https://api.coindesk.com/v1/bpi/currentprice.json"
+	},
+	"request": {}
+}

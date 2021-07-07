@@ -1,0 +1,49 @@
+.scaner[data-scroll] {
+	transition: all 2s;
+}
+.scaner[data-scroll='in'] {
+	transform: scale(1);
+	opacity: 1;
+}
+.scaner[data-scroll='out'] {
+	transform: scale(0.1);
+	transform: translateX(100px);
+	opacity: 0;
+	transition: all 0.1s;
+}
+.bubble[data-scroll] {
+	transition: all 2.5s;
+}
+.bubble[data-scroll='in'] {
+	opacity: 1;
+}
+.bubble[data-scroll='out'] {
+	transform: scale(0.1);
+	opacity: 0;
+	transition: all 0.1s;
+}
+.scan[data-scroll] {
+	transition: all 2.5s;
+	animation: pulse 5s infinite;
+}
+.scan[data-scroll='in'] {
+	opacity: 1;
+}
+.scan[data-scroll='out'] {
+	transform: scale(0.1);
+	transform: translateY(400px);
+	opacity: 0;
+	transition: all 0.1s;
+}
+.profond[data-scroll] {
+	transition: all 2.5s;
+}
+.profond[data-scroll='in'] {
+	opacity: 1;
+}
+.profond[data-scroll='out'] {
+	transform: scale(0.1);
+	transform: translatex(400px);
+	opacity: 0;
+	transition: all 0.1s;
+}

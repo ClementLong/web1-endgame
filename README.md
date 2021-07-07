@@ -1,48 +1,12 @@
 # web1-endgame
 
-## Stack du projet
+# groupe 10
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
+# Version fonctionnel
+# URL du site : https://pal-hetic.netlify.app/
 
-## Route
+# Déscription : PROJECT ABYS LIFE est un web documentaire qui a pour but de découvrir la vie dans les fonds océaniques.
 
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
+# Participant : Romain FEREGOTTO, Gabriel OROS, Jonathan YAFU, Dorian Vidal, Marcus LINGUET, Lucas MASSOL
 
-## Command line pour démarrer le projet
-
-### Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-## Documentation
-
-https://vuejs.org/
-
-https://router.vuejs.org/
-
-https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
-
-https://marozed.ma/vue-cheatsheet/
-
+# Github back-end : https://github.com/gravity-zero/Webdoc-W1-G10-back
